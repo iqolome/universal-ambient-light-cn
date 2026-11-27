@@ -191,7 +191,7 @@
   <string name="pref_title_color_brightness_b">파랑 밝기</string>
   <string name="pref_title_color_gamma_r">빨강 감마</string>
   <string name="pref_title_color_gamma_g">초록 감마</string>
-  <string name="pref_summary_color_gamma">감마 100% 미만이면 중간톤이 어두워집니다. 색이 더 진해지고, 영상의 블랙 바를 포함한 어두운 회색이 빛나지 않습니다. 45%는 감마 2.2로, 색이 바래 보이는 LED 스트립에 좋은 시작점입니다. 100% 이상이면 중간톤이 밝아집니다.</string>
+  <string name="pref_summary_color_gamma">감마 100%% 미만이면 중간톤이 어두워집니다. 색이 더 진해지고, 영상의 블랙 바를 포함한 어두운 회색이 빛나지 않습니다. 45%%는 감마 2.2로, 색이 바래 보이는 LED 스트립에 좋은 시작점입니다. 100%% 이상이면 중간톤이 밝아집니다.</string>
   <string name="pref_title_color_gamma_b">파랑 감마</string>
   <string name="pref_color_preview_title">미리보기 (색상 처리 후)</string>
   <string name="pref_color_preview_hint">LED 스트립으로 전송될 결과를 반영합니다. 홈 화면의 애니메이션에는 이 설정이 적용되지 않습니다.</string>

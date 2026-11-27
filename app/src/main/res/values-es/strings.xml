@@ -191,7 +191,7 @@
   <string name="pref_title_color_brightness_b">Brillo azul</string>
   <string name="pref_title_color_gamma_r">Gamma rojo</string>
   <string name="pref_title_color_gamma_g">Gamma verde</string>
-  <string name="pref_summary_color_gamma">Una gamma inferior al 100% oscurece los tonos medios: los colores se enriquecen y el gris oscuro, incluidas las barras negras de un vídeo, deja de brillar. El 45% equivale a gamma 2.2, un buen punto de partida para una tira LED con colores lavados. Por encima del 100% los tonos medios se aclaran.</string>
+  <string name="pref_summary_color_gamma">Una gamma inferior al 100%% oscurece los tonos medios: los colores se enriquecen y el gris oscuro, incluidas las barras negras de un vídeo, deja de brillar. El 45%% equivale a gamma 2.2, un buen punto de partida para una tira LED con colores lavados. Por encima del 100%% los tonos medios se aclaran.</string>
   <string name="pref_title_color_gamma_b">Gamma azul</string>
   <string name="pref_color_preview_title">Vista previa (tras el procesamiento de color)</string>
   <string name="pref_color_preview_hint">Refleja lo que se enviará a la tira LED. Las animaciones de la pantalla de inicio NO usan estos ajustes.</string>

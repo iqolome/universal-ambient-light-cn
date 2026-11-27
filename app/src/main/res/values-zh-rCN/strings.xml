@@ -191,7 +191,7 @@
   <string name="pref_title_color_brightness_b">蓝色亮度</string>
   <string name="pref_title_color_gamma_r">红色伽马</string>
   <string name="pref_title_color_gamma_g">绿色伽马</string>
-  <string name="pref_summary_color_gamma">伽马低于 100% 会压暗中间调：颜色更浓郁，暗灰（包括视频的黑边）不再发亮。45% 相当于伽马 2.2，适合颜色发白的灯带作为起点。高于 100% 则中间调更亮。</string>
+  <string name="pref_summary_color_gamma">伽马低于 100%% 会压暗中间调：颜色更浓郁，暗灰（包括视频的黑边）不再发亮。45%% 相当于伽马 2.2，适合颜色发白的灯带作为起点。高于 100%% 则中间调更亮。</string>
   <string name="pref_title_color_gamma_b">蓝色伽马</string>
   <string name="pref_color_preview_title">预览（色彩处理后）</string>
   <string name="pref_color_preview_hint">反映将发送到灯带的内容。主屏幕上的动画不会使用这些设置。</string>

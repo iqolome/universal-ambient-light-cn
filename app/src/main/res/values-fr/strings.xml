@@ -191,7 +191,7 @@
   <string name="pref_title_color_brightness_b">Luminosité bleue</string>
   <string name="pref_title_color_gamma_r">Gamma rouge</string>
   <string name="pref_title_color_gamma_g">Gamma vert</string>
-  <string name="pref_summary_color_gamma">Un gamma inférieur à 100 % assombrit les tons moyens : les couleurs deviennent plus riches, et le gris foncé, y compris les barres noires d\'une vidéo, cesse de briller. 45 % équivaut à un gamma 2.2, un bon départ pour une bande LED aux couleurs délavées. Au-dessus de 100 %, les tons moyens s\'éclaircissent.</string>
+  <string name="pref_summary_color_gamma">Un gamma inférieur à 100 %% assombrit les tons moyens : les couleurs deviennent plus riches, et le gris foncé, y compris les barres noires d\'une vidéo, cesse de briller. 45 %% équivaut à un gamma 2.2, un bon départ pour une bande LED aux couleurs délavées. Au-dessus de 100 %%, les tons moyens s\'éclaircissent.</string>
   <string name="pref_title_color_gamma_b">Gamma bleu</string>
   <string name="pref_color_preview_title">Aperçu (après traitement des couleurs)</string>
   <string name="pref_color_preview_hint">Reflète ce qui sera envoyé à la bande LED. Les animations de l\'écran d\'accueil n\'utilisent PAS ces réglages.</string>

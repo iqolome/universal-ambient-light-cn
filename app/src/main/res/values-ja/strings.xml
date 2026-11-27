@@ -191,7 +191,7 @@
   <string name="pref_title_color_brightness_b">青の明るさ</string>
   <string name="pref_title_color_gamma_r">赤のガンマ</string>
   <string name="pref_title_color_gamma_g">緑のガンマ</string>
-  <string name="pref_summary_color_gamma">ガンマを 100% 未満にすると中間調が暗くなります: 色が濃くなり、動画の黒帯を含む暗いグレーの発光も抑えられます。45% はガンマ 2.2 に相当し、色が薄い LED ストリップの良い出発点です。100% 超では中間調が明るくなります。</string>
+  <string name="pref_summary_color_gamma">ガンマを 100%% 未満にすると中間調が暗くなります: 色が濃くなり、動画の黒帯を含む暗いグレーの発光も抑えられます。45%% はガンマ 2.2 に相当し、色が薄い LED ストリップの良い出発点です。100%% 超では中間調が明るくなります。</string>
   <string name="pref_title_color_gamma_b">青のガンマ</string>
   <string name="pref_color_preview_title">プレビュー（色処理後）</string>
   <string name="pref_color_preview_hint">LED ストリップに送られる内容を反映します。ホーム画面のアニメーションにはこれらの設定は使われません。</string>

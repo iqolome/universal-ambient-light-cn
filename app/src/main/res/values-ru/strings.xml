@@ -193,7 +193,7 @@
   <string name="pref_title_color_brightness_b">Яркость B</string>
   <string name="pref_title_color_gamma_r">Гамма R</string>
   <string name="pref_title_color_gamma_g">Гамма G</string>
-  <string name="pref_summary_color_gamma">Гамма меньше 100% темнит полутона: цвета становятся сочнее, а тёмно-серое, в том числе чёрные полосы видео, перестаёт светиться. 45% соответствует гамме 2,2, с неё стоит начинать, если цвета на ленте белёсые. Больше 100% полутона светлее.</string>
+  <string name="pref_summary_color_gamma">Гамма меньше 100%% темнит полутона: цвета становятся сочнее, а тёмно-серое, в том числе чёрные полосы видео, перестаёт светиться. 45%% соответствует гамме 2,2, с неё стоит начинать, если цвета на ленте белёсые. Больше 100%% полутона светлее.</string>
   <string name="pref_title_color_gamma_b">Гамма B</string>
   <string name="pref_color_preview_title">Превью (с применением обработки)</string>
   <string name="pref_color_preview_hint">Отражает то, что будет отправлено на LED-ленту. Анимации на главном экране НЕ используют эти настройки.</string>

@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string-array name="pref_list_framerate">
+    <item>10 fps</item>
+    <item>15 fps</item>
+    <item>24 fps</item>
+    <item>30 fps</item>
+    <item>60 fps</item>
+  </string-array>
+  <string name="app_name">Universal Ambient Light</string>
+  <string name="pref_title">설정</string>
+  <!-- notification button -->
+  <string name="notification_exit_button">종료</string>
+  <!-- Network scanner -->
+  <string name="scanner_retry_button">다시 시도</string>
+  <string name="scanner_cancel">취소</string>
+  <!-- Network Scanner result -->
+  <!-- Connection settings -->
+  <string name="pref_group_connection">연결</string>
+  <string name="pref_title_host">호스트</string>
+  <string name="pref_title_port">포트</string>
+  <string name="pref_title_led_start_corner">LED 시작 모서리</string>
+  <string name="pref_title_led_direction">LED 방향</string>
+  <string name="pref_title_led_layout">LED 레이아웃</string>
+  <string name="pref_summary_led_layout">화면에서 LED 레이아웃 보기 및 편집</string>
+  <string name="led_layout_top_count_label">상단 LED 수</string>
+  <string name="led_layout_right_count_label">우측 LED 수</string>
+  <string name="led_layout_bottom_count_label">하단 LED 수</string>
+  <string name="led_layout_left_count_label">좌측 LED 수</string>
+  <string name="led_layout_total_leds">총 LED: %1$d</string>
+  <string name="led_layout_active_sides">활성 변</string>
+  <string name="led_layout_side_top">상단</string>
+  <string name="led_layout_side_right">우측</string>
+  <string name="led_layout_side_bottom">하단</string>
+  <string name="led_layout_side_left">좌측</string>
+  <string name="led_layout_bottom_gap_label">하단 간격 (사운드바용)</string>
+  <string name="led_layout_capture_margin_label">캡처 여백 (%)</string>
+  <string name="led_layout_capture_margin_top_label">상단 캡처 여백 (%)</string>
+  <string name="led_layout_capture_margin_top_help">0–90%. 화면 상단 가장자리에서의 오프셋.</string>
+  <string name="led_layout_capture_margin_right_label">우측 캡처 여백 (%)</string>
+  <string name="led_layout_capture_margin_right_help">0–90%. 화면 우측 가장자리에서의 오프셋.</string>
+  <string name="led_layout_capture_margin_bottom_label">하단 캡처 여백 (%)</string>
+  <string name="led_layout_capture_margin_bottom_help">0–90%. 화면 하단 가장자리에서의 오프셋.</string>
+  <string name="led_layout_capture_margin_left_label">좌측 캡처 여백 (%)</string>
+  <string name="led_layout_capture_margin_left_help">0–90%. 화면 좌측 가장자리에서의 오프셋.</string>
+    <string name="led_layout_offset_label">LED 오프셋 (둘레 기준 스텝)</string>
+    <string name="led_layout_offset_help">양수 — 레이아웃 방향, 음수 — 반대 방향.</string>
+    <string name="led_layout_scan_depth_label">스캔 깊이 (%)</string>
+    <string name="led_layout_scan_depth_help">색상을 평균내는 영역의 깊이(1-50%).</string>
+  <string name="led_layout_legend_title">범례:</string>
+  <string name="led_layout_legend_first_led">LED #1 (첫 번째)</string>
+  <string name="led_layout_legend_active_leds">활성 LED</string>
+  <string name="led_layout_legend_disabled_leds">비활성 LED</string>
+  <string name="led_layout_legend_screen">화면</string>
+  <string name="led_side_mode_on">켜기</string>
+  <string name="led_side_mode_off">끄기</string>
+  <string name="led_side_mode_none">없음</string>
+  <string name="led_direction_clockwise">시계 방향</string>
+  <string name="led_direction_counterclockwise">반시계 방향</string>
+  <string name="led_corner_top_left">왼쪽 위</string>
+  <string name="led_corner_top_right">오른쪽 위</string>
+  <string name="led_corner_bottom_right">오른쪽 아래</string>
+  <string name="led_corner_bottom_left">왼쪽 아래</string>
+  <string name="action_back">뒤로</string>
+  <string name="action_ok">확인</string>
+  <string name="action_cancel">취소</string>
+  <string name="action_close">닫기</string>
+  <string name="action_copy">복사</string>
+  <string name="action_reset">초기화</string>
+  <string name="home_effects">효과</string>
+  <string name="home_toggle_power">전원 전환</string>
+  <string name="home_settings">설정</string>
+  <string name="unit_ms">%1$d ms</string>
+  <string name="debug_info_title">디버그 정보</string>
+  <string name="debug_info_copied">클립보드에 복사됨</string>
+  <string name="pref_category_debug">디버그</string>
+  <string name="pref_title_device_info">기기 정보</string>
+  <string name="pref_summary_device_info">디버그용 기기 정보 표시</string>
+  <string name="rating_stars_desc">별점 %1$d개</string>
+  <string name="usb_service_unavailable">이 기기에서는 USB 서비스를 사용할 수 없습니다</string>
+  <string name="usb_no_serial_devices">USB 시리얼 기기를 찾을 수 없습니다. USB OTG로 기기를 연결하세요</string>
+  <string name="usb_permission_denied_toast">USB 기기 권한이 거부되었습니다. USB 접근을 허용해 주세요.</string>
+  <string name="usb_permission_prompt">USB 기기 접근을 확인하세요</string>
+  <string name="usb_permission_no_dialog">시스템이 USB 접근 요청을 표시하지 않아 앱이 컨트롤러를 열 수 없습니다. 펌웨어 제한입니다. WLED 같은 네트워크 컨트롤러를 사용하세요</string>
+  <string name="pref_title_priority">메시지 우선순위</string>
+  <string name="pref_title_reconnect">재연결</string>
+  <string name="pref_title_reconnect_delay">재연결 지연</string>
+  <string name="pref_title_standby_keepalive">대기 모드에서도 계속 실행</string>
+  <string name="pref_summary_standby_keepalive">TV 화면이 꺼져 있어도 LED로 데이터를 계속 보냅니다. 끄면 앱이 LED를 끄고 대기 중에는 조용히 있다가 화면이 다시 켜지면 재개합니다</string>
+  <!-- Capture source -->
+  <string name="pref_title_capture_source">캡처 소스</string>
+  <string-array name="pref_list_capture_source">
+    <item>화면</item>
+    <item>카메라</item>
+    <item>효과 (캡처 없음)</item>
+  </string-array>
+  <string-array name="pref_list_capture_source_values">
+    <item>screen</item>
+    <item>camera</item>
+    <item>effect</item>
+  </string-array>
+  <string name="pref_title_camera_setup">카메라 모서리 설정</string>
+  <string name="pref_summary_camera_setup">카메라 화면에서 TV 화면에 맞게 네 모서리를 조정하세요</string>
+  <string name="camera_setup_title">카메라 설정</string>
+  <string name="camera_setup_instruction">TV 화면 가장자리에 맞게 네 모서리를 드래그하세요</string>
+  <string name="camera_auto_frame_button">TV 찾기</string>
+  <string name="camera_auto_frame_not_found">TV 화면을 찾지 못함 — 모서리는 그대로 둡니다</string>
+  <string name="camera_auto_frame_too_dark">화면을 찾기에는 너무 어두움 — TV를 켠 뒤 다시 시도하세요</string>
+  <string name="camera_auto_frame_no_screen">화면처럼 보이는 것이 없음 — 카메라를 TV에 향하세요</string>
+  <string name="camera_auto_frame_no_frames">카메라가 프레임을 전달하지 않았습니다</string>
+  <string name="camera_setup_save">저장</string>
+  <string name="camera_setup_reset">초기화</string>
+  <string name="camera_permission_required">카메라 캡처 모드에는 카메라 권한이 필요합니다</string>
+  <string name="camera_grant_permission">권한 허용</string>
+  <string name="camera_capturing_status">카메라가 캡처 중…</string>
+  <!-- Capture Method -->
+  <string name="pref_title_capture_method">캡처 방식</string>
+  <string-array name="pref_list_capture_method">
+    <item>MediaProjection (표준)</item>
+    <item>Scrcpy (ADB, ~30ms) ★★★★★</item>
+    <item>ADB Stream (H.264, ~50ms)</item>
+    <item>Screencap (Shell / ADB)</item>
+    <item>Screencap (Root)</item>
+    <item>ADB (스크린샷, ~200ms)</item>
+    <item>Accessibility (Android 11+)</item>
+    <item>MTK Hardware Capture (Root)</item>
+    <item>MStar VSS Hardware Capture (Root)</item>
+  </string-array>
+  <string-array name="pref_list_capture_method_values">
+    <item>media_projection</item>
+    <item>scrcpy</item>
+    <item>adb_stream</item>
+    <item>screencap_shell</item>
+    <item>screencap_root</item>
+    <item>adb_local</item>
+    <item>accessibility</item>
+    <item>mtk_thal_capture</item>
+    <item>mstar_vss_capture</item>
+  </string-array>
+
+  <string name="pref_title_adb_port">ADB 포트</string>
+  <string name="pref_btn_adb_pair">ADB 연결 테스트</string>
+  <string name="pref_summary_adb_pair">연결을 확인하고 TV에서 키를 승인합니다</string>
+  <string name="adb_pair_title">ADB 승인</string>
+  <string name="adb_pair_instruction">처음 연결 시 TV에 \"무선 디버깅을 허용할까요?\" 대화상자가 나타납니다 — TV 화면에서 허용을 누르세요. 개발자 옵션에서 무선 디버깅이 켜져 있는지 확인하세요.</string>
+  <string name="error_adb_pairing_required">ADB 페어링이 필요합니다. 설정 → 캡처 방식 → ADB 연결 테스트 → 코드로 페어링.</string>
+  <string name="adb_pair_code_title">코드로 페어링 (Android 11+, 1회)</string>
+  <string name="adb_pair_code_hint">6자리 페어링 코드</string>
+  <string name="adb_pair_port_hint">페어링 포트 (해당 화면에 표시)</string>
+  <string name="adb_pair_code_instruction">수동 대체: 무선 디버깅 → \"페어링 코드로 기기 페어링\"을 열고 표시된 포트와 6자리 코드를 입력하세요. 위의 자동 버튼이 더 쉽습니다 — 코드를 직접 읽어 그 화면을 나가지 않고 페어링합니다.</string>
+  <string name="adb_autopair_btn">자동 페어링 (접근성)</string>
+  <string name="adb_autopair_waiting">필요하면 무선 디버깅을 켜세요 — 앱이 열고 코드를 읽어 자동으로 페어링합니다.</string>
+  <string name="adb_autopair_need_accessibility">다음 화면에서 이 앱의 접근성을 켠 뒤 \"자동 페어링\"을 다시 누르세요.</string>
+  <string name="adb_enable_accessibility_toast">목록에서 \"%1$s\"을(를) 찾아 열고 켠 다음 — 돌아와 \"자동 페어링\"을 누르세요.</string>
+  <string name="adb_autopair_consent_title">자동 페어링 — 확인해 주세요</string>
+  <string name="adb_autopair_consent_text">화면을 캡처하려면 앱이 이 기기 자신의 ADB에 localhost(127.0.0.1)로 연결합니다. 허용하면: 무선 디버깅을 열고, 접근성 서비스로 화면에 표시된 일회용 6자리 페어링 코드를 읽으며, \"페어링 코드로 기기 페어링\"을 대신 누릅니다. 로컬로만 연결하며 다른 설정은 바꾸지 않고 기기 밖으로 아무것도 보내지 않습니다. 계속할까요?</string>
+  <string name="adb_autopair_consent_continue">계속</string>
+  <string name="adb_autopair_timeout">시간 초과. 무선 디버깅이 켜져 있는지 확인한 뒤 \"자동 페어링\"을 다시 누르세요.</string>
+  <string name="adb_pair_manual_label">수동 입력</string>
+  <string name="adb_pair_btn">페어링</string>
+  <string name="adb_pairing">페어링 중…</string>
+  <string name="adb_pair_success">페어링됨! 이제 ADB 연결 테스트를 누르세요.</string>
+  <string name="adb_pair_failed">페어링 실패: %1$s</string>
+  <string name="adb_test_success">연결됨! ADB 키가 승인되었습니다.</string>
+  <string name="adb_test_failed">연결 실패: %s\n\n무선 디버깅이 켜져 있는지 확인하고 TV에서 대화상자를 수락하세요.</string>
+  <string name="adb_status_label">개발자 옵션: %1$s\nADB: %2$s</string>
+  <string name="adb_legacy_title">Android 10 이하</string>
+  <string name="adb_legacy_btn">연결 (레거시, 페어링 없음)</string>
+  <string name="adb_status_on">켜짐</string>
+  <string name="adb_status_off">꺼짐</string>
+  <string name="adb_btn_open_dev_options">개발자 옵션 열기</string>
+  <string name="adb_btn_how_to_enable_dev_options">개발자 옵션 켜는 방법</string>
+  <string name="adb_btn_open_wireless_debug">무선 디버깅 열기</string>
+  <string name="adb_toast_dev_options_help">먼저 개발자 옵션을 켜세요: 설정 → 휴대전화 정보 → 빌드 번호를 7번 탭</string>
+  <string name="adb_toast_cannot_open_dev">이 기기에서는 개발자 옵션을 열 수 없습니다</string>
+  <string name="adb_toast_cannot_open_wireless">이 기기에서는 무선 디버깅을 열 수 없습니다</string>
+
+  <!-- Capturing settings -->
+  <string name="pref_group_capturing">캡처</string>
+  <string name="pref_title_framerate">캡처 속도</string>
+  <string name="pref_title_capture_quality">캡처 품질</string>
+  <string name="pref_title_color_brightness">밝기</string>
+  <string name="pref_title_color_contrast">대비</string>
+  <string name="pref_title_color_black_level">블랙 레벨</string>
+  <string name="pref_title_color_white_level">화이트 레벨</string>
+  <string name="pref_title_color_saturation">채도</string>
+  <string name="pref_title_color_processing_enabled">색상 처리</string>
+  <string name="pref_group_color_per_channel">채널별 보정 (R/G/B)</string>
+  <string name="pref_title_color_brightness_r">빨강 밝기</string>
+  <string name="pref_title_color_brightness_g">초록 밝기</string>
+  <string name="pref_title_color_brightness_b">파랑 밝기</string>
+  <string name="pref_title_color_gamma_r">빨강 감마</string>
+  <string name="pref_title_color_gamma_g">초록 감마</string>
+  <string name="pref_summary_color_gamma">감마 100%% 미만이면 중간톤이 어두워집니다. 색이 더 진해지고, 영상의 블랙 바를 포함한 어두운 회색이 빛나지 않습니다. 45%%는 감마 2.2로, 색이 바래 보이는 LED 스트립에 좋은 시작점입니다. 100%% 이상이면 중간톤이 밝아집니다.</string>
+  <string name="pref_title_color_gamma_b">파랑 감마</string>
+  <string name="pref_color_preview_title">미리보기 (색상 처리 후)</string>
+  <string name="pref_color_preview_hint">LED 스트립으로 전송될 결과를 반영합니다. 홈 화면의 애니메이션에는 이 설정이 적용되지 않습니다.</string>
+  <string name="pref_group_border_detection">블랙 바(레터박스) 감지</string>
+  <string name="pref_title_border_detection_enabled">레터박스 자동 감지</string>
+  <string name="pref_summary_border_detection_enabled">영상 주변의 검은 바를 무시합니다(16:9, 1.85:1, 2.39:1 콘텐츠에 동작). 기본값은 꺼짐.</string>
+  <string name="pref_title_border_threshold">블랙 임계값 (RGB 0–64)</string>
+  <string name="pref_title_border_check_interval">감지 간격 (프레임)</string>
+  <string name="pref_title_border_ignore_subtitles">하단 바의 자막 무시</string>
+  <string name="pref_summary_border_ignore_subtitles">바 높이는 상단 가장자리에서 가져오고 하단은 모서리만 확인하여, 바 안의 자막이 크롭을 줄이지 않게 합니다. 어두운 장면에서도 크롭을 유지합니다. 영상 위 자막은 여전히 LED에 반영됩니다.</string>
+  <string name="pref_group_camera_idle">카메라 절전 모드</string>
+  <string name="pref_title_camera_idle_enabled">절전 모드 사용</string>
+  <string name="pref_summary_camera_idle_enabled">카메라 캡처는 TV의 대기 신호를 받지 않아, 화면이 꺼져도 센서 노이즈가 스트립으로 계속 전송됩니다. 켜면 화면이 비었을 때 LED가 꺼지고 영상이 돌아올 때까지 프레임 전송이 일시 중지됩니다. 기본값은 꺼짐.</string>
+  <string name="pref_title_camera_idle_timeout">절전 지연 (초)</string>
+  <string name="pref_title_camera_idle_dark_level">빈 화면 임계값 (0–96)</string>
+  <string name="pref_title_camera_idle_motion_level">움직임 감도 임계값 (1–64)</string>
+  <string name="pref_title_camera_idle_static">정지 화면에서 절전</string>
+  <string name="pref_summary_camera_idle_static">켜면 화면이 변하지 않을 때(일시정지 영상이나 고정 메뉴 등)에도 프레임 전송이 멈추고, 스트립은 마지막으로 표시된 색을 유지합니다. 긴 정지 장면이 스트립 색을 고정하므로 기본값은 꺼짐입니다.</string>
+  <string name="unit_rgb">RGB</string>
+  <string name="unit_frames">프레임</string>
+  <string name="unit_seconds">초</string>
+  <string-array name="pref_list_capture_quality">
+    <item>낮음 (64px)</item>
+    <item>중간 (128px)</item>
+    <item>높음 (256px)</item>
+    <item>울트라 (512px)</item>
+    <item>720p (불안정)</item>
+    <item>1080p (불안정)</item>
+    <item>1440p (불안정)</item>
+    <item>2160p (불안정)</item>
+  </string-array>
+  <string-array name="pref_list_capture_quality_values">
+    <item>64</item>
+    <item>128</item>
+    <item>256</item>
+    <item>512</item>
+    <item>720</item>
+    <item>1080</item>
+    <item>1440</item>
+    <item>2160</item>
+  </string-array>
+  <!-- General settings -->
+  <string name="pref_group_general">일반</string>
+  <string name="pref_title_boot">부팅 시 캡처</string>
+  <string name="pref_title_language">언어</string>
+  <string name="pref_title_reset_picture">화면 설정 초기화</string>
+  <string name="pref_summary_reset_picture">캡처 속도와 품질, 색상 보정, 스무딩, 블랙 바 크롭이 기본값으로 돌아갑니다. 연결, LED 레이아웃, 카메라 보정은 그대로입니다</string>
+  <string name="pref_title_backup_save">설정을 파일로 저장</string>
+  <string name="pref_summary_backup_save">휴대폰 페어링을 제외한 모든 설정. 조명의 토큰과 비밀번호가 파일에 평문으로 저장됩니다</string>
+  <string name="pref_title_backup_restore">파일에서 설정 복원</string>
+  <string name="pref_summary_backup_restore">현재 설정을 모두 대체합니다. TV에서는 파일 관리자가 필요하거나 휴대폰 원격으로 하세요</string>
+  <string name="backup_saved">설정 저장됨: %1$s</string>
+  <string name="backup_save_failed">파일을 저장할 수 없습니다</string>
+  <string name="backup_restored">설정이 복원되었습니다</string>
+  <string name="backup_restored_without_method">설정이 복원되었습니다. 파일의 캡처 방식은 여기서 사용할 수 없어 현재 방식을 유지합니다</string>
+  <string name="backup_read_failed">이 파일에서 설정을 읽을 수 없습니다</string>
+  <string name="backup_no_picker">이 기기에서 파일 관리자를 찾을 수 없습니다</string>
+  <string name="pref_key_language">language</string>
+  <string-array name="pref_list_language">
+    <item>시스템 기본값</item>
+    <item>简体中文</item>
+    <item>English</item>
+    <item>日本語</item>
+    <item>한국어</item>
+    <item>Русский</item>
+    <item>Español</item>
+    <item>Français</item>
+  </string-array>
+  <string-array name="pref_list_language_values">
+    <item>default</item>
+    <item>zh</item>
+    <item>en</item>
+    <item>ja</item>
+    <item>ko</item>
+    <item>ru</item>
+    <item>es</item>
+    <item>fr</item>
+  </string-array>
+
+  <string name="error_empty_host">서버 주소가 설정되지 않았습니다. 설정 → 연결 → 호스트에서 Hyperion/HyperHDR/WLED 기기의 IP를 입력하거나 네트워크 검색을 사용하세요</string>
+  <string name="error_empty_port">포트가 설정되지 않았습니다. 설정 → 연결 → 포트(Hyperion은 19400, WLED/DDP는 4048)</string>
+  <string name="error_invalid_port">잘못된 포트: %1$d. 1에서 65535 사이여야 합니다</string>
+  <string name="setup_required_title">설정 필요</string>
+  <string name="setup_required_open_settings">설정 열기</string>
+  <string name="setup_required_cancel">취소</string>
+  <string name="error_invalid_led_counts">총 LED 수가 0입니다 — 설정 → LED 레이아웃에서 변별 LED 수를 설정하세요</string>
+  <string name="error_server_unreachable">hyperion 서버에 연결할 수 없습니다. 설정을 확인하고 hyperion이 실행 중인지 확인하세요</string>
+  <string name="error_adalight_unreachable">Adalight 기기에 연결할 수 없습니다. 확인: 1) USB OTG 케이블로 연결됨, 2) 요청 시 USB 권한 허용, 3) 설정에서 올바른 보드율이 설정됨</string>
+  <string name="error_connection_lost">hyperion 서버와의 연결이 끊어져 그래버를 중지합니다</string>
+  <string name="error_adalight_connection_lost">Adalight 기기와의 연결이 끊어져 그래버를 중지합니다</string>
+  <string name="error_media_projection_denied">화면 녹화 권한이 거부되었습니다. 요청 시 권한을 허용해 주세요</string>
+  <string name="error_screen_recording_not_available">이 기기에서는 화면 녹화를 사용할 수 없습니다</string>
+  <string name="url_dialog_title">링크 열기</string>
+  <string name="url_dialog_message">QR 코드를 스캔하거나 아래 링크를 복사해 브라우저에서 여세요:</string>
+  <string name="url_dialog_qr_description">링크용 QR 코드</string>
+  <string name="url_dialog_open_link">링크 열기</string>
+  <string name="help_readme_url">https://github.com/vasmarfas/universal-ambient-light/blob/master/README.md</string>
+  <string name="support_url">https://github.com/vasmarfas/universal-ambient-light/blob/master/SUPPORT.md</string>
+  <string name="chat_url" translatable="false">https://t.me/vasmarfas_chat</string>
+  <string name="notification_channel_label">Universal Ambient Light 알림</string>
+  <string name="notification_description">현재 화면 콘텐츠를 캡처 중</string>
+  <string name="pref_title_use_avg_color">평균 화면 색상 전송</string>
+  <string name="pref_title_adalight_baudrate">Adalight 보드율</string>
+  <string-array name="pref_list_adalight_baudrate">
+    <item>9600</item>
+    <item>19200</item>
+    <item>38400</item>
+    <item>57600</item>
+    <item>115200 (권장)</item>
+    <item>230400</item>
+    <item>250000</item>
+    <item>500000</item>
+    <item>921600</item>
+    <item>1000000</item>
+    <item>2000000</item>
+  </string-array>
+  <string-array name="pref_list_adalight_baudrate_values" translatable="false">
+    <item>9600</item>
+    <item>19200</item>
+    <item>38400</item>
+    <item>57600</item>
+    <item>115200</item>
+    <item>230400</item>
+    <item>250000</item>
+    <item>500000</item>
+    <item>921600</item>
+    <item>1000000</item>
+    <item>2000000</item>
+  </string-array>
+  <string name="pref_title_wled_color_order">WLED 색상 순서</string>
+  <string-array name="pref_list_wled_color_order">
+    <item>RGB</item>
+    <item>GRB</item>
+    <item>BRG</item>
+    <item>RBG</item>
+    <item>GBR</item>
+    <item>BGR</item>
+  </string-array>
+  <string-array name="pref_list_wled_color_order_values">
+    <item>rgb</item>
+    <item>grb</item>
+    <item>brg</item>
+    <item>rbg</item>
+    <item>gbr</item>
+    <item>bgr</item>
+    </string-array>
+  
+  <!-- Smoothing settings -->
+  <string name="pref_group_smoothing">스무딩</string>
+  <string name="pref_title_smoothing_enabled">스무딩 사용</string>
+  <string name="pref_title_smoothing_preset">스무딩 프리셋</string>
+  <string-array name="pref_list_smoothing_preset">
+    <item>끄기</item>
+    <item>반응형</item>
+    <item>균형</item>
+    <item>부드럽게</item>
+  </string-array>
+  <string-array name="pref_list_smoothing_preset_values">
+    <item>off</item>
+    <item>responsive</item>
+    <item>balanced</item>
+    <item>smooth</item>
+  </string-array>
+  <string name="pref_title_settling_time">안정화 시간 (ms)</string>
+  <string name="pref_title_output_delay">출력 지연 (ms)</string>
+  <string name="pref_title_update_frequency">업데이트 빈도</string>
+  <string-array name="pref_list_update_frequency">
+    <item>20 Hz</item>
+    <item>25 Hz</item>
+    <item>30 Hz</item>
+    <item>40 Hz</item>
+    <item>50 Hz</item>
+    <item>60 Hz</item>
+  </string-array>
+  <string-array name="pref_list_update_frequency_values">
+    <item>20</item>
+    <item>25</item>
+    <item>30</item>
+    <item>40</item>
+    <item>50</item>
+    <item>60</item>
+  </string-array>
+  
+  <!-- WLED advanced settings -->
+  <string name="pref_title_wled_protocol">WLED 프로토콜</string>
+  <string-array name="pref_list_wled_protocol">
+    <item>UDP Raw (포트 19446)</item>
+    <item>DDP (포트 4048)</item>
+  </string-array>
+  <string-array name="pref_list_wled_protocol_values">
+    <item>udp_raw</item>
+    <item>ddp</item>
+  </string-array>
+  <string name="pref_title_wled_rgbw">WLED RGBW</string>
+  <string name="pref_summary_wled_rgbw_raw">포트 19446에서는 무시됨: 화이트 채널이 없습니다. RGBW 스트립에는 DDP를 사용하세요</string>
+  <string name="pref_summary_wled_rgbw_white_mode">WLED에서 화이트 계산이 Manual only 또는 Dual로 설정된 RGBW 스트립이 필요합니다 — 자동 모드는 화이트를 다시 계산해 어둡게 둡니다</string>
+  <string name="pref_title_wled_brightness">WLED 밝기</string>
+  <string name="pref_summary_wled_brightness_max">255 — 색상을 그대로 전송</string>
+  <!-- Home Assistant -->
+  <string name="pref_title_ha_token">액세스 토큰</string>
+  <string name="pref_summary_ha_token_empty">Home Assistant 프로필 → 보안의 장기 토큰</string>
+  <string name="pref_summary_ha_token_set">토큰 저장됨</string>
+  <string name="pref_title_ha_lamps">조명과 영역</string>
+  <string name="pref_summary_ha_lamps_empty">구성된 조명 없음</string>
+  <string name="pref_summary_ha_lamps_count">구성된 조명: %1$d</string>
+  <string name="pref_title_ha_update_interval">업데이트 속도</string>
+  <string-array name="pref_list_ha_update_interval">
+    <item>초당 10회 (100 ms)</item>
+    <item>150 ms</item>
+    <item>초당 4회 (250 ms)</item>
+    <item>초당 2회 (500 ms)</item>
+    <item>초당 1회</item>
+    <item>2초마다</item>
+    <item>5초마다</item>
+  </string-array>
+  <string-array name="pref_list_ha_update_interval_values" translatable="false">
+    <item>100</item>
+    <item>150</item>
+    <item>250</item>
+    <item>500</item>
+    <item>1000</item>
+    <item>2000</item>
+    <item>5000</item>
+  </string-array>
+  <string name="pref_title_ha_change_threshold">색상 변경 임계값</string>
+  <string name="pref_summary_ha_change_threshold">0–255. 영역 색상이 이 정도 이상 변할 때만 업데이트를 보냅니다</string>
+  <string name="pref_title_ha_transition">전환</string>
+  <string-array name="pref_list_ha_transition">
+    <item>끄기</item>
+    <item>150 ms</item>
+    <item>300 ms</item>
+    <item>500 ms</item>
+    <item>1초</item>
+    <item>2초</item>
+  </string-array>
+  <string-array name="pref_list_ha_transition_values" translatable="false">
+    <item>0</item>
+    <item>150</item>
+    <item>300</item>
+    <item>500</item>
+    <item>1000</item>
+    <item>2000</item>
+  </string-array>
+  <string name="pref_title_ha_brightness_mode">밝기</string>
+  <string-array name="pref_list_ha_brightness_mode">
+    <item>화면에 맞춤</item>
+    <item>변경하지 않음</item>
+  </string-array>
+  <string-array name="pref_list_ha_brightness_mode_values" translatable="false">
+    <item>screen</item>
+    <item>keep</item>
+  </string-array>
+  <string name="pref_title_ha_brightness">밝기 제한</string>
+  <string name="pref_summary_ha_brightness_max">255 — 램프 최대 밝기</string>
+  <string name="pref_title_ha_dark_off">어두운 장면에서 끄기</string>
+  <string name="pref_summary_ha_dark_off">영역이 임계값보다 어두워지면 조명이 꺼지고 화면과 함께 다시 켜집니다</string>
+  <string name="pref_title_ha_dark_threshold">어두움 임계값</string>
+  <string name="pref_title_ha_turn_off_lights">중지 시 조명 끄기</string>
+  <string name="pref_summary_ha_turn_off_lights">캡처가 멈추거나 TV 화면이 꺼지면 조명을 끕니다</string>
+  <string name="ha_lamps_dialog_title">Home Assistant 조명</string>
+  <string name="ha_lamps_loading">조명 불러오는 중…</string>
+  <string name="ha_lamps_error">Home Assistant에 연결할 수 없음: %1$s</string>
+  <string name="ha_lamps_empty">조명을 찾을 수 없음</string>
+  <string name="ha_lamps_hint">먼저 호스트와 액세스 토큰을 설정한 뒤 각 조명에 영역을 지정하세요</string>
+  <string name="ha_zone_none">사용 안 함</string>
+  <string name="ha_zone_average">평균 화면 색상</string>
+  <string name="ha_zone_left">왼쪽 가장자리</string>
+  <string name="ha_zone_right">오른쪽 가장자리</string>
+  <string name="ha_zone_top">위쪽 가장자리</string>
+  <string name="ha_zone_bottom">아래쪽 가장자리</string>
+  <string name="ha_zone_top_left">왼쪽 위 모서리</string>
+  <string name="ha_zone_top_right">오른쪽 위 모서리</string>
+  <string name="ha_zone_bottom_left">왼쪽 아래 모서리</string>
+  <string name="ha_zone_bottom_right">오른쪽 아래 모서리</string>
+  <string name="ha_lamps_lamp_missing">현재 이 Home Assistant에서 보이지 않음</string>
+  <string name="action_save">저장</string>
+  <string name="error_ha_token_missing">Home Assistant 액세스 토큰이 설정되지 않았습니다. 설정 → 연결 → 액세스 토큰</string>
+  <string name="error_ha_no_lamps">영역에 할당된 Home Assistant 조명이 없습니다. 설정 → 연결 → 조명과 영역</string>
+
+  <!-- Second, additional Home Assistant output -->
+
+  <!-- Adalight advanced settings -->
+  <string name="pref_title_adalight_protocol">Adalight 프로토콜</string>
+  <string-array name="pref_list_adalight_protocol">
+    <item>ADA (표준)</item>
+    <item>LBAPA (LightBerry APA102)</item>
+    <item>AWA (Hyperserial)</item>
+    <item>tpm2</item>
+    <item>Skydimo</item>
+    <item>SEDU</item>
+    <item>KarateLight</item>
+    <item>AtmoLight</item>
+    <item>SP616E</item>
+  </string-array>
+  <string-array name="pref_list_adalight_protocol_values">
+    <item>ada</item>
+    <item>lbapa</item>
+    <item>awa</item>
+    <item>tpm2</item>
+    <item>skydimo</item>
+    <item>sedu</item>
+    <item>karate</item>
+    <item>atmo</item>
+    <item>sp616e</item>
+  </string-array>
+
+  <!-- App Specific Strings -->
+  <string name="toggle_activity_label">Universal Ambient Light (전환)</string>
+  <string name="quick_tile_label">Universal Ambient Light</string>
+  <string name="status_grabber_running">앰비언트 라이트 서비스가 실행 중</string>
+  <string name="help">도움말</string>
+  <string name="support_project">프로젝트 후원</string>
+  <string name="help_title">사용 방법</string>
+  <string name="help_message">이 앱을 사용하기 전에 LED 컨트롤러를 설정해야 합니다:\n\n• WLED: ESP8266/ESP32 기기에 WLED 펌웨어 구성\n• Adalight: Adalight 펌웨어가 있는 Arduino를 USB로 연결\n• Hyperion: Hyperion 서버 설치 및 구성\n\n자세한 설정 방법은 GitHub 저장소를 방문하세요.</string>
+  <string name="help_open_github">GitHub 열기</string>
+  <string name="help_open_chat">Telegram 채팅</string>
+  <string name="help_close">닫기</string>
+  <string name="support_project_title">프로젝트 후원</string>
+  <string name="support_project_message">이 프로젝트를 후원해 주셔서 감사합니다!\n\n다음으로 개발을 지원할 수 있습니다:\n• Boosty\n• 암호화폐 (TON)\n• Google Play에 리뷰 남기기\n\n아래를 눌러 모든 옵션을 확인하세요.</string>
+  <string name="support_open_details">자세히 보기</string>
+  <string name="report_issue">문제 신고</string>
+  <string name="leave_review">리뷰 남기기</string>
+  <string name="rating_dialog_title">Universal Ambient Light 평가</string>
+  <string name="rating_dialog_message">사용 경험은 어떠셨나요?</string>
+  <string name="rating_dialog_low_rating_title">아쉽습니다</string>
+  <string name="rating_dialog_low_rating_message">문제가 있었다면 GitHub에 신고해 주세요. 피드백이 앱 개선에 도움이 됩니다.</string>
+  <string name="rating_dialog_report_issue">문제 신고</string>
+  <string name="rating_dialog_cancel">취소</string>
+  <string name="github_issues_url">https://github.com/vasmarfas/universal-ambient-light/issues</string>
+  <string name="accessibility_service_description">Universal Ambient Light가 앰비언트 라이팅을 위해 화면을 캡처하고, 페어링된 휴대폰의 명령으로 TV 버튼을 누를 수 있게 합니다.</string>
+  <string name="accessibility_enable_prompt">Universal Ambient Light의 접근성 서비스를 켜 주세요</string>
+  <string name="accessibility_disclosure_title">접근성 권한 필요</string>
+  <string name="accessibility_disclosure_message">이 앱은 AccessibilityService API로 화면 콘텐츠를 캡처합니다. 화면의 색상을 분석하고 배경 조명(Ambilight)과 실시간으로 동기화하는 데 필요합니다.\n\n화면 데이터는 기기에서만 처리되며 저장되지 않고 제3자 서버로 전송되지 않습니다.\n\n동의하지 않으면 이 캡처 모드를 사용할 수 없습니다.</string>
+  <string name="accessibility_disclosure_button_deny">거부</string>
+  <string name="accessibility_disclosure_button_accept">동의하고 계속</string>
+
+  <!-- Remote control, autostart, TV controls -->
+  <string name="number_input_range">%1$d에서 %2$d까지</string>
+  <string name="action_decrease">감소</string>
+  <string name="action_increase">증가</string>
+  <string name="home_status_error">오류로 인해 조명이 꺼져 있습니다</string>
+  <string name="home_status_starting">시작하는 중…</string>
+  <string name="home_status_stopped">조명이 꺼져 있습니다</string>
+  <string name="home_target_no_host">주소 미설정</string>
+  <string name="pref_summary_boot">이전에 켜져 있었다면 TV 부팅, 절전 해제 또는 앱 업데이트 후 조명을 다시 켭니다</string>
+  <string name="autostart_permissions_ok">허용됨: 대화상자 없이 조명이 자동으로 돌아옵니다</string>
+  <string name="autostart_permissions_missing">미허용: 절전 후 TV가 화면 캡처 확인을 요청할 수 있습니다. ADB로 권한을 허용하려면 여세요</string>
+  <string name="adb_grant_title">자동 시작 권한</string>
+  <string name="adb_grant_description">확인 대화상자 없이 화면 캡처, 다른 앱 위에 창 표시, 제한 없는 백그라운드 작업을 허용하도록 ADB를 한 번 사용합니다. 없으면 Android 10+에서 TV가 깨어나거나 재부팅된 후 조명을 자동으로 되돌릴 수 없습니다. 사용 기록 접근도 함께 부여됩니다: 있으면 조명이 화면의 앱을 알고 앱별 지연을 사용합니다.</string>
+  <string name="adb_grant_btn">ADB로 허용</string>
+  <string name="adb_grant_success">완료: 확인 없이 화면 캡처, 다른 앱 위 창, 백그라운드 작업이 허용되었습니다.</string>
+  <string name="adb_grant_partial">적용되지 않음: %1$s. 이 펌웨어가 지원하지 않을 수 있습니다.</string>
+  <string name="adb_grant_failed">권한을 부여할 수 없음: %1$s</string>
+  <string name="adb_pair_port_not_found">페어링 포트를 찾을 수 없습니다. \"페어링 코드로 기기 페어링\"을 열고 그 화면을 유지하세요.</string>
+  <string name="pref_group_remote">원격 제어</string>
+  <string name="remote_host_title">휴대폰에서 제어</string>
+  <string name="remote_host_summary">휴대폰에서 이 TV를 제어할 QR 코드 표시</string>
+  <string name="remote_host_instructions">휴대폰에서 Universal Ambient Light → TV 리모컨 → QR 코드 스캔을 여세요. 휴대폰과 TV가 같은 네트워크에 있어야 합니다.</string>
+  <string name="remote_host_disabled">휴대폰에서 제어가 꺼져 있습니다</string>
+  <string name="remote_host_no_network">TV가 네트워크에 연결되어 있지 않습니다</string>
+  <string name="remote_host_blocked">TV 펌웨어가 백그라운드 서비스 실행을 막아 휴대폰이 연결할 수 없습니다. 설정, 일반에서 자동 시작 권한을 허용하세요</string>
+  <string name="remote_host_no_clients">연결된 휴대폰 없음</string>
+  <string name="remote_host_clients">연결됨: %1$s</string>
+  <string name="remote_host_enable">휴대폰에서 제어 허용</string>
+  <string name="remote_host_enable_summary">백그라운드 서비스가 계속 실행되어 휴대폰이 언제든 조명을 켤 수 있습니다</string>
+  <string name="remote_host_reset_code">페어링 코드 변경</string>
+  <string name="remote_host_reset_code_summary">페어링된 휴대폰은 새 QR 코드를 스캔할 때까지 접근할 수 없습니다</string>
+  <string name="remote_host_reset_confirm">페어링된 모든 휴대폰의 연결이 끊어지고 새 QR 코드를 스캔해야 합니다. 계속할까요?</string>
+  <string name="remote_host_qr_description">페어링 QR 코드</string>
+  <string name="remote_host_name">TV</string>
+  <string name="remote_host_address">주소</string>
+  <string name="remote_host_code">코드</string>
+  <string name="remote_tvs_title">TV 리모컨</string>
+  <string name="remote_tvs_summary">이 휴대폰에서 TV 조명을 제어</string>
+  <string name="remote_tvs_intro">TV에서 앱을 열고 \"휴대폰에서 제어\"로 이동하세요: QR 코드와 수동 입력용 코드가 표시됩니다.</string>
+  <string name="remote_tvs_scan">QR 코드 스캔</string>
+  <string name="remote_tvs_manual">코드 수동 입력</string>
+  <string name="remote_tvs_connecting">TV에 연결 중…</string>
+  <string name="remote_tvs_paired">페어링된 TV</string>
+  <string name="remote_tvs_active">제어 중</string>
+  <string name="remote_tvs_online">네트워크에 있음</string>
+  <string name="remote_tvs_found">네트워크에서 발견</string>
+  <string name="remote_tvs_refresh">다시 검색</string>
+  <string name="remote_tvs_none_found">TV를 찾을 수 없습니다. TV에서 \"휴대폰에서 제어\"를 여세요.</string>
+  <string name="remote_tvs_forget">잊기</string>
+  <string name="remote_tvs_forget_confirm">휴대폰이 이 TV를 잊습니다. 다시 제어하려면 QR 코드를 스캔하세요.</string>
+  <string name="remote_tvs_connect">연결</string>
+  <string name="remote_scan_hint">카메라를 TV 화면의 QR 코드에 향하세요</string>
+  <string name="remote_manual_hint">주소와 코드는 TV의 QR 코드 아래에 표시됩니다.</string>
+  <string name="remote_banner_title">TV: %1$s</string>
+  <string name="remote_banner_connected">연결됨, 변경 사항이 TV에 적용됩니다</string>
+  <string name="remote_banner_connecting">연결 중…</string>
+  <string name="remote_banner_retry">다시 시도</string>
+  <string name="remote_banner_disconnect">연결 해제</string>
+  <string name="remote_settings_offline">TV와 연결되지 않음: 다시 연결되면 변경 사항이 전송됩니다</string>
+  <string name="remote_accessibility_on_tv">먼저 TV에서 앱의 접근성 서비스를 켜세요</string>
+  <string name="remote_detect_frame_summary">모서리는 TV에서 직접 드래그합니다. 여기서는 카메라 프레임에서 화면 검색을 실행할 수 있습니다.</string>
+  <string name="remote_detect_frame_started">TV가 카메라 프레임에서 화면을 찾는 중</string>
+  <string name="remote_adb_runs_on_tv">이 작업은 TV에서 실행됩니다</string>
+  <string name="remote_adb_pair_instruction">TV에서 무선 디버깅 → \"페어링 코드로 기기 페어링\"을 열고 여기에 6자리 코드를 입력하세요. 포트는 비워 둘 수 있습니다: TV가 스스로 찾습니다.</string>
+  <string name="remote_adb_pair_port_optional">페어링 포트 (선택)</string>
+  <string name="remote_adb_need_accessibility">TV에서 앱의 접근성 서비스를 켠 뒤 다시 시도하세요.</string>
+  <string name="remote_opened_on_tv">TV에서 열림</string>
+  <string name="remote_confirm_on_tv">리모컨으로 TV에서 화면 캡처를 확인하세요</string>
+  <string name="remote_error_activity_blocked">TV의 Android가 현재 창 위에 앱 창을 표시하지 않았습니다. TV에서 앱을 열거나 ADB로 자동 시작 권한을 허용하세요.</string>
+  <string name="remote_error_background_start">TV의 Android가 백그라운드에서 서비스 시작을 허용하지 않았습니다. ADB로 자동 시작 권한을 허용하거나 TV에서 앱을 여세요.</string>
+  <string name="remote_error_camera_not_running">TV에서 카메라 캡처가 실행되지 않음</string>
+  <string name="remote_error_offline">TV와 연결되지 않음</string>
+  <string name="remote_error_not_found">TV를 찾을 수 없습니다. 휴대폰과 TV가 같은 네트워크에 있고, TV의 앱에서 휴대폰에서 제어가 켜져 있어야 합니다.</string>
+  <string name="remote_error_code_rejected">TV가 페어링 코드를 수락하지 않았습니다. TV의 QR 코드를 다시 스캔하세요.</string>
+  <string name="remote_error_wrong_tv">이 주소에서 다른 TV가 응답했습니다. QR 코드를 다시 스캔하세요.</string>
+  <string name="remote_error_version">휴대폰과 TV의 앱 버전이 호환되지 않습니다. 양쪽에서 앱을 업데이트하세요.</string>
+  <string name="remote_notification_channel">휴대폰에서 제어</string>
+  <string name="remote_notification_title">휴대폰에서 제어가 켜져 있음</string>
+  <string name="remote_notification_waiting">휴대폰 대기 중</string>
+  <string name="remote_notification_connected">연결됨: %1$s</string>
+
+  <!-- Effects without screen capture -->
+  <string name="effects_title">효과</string>
+  <string name="effects_intro">효과는 화면 캡처 없이 스트립을 스스로 밝힙니다. 화면 녹화 권한이 필요 없고 TV에 무엇이 나오든 상관없습니다.</string>
+  <string name="effects_group_static">정적</string>
+  <string name="effects_group_dynamic">애니메이션</string>
+  <string name="effects_group_setup">설정용</string>
+  <string name="effects_group_sound">사운드</string>
+  <string name="effects_parameters">설정: %1$s</string>
+  <string name="effects_now_off">조명이 꺼져 있습니다. 효과를 고르면 켜집니다.</string>
+  <string name="effects_now_effect">현재: %1$s</string>
+  <string name="effects_now_screen">지금 조명이 화면을 따릅니다. 효과를 고르면 전환됩니다.</string>
+  <string name="effects_turn_off">끄기</string>
+  <string name="effects_back_to_screen">화면으로 돌아가기</string>
+  <string name="effects_color">색상</string>
+  <string name="effects_color2">두 번째 색상</string>
+  <string name="effects_hue">색조</string>
+  <string name="effects_saturation">채도</string>
+  <string name="effects_speed">속도</string>
+  <string name="effects_brightness">밝기</string>
+  <string name="effects_temperature">색온도</string>
+  <string name="effects_sensitivity">감도</string>
+  <string name="effects_standby">TV 화면이 꺼져도 유지</string>
+  <string name="effects_standby_summary">TV 박스가 깨어 있는 동안 스트립이 야간등처럼 계속 빛납니다. 일부 TV는 대기에서 네트워크를 끊어 그래도 꺼질 수 있습니다.</string>
+  <string name="unit_kelvin">%1$d K</string>
+  <string name="effect_solid">단색</string>
+  <string name="effect_gradient">그라데이션</string>
+  <string name="effect_white">영화용 화이트</string>
+  <string name="effect_white_hint">영화 시청의 기준 화이트는 6500 K이며, 값이 낮을수록 더 따뜻합니다.</string>
+  <string name="effect_rainbow">무지개</string>
+  <string name="effect_color_cycle">색상 순환</string>
+  <string name="effect_breathing">호흡</string>
+  <string name="effect_candle">촛불</string>
+  <string name="effect_fire">불꽃</string>
+  <string name="effect_aurora">오로라</string>
+  <string name="effect_ocean">바다</string>
+  <string name="effect_plasma">플라즈마</string>
+  <string name="effect_comet">혜성</string>
+  <string name="effect_layout_test">레이아웃 테스트</string>
+  <string name="effect_music">컬러 뮤직</string>
+  <string name="effect_music_hint">소리를 주파수별로 나눕니다: 베이스는 화면 하단을 빨갛게, 고음은 상단을 파랗게 밝힙니다. 소리가 커질 때 스트립이 반응합니다: 비트와 변화가 번쩍이고, 실내 소음처럼 일정한 소리는 몇 초 안에 사라집니다. 소리는 기기에서만 분석되며 녹음되거나 전송되지 않습니다. 음악에 거의 반응하지 않으면 감도를 높이고, 실내 소음에 깜빡이면 낮추세요. 휴대폰에서는 화면이 꺼져도 \"TV 화면이 꺼져도 유지\"를 켜 조명이 계속되게 하세요.</string>
+  <string name="effect_music_source">사운드 소스</string>
+  <string-array name="pref_list_music_source">
+    <item>마이크</item>
+    <item>이 기기의 소리</item>
+  </string-array>
+  <string name="effect_music_source_hint">마이크는 방의 소리를 듣습니다: TV, 스피커, 휴대폰의 음악. 이 기기의 소리는 이 TV 박스나 휴대폰이 스스로 재생하는 소리이며 마이크가 필요 없습니다. 리시버로 Dolby나 DTS 비트스트림(패스스루)으로 보낸 소리는 Android를 우회해 이 방식으로 잡을 수 없습니다.</string>
+  <string name="music_permission_required">컬러 뮤직에는 마이크 접근이 필요합니다</string>
+  <string name="error_microphone_unavailable">마이크를 사용할 수 없음: 기기에 없거나 다른 앱이 사용 중</string>
+  <string name="error_output_audio_unavailable">이 기기의 소리를 사용할 수 없음: 펌웨어가 앱에 제공하지 않습니다. 사운드 소스로 마이크를 선택하세요</string>
+  <string name="effect_layout_test_hint">상단은 빨강, 우측은 초록, 하단은 파랑, 좌측은 노랑입니다. 흰 점이 첫 LED부터 번호 방향으로 달립니다. 색이나 점의 경로가 스트립과 맞지 않으면 LED 레이아웃을 수정하세요.</string>
+  <string name="effect_layout_test_strip_hint">LED 스트립에서는 이 패턴의 변 경계가 스캔 깊이와 캡처 여백에 따라 이동합니다. 모든 LED를 정확히 확인하려면 LED 레이아웃을 열고 \"LED 레이아웃 테스트 표시\"를 켜세요.</string>
+  <string name="home_source_effect">효과: %1$s</string>
+  <string name="remote_error_update_tv">TV의 앱이 이 기능보다 오래되었습니다. TV에서 업데이트하세요.</string>
+
+  <!-- Remote: buttons, mouse, text and apps of the TV -->
+  <string name="tv_remote_title">리모컨</string>
+  <string name="tv_remote_tab_keys">버튼</string>
+  <string name="tv_remote_tab_mouse">마우스</string>
+  <string name="tv_remote_tab_text">텍스트</string>
+  <string name="tv_remote_tab_apps">앱</string>
+  <string name="tv_remote_adb_missing">버튼, 마우스, 텍스트는 TV의 ADB를 통해 동작하며 지금은 사용할 수 없습니다: %1$s</string>
+  <string name="tv_remote_adb_missing_accessibility">ADB 없이는 시스템 버튼, 탭, 접근성 서비스를 통한 텍스트만 동작합니다.</string>
+  <string name="tv_remote_adb_setup">ADB 설정</string>
+  <string name="tv_remote_no_cursor">TV가 다른 앱 위 창을 허용하지 않아 커서가 보이지 않습니다. ADB로 자동 시작 권한을 허용하세요.</string>
+  <string name="tv_remote_power">전원</string>
+  <string name="tv_remote_input">입력 소스</string>
+  <string name="tv_remote_settings">TV 설정</string>
+  <string name="tv_remote_back">뒤로</string>
+  <string name="tv_remote_home">홈</string>
+  <string name="tv_remote_menu">메뉴</string>
+  <string name="tv_remote_ok">확인</string>
+  <string name="tv_remote_up">위</string>
+  <string name="tv_remote_down">아래</string>
+  <string name="tv_remote_left">왼쪽</string>
+  <string name="tv_remote_right">오른쪽</string>
+  <string name="tv_remote_volume_up">볼륨 업</string>
+  <string name="tv_remote_volume_down">볼륨 다운</string>
+  <string name="tv_remote_mute">음소거</string>
+  <string name="tv_remote_play_pause">재생 또는 일시정지</string>
+  <string name="tv_remote_rewind">되감기</string>
+  <string name="tv_remote_forward">빨리 감기</string>
+  <string name="tv_remote_previous">이전</string>
+  <string name="tv_remote_next">다음</string>
+  <string name="tv_remote_touchpad_hint">손가락을 밀어 커서를 이동합니다. 탭은 클릭, 길게 누르면 길게 누르기입니다. 두 손가락으로 스크롤, 두 손가락 탭은 뒤로입니다.</string>
+  <string name="tv_remote_click">클릭</string>
+  <string name="tv_remote_text_label">TV용 텍스트</string>
+  <string name="tv_remote_text_hint">TV에서 검색창 같은 텍스트 필드를 선택한 뒤 여기에 입력하세요. 텍스트가 TV에 바로 나타납니다.</string>
+  <string name="tv_remote_enter">입력</string>
+  <string name="tv_remote_backspace">삭제</string>
+  <string name="tv_remote_clear">지우기</string>
+  <string name="tv_remote_apps_loading">TV 앱 불러오는 중…</string>
+  <string name="tv_remote_apps_empty">TV에서 앱을 찾을 수 없음</string>
+  <string name="remote_tvs_switch">다른 TV</string>
+  <string name="remote_input_needs_adb">TV에 ADB가 필요합니다(%1$s). 리모컨 화면에서 설정합니다.</string>
+  <string name="remote_app_not_found">TV에 앱이 설치되어 있지 않습니다</string>
+
+  <!-- Lighting delay and auto-tuning with the phone camera -->
+  <string name="calibration_title">지연 자동 조정</string>
+  <string name="calibration_needs_remote">자동 조정은 휴대폰 카메라로 TV를 촬영하므로 TV와 페어링된 휴대폰에서 실행합니다.</string>
+  <string name="calibration_needs_screen">TV에서 화면 캡처 모드로 조명을 켜고 영화를 재생하세요: 그 위에서 지연을 측정합니다.</string>
+  <string name="calibration_turn_on">조명 켜기</string>
+  <string name="calibration_intro">휴대폰이 TV와 벽의 빛을 촬영해 화면과 스트립이 변하는 시점을 비교합니다. 지금 재생 중인 콘텐츠에서 지연을 측정하므로 앱과 소스마다 값이 달라집니다.</string>
+  <string name="calibration_steps">1. 장면 전환이 잦은 영화나 영상을 재생하세요.\n2. 방의 불을 끄세요.\n3. TV 화면 전체와 주변 벽이 프레임에 들어오게 서고 약 1분 동안 휴대폰을 고정하세요.</string>
+  <string name="calibration_start">시작</string>
+  <string name="calibration_searching">휴대폰이 TV 화면을 찾는 동안 스트립이 몇 초간 꺼집니다. 휴대폰을 고정하세요.</string>
+  <string name="calibration_measuring">측정 중. 장면 전환: %1$d, 초: %2$d. 휴대폰을 고정하세요.</string>
+  <string name="calibration_glow_invisible">카메라가 스트립의 빛을 거의 보지 못합니다. 불을 끄고 TV 주변 벽이 프레임에 들어오는지 확인하세요.</string>
+  <string name="calibration_result_ahead">스트립이 화면보다 %1$d ms 앞섬</string>
+  <string name="calibration_result_behind">스트립이 화면보다 %1$d ms 뒤처짐</string>
+  <string name="calibration_result_in_sync">스트립과 화면이 동기화됨</string>
+  <string name="calibration_result_details">장면 전환: %1$d. 정확도 약 ±%2$d ms, 일치 %3$d%%.</string>
+  <string name="calibration_unreliable">결과가 신뢰할 수 없음: 장면 전환이 너무 적거나 휴대폰이 움직였습니다. 더 역동적인 장면에서 다시 하세요.</string>
+  <string name="calibration_behind_hint">지연으로는 늦은 스트립을 고칠 수 없습니다. 스무딩을 낮추거나 더 빠른 캡처 방식을 고르세요.</string>
+  <string name="calibration_current">현재 설정: %1$d ms. 권장: %2$d ms.</string>
+  <string name="calibration_save_app">%1$s에 저장</string>
+  <string name="calibration_save_all">모든 앱에 저장</string>
+  <string name="calibration_no_usage_access">TV가 화면의 앱을 알려주지 않아 지연이 모든 앱에 저장됩니다. 앱별 지연에는 사용 기록 접근이 필요하며, ADB 자동 시작 권한과 함께 부여됩니다.</string>
+  <string name="calibration_saved">저장됨: %1$d ms. TV에 바로 적용됩니다.</string>
+  <string name="calibration_repeat">다시 측정</string>
+  <string name="calibration_error_no_screen">프레임에서 TV 화면을 찾지 못했습니다. 화면 전체가 보이도록 카메라를 맞추고 다시 시도하세요.</string>
+  <string name="calibration_error_too_dark">프레임이 너무 어둡습니다. TV가 켜져 있고 충분히 밝은 콘텐츠를 재생해야 합니다.</string>
+  <string name="calibration_error_too_close">TV가 프레임을 거의 채워 벽 공간이 없습니다. 조금 물러서세요.</string>
+  <string name="calibration_error_static">측정하기에 장면 전환이 너무 적습니다. 더 역동적인 콘텐츠를 재생하고 다시 시도하세요.</string>
+  <string name="calibration_error_not_running">먼저 TV에서 조명을 켜세요.</string>
+  <string name="calibration_error_not_screen">자동 조정은 화면 캡처에서 동작하며, TV는 지금 효과이거나 카메라를 사용 중입니다.</string>
+  <string name="delay_title">조명 지연</string>
+  <string name="delay_summary">앱별 지연과 휴대폰 카메라 자동 조정</string>
+  <string name="delay_intro">스트립이 화면보다 앞서면 지연으로 늦춥니다. 플레이어와 소스가 영상을 다르게 처리하므로 앱마다 지연을 둘 수 있습니다: 해당 앱이 화면에 있는 동안 TV가 그 값으로 전환합니다.</string>
+  <string name="delay_global">모든 앱의 지연</string>
+  <string name="delay_calibration_title">자동 조정</string>
+  <string name="delay_calibration_summary">휴대폰 카메라가 TV와 빛을 촬영해 재생 중인 영화에서 지연을 찾습니다.</string>
+  <string name="delay_calibration_open">카메라로 조정</string>
+  <string name="delay_calibration_on_phone">자동 조정은 휴대폰에서 실행됩니다: TV 리모컨을 열고 이 TV에 연결한 뒤 설정, 조명 지연으로 가세요.</string>
+  <string name="delay_apps_title">앱별 지연</string>
+  <string name="delay_no_usage_access">TV가 화면의 앱을 알려주지 않습니다. ADB로 사용 기록 접근을 허용하세요. 그렇지 않으면 모든 앱의 지연이 어디서든 사용됩니다.</string>
+  <string name="delay_apps_empty">자체 지연이 있는 앱이 아직 없습니다.</string>
+  <string name="delay_apps_remove">제거</string>
+  <string name="delay_apps_add">앱 추가</string>
+
+  <!-- Sleep timer -->
+  <string name="sleep_timer">취침 타이머</string>
+  <string name="sleep_timer_minutes">%1$d분 후</string>
+  <string name="sleep_timer_cancel">타이머 끄기</string>
+  <string name="sleep_timer_until">%1$s에 꺼짐</string>
+
+  <!-- More controllers and smart lights -->
+  <string name="error_hue_not_paired">Hue 브리지가 페어링되지 않았습니다. 설정, 연결에서 브리지 버튼으로 페어링하세요.</string>
+  <string name="error_nanoleaf_not_paired">Nanoleaf가 페어링되지 않았습니다. 설정, 연결에서 패널을 페어링하세요.</string>
+  <string name="error_no_lamps">화면 영역에 할당된 조명이 없습니다. 설정, 연결, 조명과 영역을 여세요.</string>
+
+  <!-- Controller picker -->
+  <string name="devices_title">컨트롤러</string>
+  <string name="devices_found">네트워크에서 발견</string>
+  <string name="devices_searching">네트워크에서 기기 검색 중…</string>
+  <string name="devices_nothing_found">응답이 없습니다. 컨트롤러가 같은 네트워크에 있는지 확인하거나, 아래에서 유형을 고르고 주소를 직접 입력하세요.</string>
+  <string name="devices_search_again">다시 검색</string>
+  <string name="devices_sweep">모든 주소 확인</string>
+  <string name="devices_sweep_summary">mDNS 없는 WLED와 Hyperion용. 1~2분 걸립니다.</string>
+  <string name="devices_sweep_progress">주소 확인 중: %1$d%%</string>
+  <string name="devices_manual">유형으로 선택</string>
+  <string name="devices_current">현재</string>
+  <string name="devices_lamps_count">조명: %1$d</string>
+  <string name="devices_remote_note">검색은 이 휴대폰에서 실행되므로 TV가 같은 네트워크에 있어야 합니다.</string>
+  <string name="devices_group_strip">네트워크 주소 지정 스트립</string>
+  <string name="devices_group_usb">USB 스트립</string>
+  <string name="devices_group_lamps">스마트 조명과 패널</string>
+  <string name="devices_group_server">Ambilight 서버</string>
+
+  <!-- Output types -->
+  <string name="output_wled">WLED</string>
+  <string name="output_wled_summary">WLED 펌웨어의 ESP8266 또는 ESP32</string>
+  <string name="output_ddp">DDP</string>
+  <string name="output_ddp_summary">WLED, ESPixelStick, FPP 및 기타 DDP 수신기</string>
+  <string name="output_e131">E1.31 (sACN)</string>
+  <string name="output_e131_summary">ESPixelStick, Falcon, FPP, DMX 노드</string>
+  <string name="output_artnet">Art-Net</string>
+  <string name="output_artnet_summary">DMX 노드와 픽셀 컨트롤러</string>
+  <string name="output_tpm2net">tpm2.net</string>
+  <string name="output_tpm2net_summary">Jinx!와 호환되는 수신기</string>
+  <string name="output_udpraw">UDP raw</string>
+  <string name="output_udpraw_summary">한 패킷의 순수 RGB, 최대 490 LED</string>
+  <string name="output_opc">Open Pixel Control</string>
+  <string name="output_opc_summary">FadeCandy 및 fcserver</string>
+  <string name="output_adalight">Adalight 및 USB 키트</string>
+  <string name="output_adalight_summary">USB 케이블의 Arduino, ESP, Skydimo 및 기타 보드</string>
+  <string name="output_hue">Philips Hue</string>
+  <string name="output_hue_summary">Hue 브리지를 통한 조명</string>
+  <string name="output_nanoleaf">Nanoleaf</string>
+  <string name="output_nanoleaf_summary">Shapes, Canvas, Elements, Lines, Light Panels</string>
+  <string name="output_wiz">WiZ</string>
+  <string name="output_wiz_summary">WiZ Connected 조명, Philips WiZ 포함</string>
+  <string name="output_yeelight">Yeelight</string>
+  <string name="output_yeelight_summary">Yeelight 앱에서 LAN Control을 켜야 합니다</string>
+  <string name="output_lifx">LIFX</string>
+  <string name="output_lifx_summary">로컬 네트워크의 LIFX 조명</string>
+  <string name="output_govee">Govee</string>
+  <string name="output_govee_summary">Govee Home 앱에서 LAN Control을 켜야 합니다</string>
+  <string name="output_homeassistant">Home Assistant</string>
+  <string name="output_homeassistant_summary">Home Assistant에 연결된 모든 조명</string>
+  <string name="output_hyperion">Hyperion / HyperHDR</string>
+  <string name="output_hyperion_summary">영상이 LED를 구동하는 Hyperion 또는 HyperHDR 서버로 전달됩니다</string>
+
+  <!-- Controller settings -->
+  <string name="extra_outputs_title">추가 컨트롤러</string>
+  <string name="extra_outputs_summary_empty">메인 컨트롤러 옆의 두 번째 스트립, 사이드 바 또는 램프</string>
+  <string name="extra_outputs_summary_count">추가됨: %1$d</string>
+  <string name="extra_outputs_hint">메인 컨트롤러와 함께 동작하며 같은 화면을 표시합니다. 각각 고유한 주소와 LED 레이아웃이 있습니다: 레이아웃은 담당하는 변을 정하고, 캡처 여백은 화면의 일부로 좁힙니다.</string>
+  <string name="extra_outputs_add">컨트롤러 추가</string>
+  <string name="extra_output_title">추가 컨트롤러</string>
+  <string name="extra_output_off">꺼짐</string>
+  <string name="extra_output_delete">컨트롤러 삭제</string>
+  <string name="extra_output_delete_confirm">주소와 LED 레이아웃이 사라집니다.</string>
+  <string name="pref_title_output_enabled">사용</string>
+  <string name="pref_title_output_name">이름</string>
+  <string name="pref_summary_output_name_empty">설정되지 않음</string>
+  <string name="home_target_with_extra" translatable="false">%1$s + %2$d</string>
+  <string name="controller_change">변경</string>
+  <string name="controller_no_address">주소 미설정</string>
+  <string name="pref_title_color_order">색상 순서</string>
+  <string name="pref_title_dmx_universe">시작 유니버스</string>
+  <string name="pref_summary_dmx_universe">%1$d, 더 긴 스트립은 다음 유니버스로 이어집니다</string>
+  <string name="pref_title_dmx_leds_per_universe">유니버스당 LED</string>
+  <string name="pref_summary_dmx_leds_per_universe">%1$d (170이면 유니버스의 510 채널을 모두 채움)</string>
+  <string name="pref_title_tpm2_leds_per_packet">패킷당 LED</string>
+  <string name="pref_title_opc_channel">OPC 채널</string>
+  <string name="pref_summary_opc_channel">%1$d (0은 서버의 모든 채널)</string>
+  <string name="pref_summary_e131_multicast">비움: 239.255.x.y로 멀티캐스트</string>
+  <string name="home_target_multicast">멀티캐스트</string>
+  <string name="pref_title_hue_pairing">브리지 페어링</string>
+  <string name="pref_title_nanoleaf_pairing">패널 페어링</string>
+  <string name="pref_summary_paired">페어링됨</string>
+  <string name="pref_summary_not_paired">페어링되지 않음, 눌러서 페어링</string>
+
+  <!-- Pairing -->
+  <string name="action_pair">페어링</string>
+  <string name="pair_in_progress">페어링 중…</string>
+  <string name="pair_failed">페어링할 수 없음: %1$s</string>
+  <string name="hue_pair_title">Hue 브리지 페어링</string>
+  <string name="hue_pair_text">브리지 상단의 둥근 버튼을 누른 뒤 30초 안에 페어링을 누르세요.</string>
+  <string name="hue_pair_button_not_pressed">브리지가 버튼이 눌리지 않았다고 합니다. 누른 뒤 다시 시도하세요.</string>
+  <string name="nanoleaf_pair_title">Nanoleaf 페어링</string>
+  <string name="nanoleaf_pair_text">컨트롤러의 전원 버튼을 5~7초 길게 눌러 불이 깜빡일 때까지 기다린 뒤 30초 안에 페어링을 누르세요.</string>
+  <string name="nanoleaf_pair_rejected">Nanoleaf가 거부함: 버튼을 길게 누르지 않았거나 30초가 지났습니다.</string>
+  <string name="pair_need_host">먼저 주소를 입력하세요</string>
+
+  <!-- Lights of other systems -->
+  <string name="lamps_dialog_title">%1$s 조명</string>
+  <string name="lamps_hint_network">로컬 네트워크에서 조명을 검색합니다. 켜 두고 같은 Wi-Fi인지 확인하세요.</string>
+  <string name="lamps_hint_hue">먼저 브리지를 페어링한 뒤 각 조명에 영역을 지정하세요.</string>
+  <string name="lamps_error">조명 목록을 가져올 수 없음: %1$s</string>
+  <string name="lamps_lamp_missing">지금 네트워크에서 찾을 수 없음</string>
+  <string name="lamps_identify">깜빡이기</string>
+
+  <!-- Home: controller setup hint -->
+  <string name="home_setup_button">컨트롤러 설정</string>
+  <string name="home_setup_no_host">컨트롤러 주소가 설정되지 않음</string>
+  <string name="home_setup_no_lamps">화면 영역에 할당된 조명 없음</string>
+  <string name="home_setup_not_paired">%1$s이(가) 아직 페어링되지 않음</string>
+  <string name="home_setup_no_token">Home Assistant 토큰이 설정되지 않음</string>
+
+  <!-- Connection errors of LED controllers and lights -->
+  <string name="error_device_unreachable">컨트롤러에 연결할 수 없습니다. 주소와 전원, 같은 네트워크인지 확인하세요.</string>
+  <string name="error_device_connection_lost">컨트롤러와의 연결이 끊어져 캡처가 중지되었습니다.</string>
+  <string name="error_lamps_unreachable">조명에 연결할 수 없습니다. 전원이 켜져 있고 같은 네트워크인지 확인하세요.</string>
+  <string name="error_lamps_connection_lost">조명과의 연결이 끊어져 캡처가 중지되었습니다.</string>
+
+  <!-- WLED LED count check -->
+  <string name="devices_led_mismatch_title">LED 수가 다름</string>
+  <string name="devices_led_mismatch_text">WLED의 LED: %1$d, 앱 레이아웃: %2$d. 수가 다르면 스트립 일부가 어둡거나 색이 잘못된 위치에 갑니다.</string>
+  <string name="devices_led_mismatch_layout">레이아웃 설정</string>
+  <string name="devices_led_mismatch_later">나중에</string>
+
+  <!-- Local network access (Android 17) -->
+  <string name="error_local_network">로컬 네트워크에 접근할 수 없습니다. 시스템 설정에서 앱의 주변 기기를 허용하세요.</string>
+
+  <!-- Hue entertainment area -->
+  <string name="pref_title_hue_area">엔터테인먼트 영역</string>
+  <string name="pref_summary_hue_area_none">사용 안 함, 조명이 하나씩 색을 받음</string>
+  <string name="hue_area_none">조명 하나씩</string>
+  <string name="hue_area_none_summary">초당 몇 번 업데이트, 영역은 여기서 선택</string>
+  <string name="hue_area_summary">초당 최대 25회 스트림, 위치는 Hue 앱에서</string>
+  <string name="hue_area_hint">영역은 Hue 앱의 엔터테인먼트 영역에서 만듭니다. 브리지가 해당 조명으로 색을 스트리밍하고, 각 조명은 화면 주변 자신의 위치 색을 받습니다.</string>
+  <string name="hue_area_empty">브리지에 아직 엔터테인먼트 영역이 없습니다.</string>
+  <string name="hue_area_no_key">브리지가 스트리밍 키 없이 이전 버전 앱으로 페어링되었습니다. 영역을 쓰려면 다시 페어링하세요.</string>
+  <string name="hue_area_repair">다시 페어링</string>
+  <string name="hue_area_error">영역을 가져올 수 없음: %1$s</string>
+  <string name="pref_summary_hue_area_lamps">조명과 위치는 Hue 앱의 영역에서 설정됩니다</string>
+  <string name="error_hue_no_clientkey">Hue 브리지를 다시 페어링해야 합니다: 엔터테인먼트 영역에는 스트리밍 키가 필요합니다. 설정, 연결을 여세요.</string>
+  <string name="home_setup_hue_repair">Hue 브리지를 다시 페어링해야 합니다</string>
+  <string name="hue_area_loading">브리지에 요청 중…</string>
+
+  <!-- Zigbee2MQTT -->
+  <string name="output_z2m">Zigbee2MQTT</string>
+  <string name="output_z2m_summary">MQTT 브로커를 통한 Zigbee 조명</string>
+  <string name="pref_title_mqtt_username">MQTT 사용자</string>
+  <string name="pref_summary_mqtt_no_login">로그인 없음</string>
+  <string name="pref_title_mqtt_password">MQTT 비밀번호</string>
+  <string name="pref_summary_mqtt_password_empty">설정되지 않음</string>
+  <string name="pref_summary_mqtt_password_set">저장됨</string>
+  <string name="pref_title_z2m_base_topic">Zigbee2MQTT 기본 토픽</string>
+  <string name="lamps_hint_z2m">목록은 브로커에서 오며 Zigbee2MQTT가 그곳에 유지합니다. 브로커 주소, 로그인, 기본 토픽을 확인하세요.</string>
+    <string name="remote_layout_test_unsupported_output">TV에서 주소 지정 LED 출력을 선택하세요</string>
+    <string name="remote_layout_test_no_device">TV에 연결된 USB 시리얼 기기 없음</string>
+    <string name="remote_layout_test_start_failed">TV에서 LED 레이아웃 테스트를 시작할 수 없음</string>
+    <string name="remote_layout_test_timeout">TV의 USB 권한 대기 시간 초과</string>
+    <string name="remote_layout_test_denied">TV에서 USB 권한 또는 LED 테스트 시작이 거부됨</string>
+    <string name="led_layout_direct_test">LED 레이아웃 테스트 표시</string>
+    <string name="error_mstar_capture_stopped">MStar 하드웨어 캡처 중지됨: %1$s</string>
+</resources>

@@ -97,6 +97,16 @@ android {
             if (System.getenv("KEYSTORE_PATH") != null) {
                 signingConfig = signingConfigs.getByName("release")
             }
+            // Local builds (esp. behind firewalls) often cannot reach
+            // firebasecrashlyticssymbols.googleapis.com. Only upload when CI/release
+            // explicitly opts in via CRASHLYTICS_MAPPING_UPLOAD=true, or when a
+            // keystore is present (release pipeline).
+            val uploadMapping =
+                System.getenv("CRASHLYTICS_MAPPING_UPLOAD") == "true" ||
+                    System.getenv("KEYSTORE_PATH") != null
+            firebaseCrashlytics {
+                mappingFileUploadEnabled = uploadMapping
+            }
         }
     }
 

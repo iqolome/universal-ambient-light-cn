@@ -191,7 +191,7 @@
   <string name="pref_title_color_brightness_b">Blue brightness</string>
   <string name="pref_title_color_gamma_r">Red gamma</string>
   <string name="pref_title_color_gamma_g">Green gamma</string>
-  <string name="pref_summary_color_gamma">Gamma below 100% darkens midtones: colors get richer, and dark grey, including the black bars of a video, stops glowing. 45% equals gamma 2.2, a good start for an LED strip with washed-out colors. Above 100% midtones get brighter.</string>
+  <string name="pref_summary_color_gamma">Gamma below 100%% darkens midtones: colors get richer, and dark grey, including the black bars of a video, stops glowing. 45%% equals gamma 2.2, a good start for an LED strip with washed-out colors. Above 100%% midtones get brighter.</string>
   <string name="pref_title_color_gamma_b">Blue gamma</string>
   <string name="pref_color_preview_title">Preview (after color processing)</string>
   <string name="pref_color_preview_hint">Reflects what will be sent to the LED strip. The animations on the Home screen do NOT use these settings.</string>
@@ -252,15 +252,23 @@
   <string name="pref_key_language">language</string>
   <string-array name="pref_list_language">
     <item>Default</item>
+    <item>简体中文</item>
     <item>English</item>
+    <item>日本語</item>
+    <item>한국어</item>
     <item>Русский</item>
-    <item>Deutsch</item>
+    <item>Español</item>
+    <item>Français</item>
   </string-array>
   <string-array name="pref_list_language_values">
     <item>default</item>
+    <item>zh</item>
     <item>en</item>
+    <item>ja</item>
+    <item>ko</item>
     <item>ru</item>
-    <item>de</item>
+    <item>es</item>
+    <item>fr</item>
   </string-array>
 
   <string name="error_empty_host">Server address is not set. Open Settings → Connection → Host and enter the IP of your Hyperion/HyperHDR/WLED device, or use Scan network</string>

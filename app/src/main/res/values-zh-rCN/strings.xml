@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string-array name="pref_list_framerate">
+    <item>10 fps</item>
+    <item>15 fps</item>
+    <item>24 fps</item>
+    <item>30 fps</item>
+    <item>60 fps</item>
+  </string-array>
+  <string name="app_name">万能氛围灯</string>
+  <string name="pref_title">设置</string>
+  <!-- notification button -->
+  <string name="notification_exit_button">退出</string>
+  <!-- Network scanner -->
+  <string name="scanner_retry_button">重试</string>
+  <string name="scanner_cancel">取消</string>
+  <!-- Network Scanner result -->
+  <!-- Connection settings -->
+  <string name="pref_group_connection">连接</string>
+  <string name="pref_title_host">主机</string>
+  <string name="pref_title_port">端口</string>
+  <string name="pref_title_led_start_corner">LED 起始角</string>
+  <string name="pref_title_led_direction">LED 方向</string>
+  <string name="pref_title_led_layout">LED 布局</string>
+  <string name="pref_summary_led_layout">在屏幕上查看并编辑 LED 布局</string>
+  <string name="led_layout_top_count_label">顶部 LED 数量</string>
+  <string name="led_layout_right_count_label">右侧 LED 数量</string>
+  <string name="led_layout_bottom_count_label">底部 LED 数量</string>
+  <string name="led_layout_left_count_label">左侧 LED 数量</string>
+  <string name="led_layout_total_leds">LED 总数：%1$d</string>
+  <string name="led_layout_active_sides">启用边</string>
+  <string name="led_layout_side_top">上</string>
+  <string name="led_layout_side_right">右</string>
+  <string name="led_layout_side_bottom">下</string>
+  <string name="led_layout_side_left">左</string>
+  <string name="led_layout_bottom_gap_label">底部间隙（用于音响条）</string>
+  <string name="led_layout_capture_margin_label">捕获边距（%）</string>
+  <string name="led_layout_capture_margin_top_label">顶部捕获边距（%）</string>
+  <string name="led_layout_capture_margin_top_help">0–90%。顶部边缘相对屏幕的偏移。</string>
+  <string name="led_layout_capture_margin_right_label">右侧捕获边距（%）</string>
+  <string name="led_layout_capture_margin_right_help">0–90%。右侧边缘相对屏幕的偏移。</string>
+  <string name="led_layout_capture_margin_bottom_label">底部捕获边距（%）</string>
+  <string name="led_layout_capture_margin_bottom_help">0–90%。底部边缘相对屏幕的偏移。</string>
+  <string name="led_layout_capture_margin_left_label">左侧捕获边距（%）</string>
+  <string name="led_layout_capture_margin_left_help">0–90%。左侧边缘相对屏幕的偏移。</string>
+    <string name="led_layout_offset_label">LED 偏移（沿周长的步数）</string>
+    <string name="led_layout_offset_help">正值 — 沿布局方向，负值 — 相反方向。</string>
+    <string name="led_layout_scan_depth_label">扫描深度（%）</string>
+    <string name="led_layout_scan_depth_help">用于平均取色的区域深度（1-50%）。</string>
+  <string name="led_layout_legend_title">图例：</string>
+  <string name="led_layout_legend_first_led">LED #1（第一个）</string>
+  <string name="led_layout_legend_active_leds">启用的 LED</string>
+  <string name="led_layout_legend_disabled_leds">禁用的 LED</string>
+  <string name="led_layout_legend_screen">屏幕</string>
+  <string name="led_side_mode_on">开</string>
+  <string name="led_side_mode_off">关</string>
+  <string name="led_side_mode_none">无</string>
+  <string name="led_direction_clockwise">顺时针</string>
+  <string name="led_direction_counterclockwise">逆时针</string>
+  <string name="led_corner_top_left">左上</string>
+  <string name="led_corner_top_right">右上</string>
+  <string name="led_corner_bottom_right">右下</string>
+  <string name="led_corner_bottom_left">左下</string>
+  <string name="action_back">返回</string>
+  <string name="action_ok">确定</string>
+  <string name="action_cancel">取消</string>
+  <string name="action_close">关闭</string>
+  <string name="action_copy">复制</string>
+  <string name="action_reset">重置</string>
+  <string name="home_effects">效果</string>
+  <string name="home_toggle_power">开关电源</string>
+  <string name="home_settings">设置</string>
+  <string name="unit_ms">%1$d 毫秒</string>
+  <string name="debug_info_title">调试信息</string>
+  <string name="debug_info_copied">已复制到剪贴板</string>
+  <string name="pref_category_debug">调试</string>
+  <string name="pref_title_device_info">设备信息</string>
+  <string name="pref_summary_device_info">显示用于调试的设备信息</string>
+  <string name="rating_stars_desc">%1$d 星</string>
+  <string name="usb_service_unavailable">此设备上 USB 服务不可用</string>
+  <string name="usb_no_serial_devices">未找到 USB 串口设备。请通过 USB OTG 连接设备</string>
+  <string name="usb_permission_denied_toast">USB 设备权限被拒绝。请允许 USB 访问。</string>
+  <string name="usb_permission_prompt">确认访问 USB 设备</string>
+  <string name="usb_permission_no_dialog">系统未显示 USB 访问请求，没有它应用无法打开控制器。这是固件限制：请改用 WLED 等网络控制器</string>
+  <string name="pref_title_priority">消息优先级</string>
+  <string name="pref_title_reconnect">重新连接</string>
+  <string name="pref_title_reconnect_delay">重连延迟</string>
+  <string name="pref_title_standby_keepalive">待机时保持运行</string>
+  <string name="pref_summary_standby_keepalive">电视屏幕关闭时继续向 LED 发送数据。禁用后，应用会关闭 LED，并在待机时保持静默，屏幕重新亮起后恢复</string>
+  <!-- Capture source -->
+  <string name="pref_title_capture_source">捕获来源</string>
+  <string-array name="pref_list_capture_source">
+    <item>屏幕</item>
+    <item>摄像头</item>
+    <item>效果（不捕获）</item>
+  </string-array>
+  <string-array name="pref_list_capture_source_values">
+    <item>screen</item>
+    <item>camera</item>
+    <item>effect</item>
+  </string-array>
+  <string name="pref_title_camera_setup">摄像头角落设置</string>
+  <string name="pref_summary_camera_setup">调整 4 个角点，使其与摄像头画面中的电视屏幕对齐</string>
+  <string name="camera_setup_title">摄像头设置</string>
+  <string name="camera_setup_instruction">拖动 4 个角点以对齐电视屏幕边缘</string>
+  <string name="camera_auto_frame_button">查找电视</string>
+  <string name="camera_auto_frame_not_found">未找到电视屏幕 — 角点保持不变</string>
+  <string name="camera_auto_frame_too_dark">太暗，无法找到屏幕 — 请打开电视后重试</string>
+  <string name="camera_auto_frame_no_screen">画面中没有屏幕形状 — 请将摄像头对准电视</string>
+  <string name="camera_auto_frame_no_frames">摄像头未提供任何帧</string>
+  <string name="camera_setup_save">保存</string>
+  <string name="camera_setup_reset">重置</string>
+  <string name="camera_permission_required">摄像头捕获模式需要摄像头权限</string>
+  <string name="camera_grant_permission">授予权限</string>
+  <string name="camera_capturing_status">摄像头正在捕获…</string>
+  <!-- Capture Method -->
+  <string name="pref_title_capture_method">捕获方法</string>
+  <string-array name="pref_list_capture_method">
+    <item>MediaProjection（标准）</item>
+    <item>Scrcpy（ADB，约 30ms）★★★★★</item>
+    <item>ADB Stream（H.264，约 50ms）</item>
+    <item>Screencap（Shell / ADB）</item>
+    <item>Screencap（Root）</item>
+    <item>ADB（截图，约 200ms）</item>
+    <item>无障碍（Android 11+）</item>
+    <item>MTK 硬件捕获（Root）</item>
+    <item>MStar VSS 硬件捕获（Root）</item>
+  </string-array>
+  <string-array name="pref_list_capture_method_values">
+    <item>media_projection</item>
+    <item>scrcpy</item>
+    <item>adb_stream</item>
+    <item>screencap_shell</item>
+    <item>screencap_root</item>
+    <item>adb_local</item>
+    <item>accessibility</item>
+    <item>mtk_thal_capture</item>
+    <item>mstar_vss_capture</item>
+  </string-array>
+
+  <string name="pref_title_adb_port">ADB 端口</string>
+  <string name="pref_btn_adb_pair">测试 ADB 连接</string>
+  <string name="pref_summary_adb_pair">检查连接并在电视上授权密钥</string>
+  <string name="adb_pair_title">ADB 授权</string>
+  <string name="adb_pair_instruction">首次连接时，电视会显示“允许无线调试？”对话框 — 请在电视屏幕上点按允许。请确保已在开发者选项中启用无线调试。</string>
+  <string name="error_adb_pairing_required">需要 ADB 配对。打开设置 → 捕获方法 → 测试 ADB 连接 → 使用配对码配对。</string>
+  <string name="adb_pair_code_title">使用配对码配对（Android 11+，一次性）</string>
+  <string name="adb_pair_code_hint">6 位配对码</string>
+  <string name="adb_pair_port_hint">配对端口（该屏幕上显示）</string>
+  <string name="adb_pair_code_instruction">手动备用：打开无线调试 → “使用配对码配对设备”，并输入那里显示的端口和 6 位配对码。上方的自动按钮更方便 — 它会自行读取配对码并完成配对，无需离开该屏幕。</string>
+  <string name="adb_autopair_btn">自动配对（无障碍）</string>
+  <string name="adb_autopair_waiting">如有需要请启用无线调试 — 应用会打开它，然后自行读取配对码并完成配对。</string>
+  <string name="adb_autopair_need_accessibility">请在下一屏幕为此应用打开无障碍功能，然后再次点按“自动配对”。</string>
+  <string name="adb_enable_accessibility_toast">在列表中找到“%1$s”，打开并开启 — 然后返回并点按“自动配对”。</string>
+  <string name="adb_autopair_consent_title">自动配对 — 请确认</string>
+  <string name="adb_autopair_consent_text">为了捕获屏幕，应用会通过本机回环地址（127.0.0.1）连接到此设备自己的 ADB。经您同意后，它将：打开无线调试，使用无障碍服务读取该屏幕上显示的一次性 6 位配对码，并为您点按“使用配对码配对设备”选项。它仅进行本地连接，不会更改任何其他设置，也不会将任何内容发送到设备外。是否继续？</string>
+  <string name="adb_autopair_consent_continue">继续</string>
+  <string name="adb_autopair_timeout">超时。请确保无线调试已开启，然后再次点按“自动配对”。</string>
+  <string name="adb_pair_manual_label">手动输入</string>
+  <string name="adb_pair_btn">配对</string>
+  <string name="adb_pairing">正在配对…</string>
+  <string name="adb_pair_success">已配对！现在点按测试 ADB 连接。</string>
+  <string name="adb_pair_failed">配对失败：%1$s</string>
+  <string name="adb_test_success">已连接！ADB 密钥已授权。</string>
+  <string name="adb_test_failed">连接失败：%s\n\n请确保已启用无线调试，并在电视上接受对话框。</string>
+  <string name="adb_status_label">开发者选项：%1$s\nADB：%2$s</string>
+  <string name="adb_legacy_title">Android 10 及更早版本</string>
+  <string name="adb_legacy_btn">连接（旧版，无需配对）</string>
+  <string name="adb_status_on">开</string>
+  <string name="adb_status_off">关</string>
+  <string name="adb_btn_open_dev_options">打开开发者选项</string>
+  <string name="adb_btn_how_to_enable_dev_options">如何启用开发者选项</string>
+  <string name="adb_btn_open_wireless_debug">打开无线调试</string>
+  <string name="adb_toast_dev_options_help">请先启用开发者选项：设置 → 关于手机 → 连续点按版本号 7 次</string>
+  <string name="adb_toast_cannot_open_dev">无法在此设备上打开开发者选项</string>
+  <string name="adb_toast_cannot_open_wireless">无法在此设备上打开无线调试</string>
+
+  <!-- Capturing settings -->
+  <string name="pref_group_capturing">捕获</string>
+  <string name="pref_title_framerate">捕获帧率</string>
+  <string name="pref_title_capture_quality">捕获质量</string>
+  <string name="pref_title_color_brightness">亮度</string>
+  <string name="pref_title_color_contrast">对比度</string>
+  <string name="pref_title_color_black_level">黑电平</string>
+  <string name="pref_title_color_white_level">白电平</string>
+  <string name="pref_title_color_saturation">饱和度</string>
+  <string name="pref_title_color_processing_enabled">色彩处理</string>
+  <string name="pref_group_color_per_channel">分通道校正（R/G/B）</string>
+  <string name="pref_title_color_brightness_r">红色亮度</string>
+  <string name="pref_title_color_brightness_g">绿色亮度</string>
+  <string name="pref_title_color_brightness_b">蓝色亮度</string>
+  <string name="pref_title_color_gamma_r">红色伽马</string>
+  <string name="pref_title_color_gamma_g">绿色伽马</string>
+  <string name="pref_summary_color_gamma">伽马低于 100%% 会压暗中间调：颜色更浓郁，暗灰（包括视频的黑边）不再发亮。45%% 相当于伽马 2.2，适合颜色发白的灯带作为起点。高于 100%% 则中间调更亮。</string>
+  <string name="pref_title_color_gamma_b">蓝色伽马</string>
+  <string name="pref_color_preview_title">预览（色彩处理后）</string>
+  <string name="pref_color_preview_hint">反映将发送到灯带的内容。主屏幕上的动画不会使用这些设置。</string>
+  <string name="pref_group_border_detection">黑边（信箱）检测</string>
+  <string name="pref_title_border_detection_enabled">自动检测信箱黑边</string>
+  <string name="pref_summary_border_detection_enabled">忽略画面周围的黑边（适用于 16:9、1.85:1、2.39:1 内容）。默认关闭。</string>
+  <string name="pref_title_border_threshold">黑色阈值（RGB 0–64）</string>
+  <string name="pref_title_border_check_interval">检测间隔（帧）</string>
+  <string name="pref_title_border_ignore_subtitles">忽略底部黑边中的字幕</string>
+  <string name="pref_summary_border_ignore_subtitles">从顶部边缘取黑边高度，底部只检查角落，这样黑边中的字幕不会缩小裁切。暗场景会保持裁切。覆盖在画面上的字幕仍会传到 LED。</string>
+  <string name="pref_group_camera_idle">摄像头睡眠模式</string>
+  <string name="pref_title_camera_idle_enabled">启用睡眠模式</string>
+  <string name="pref_summary_camera_idle_enabled">摄像头捕获不会从电视收到待机信号，因此关机屏幕会继续把传感器噪点流到灯带。启用后，画面变黑时 LED 会关闭，帧传输暂停，直到画面恢复。默认禁用。</string>
+  <string name="pref_title_camera_idle_timeout">睡眠延迟（秒）</string>
+  <string name="pref_title_camera_idle_dark_level">空白屏幕阈值（0–96）</string>
+  <string name="pref_title_camera_idle_motion_level">运动灵敏度阈值（1–64）</string>
+  <string name="pref_title_camera_idle_static">静态画面时睡眠</string>
+  <string name="pref_summary_camera_idle_static">启用后，如果画面停止变化（例如暂停的视频或静态菜单），帧传输也会暂停；灯带会保留最后显示的颜色。默认禁用，因为长时间静态场景会冻结灯带的颜色。</string>
+  <string name="unit_rgb">RGB</string>
+  <string name="unit_frames">帧</string>
+  <string name="unit_seconds">秒</string>
+  <string-array name="pref_list_capture_quality">
+    <item>低（64px）</item>
+    <item>中（128px）</item>
+    <item>高（256px）</item>
+    <item>超高（512px）</item>
+    <item>720p（不稳定）</item>
+    <item>1080p（不稳定）</item>
+    <item>1440p（不稳定）</item>
+    <item>2160p（不稳定）</item>
+  </string-array>
+  <string-array name="pref_list_capture_quality_values">
+    <item>64</item>
+    <item>128</item>
+    <item>256</item>
+    <item>512</item>
+    <item>720</item>
+    <item>1080</item>
+    <item>1440</item>
+    <item>2160</item>
+  </string-array>
+  <!-- General settings -->
+  <string name="pref_group_general">常规</string>
+  <string name="pref_title_boot">开机时抓取</string>
+  <string name="pref_title_language">语言</string>
+  <string name="pref_title_reset_picture">重置画面设置</string>
+  <string name="pref_summary_reset_picture">捕获帧率与质量、色彩校正、平滑和黑边裁切将恢复为默认值。连接、LED 布局和摄像头校准保持不变</string>
+  <string name="pref_title_backup_save">将设置保存到文件</string>
+  <string name="pref_summary_backup_save">除与手机的配对外的所有设置。灯具的令牌和密码会以明文保存在文件中</string>
+  <string name="pref_title_backup_restore">从文件恢复设置</string>
+  <string name="pref_summary_backup_restore">替换所有当前设置。在电视上需要文件管理器，或通过手机遥控器操作</string>
+  <string name="backup_saved">设置已保存：%1$s</string>
+  <string name="backup_save_failed">无法保存文件</string>
+  <string name="backup_restored">设置已恢复</string>
+  <string name="backup_restored_without_method">设置已恢复。文件中的捕获方法在此不可用，仍使用当前方法</string>
+  <string name="backup_read_failed">无法从此文件读取设置</string>
+  <string name="backup_no_picker">此设备上未找到文件管理器</string>
+  <string name="pref_key_language">language</string>
+  <string-array name="pref_list_language">
+    <item>跟随系统</item>
+    <item>简体中文</item>
+    <item>English</item>
+    <item>日本語</item>
+    <item>한국어</item>
+    <item>Русский</item>
+    <item>Español</item>
+    <item>Français</item>
+  </string-array>
+  <string-array name="pref_list_language_values">
+    <item>default</item>
+    <item>zh</item>
+    <item>en</item>
+    <item>ja</item>
+    <item>ko</item>
+    <item>ru</item>
+    <item>es</item>
+    <item>fr</item>
+  </string-array>
+
+  <string name="error_empty_host">未设置服务器地址。打开设置 → 连接 → 主机，输入您的 Hyperion/HyperHDR/WLED 设备 IP，或使用扫描网络</string>
+  <string name="error_empty_port">未设置端口。打开设置 → 连接 → 端口（Hyperion 为 19400，WLED/DDP 为 4048）</string>
+  <string name="error_invalid_port">无效端口：%1$d。必须在 1 到 65535 之间</string>
+  <string name="setup_required_title">需要设置</string>
+  <string name="setup_required_open_settings">打开设置</string>
+  <string name="setup_required_cancel">取消</string>
+  <string name="error_invalid_led_counts">LED 总数为 0 — 请在设置 → LED 布局中设置各边的 LED 数量</string>
+  <string name="error_server_unreachable">无法连接到 hyperion 服务器。请检查设置并确保 hyperion 正在运行</string>
+  <string name="error_adalight_unreachable">无法连接到 Adalight 设备。请确认：1）设备已通过 USB OTG 线连接，2）提示时已授予 USB 权限，3）设置中波特率正确</string>
+  <string name="error_connection_lost">与 hyperion 服务器的连接已断开，正在停止抓取器</string>
+  <string name="error_adalight_connection_lost">与 Adalight 设备的连接已断开，正在停止抓取器</string>
+  <string name="error_media_projection_denied">屏幕录制权限被拒绝。请在提示时授予权限</string>
+  <string name="error_screen_recording_not_available">此设备上屏幕录制不可用</string>
+  <string name="url_dialog_title">打开链接</string>
+  <string name="url_dialog_message">扫描二维码或复制下方链接，在浏览器中打开：</string>
+  <string name="url_dialog_qr_description">链接的二维码</string>
+  <string name="url_dialog_open_link">打开链接</string>
+  <string name="help_readme_url">https://github.com/vasmarfas/universal-ambient-light/blob/master/README.md</string>
+  <string name="support_url">https://github.com/vasmarfas/universal-ambient-light/blob/master/SUPPORT.md</string>
+  <string name="chat_url" translatable="false">https://t.me/vasmarfas_chat</string>
+  <string name="notification_channel_label">万能氛围灯通知</string>
+  <string name="notification_description">正在抓取屏幕内容</string>
+  <string name="pref_title_use_avg_color">发送屏幕平均颜色</string>
+  <string name="pref_title_adalight_baudrate">Adalight 波特率</string>
+  <string-array name="pref_list_adalight_baudrate">
+    <item>9600</item>
+    <item>19200</item>
+    <item>38400</item>
+    <item>57600</item>
+    <item>115200（推荐）</item>
+    <item>230400</item>
+    <item>250000</item>
+    <item>500000</item>
+    <item>921600</item>
+    <item>1000000</item>
+    <item>2000000</item>
+  </string-array>
+  <string-array name="pref_list_adalight_baudrate_values" translatable="false">
+    <item>9600</item>
+    <item>19200</item>
+    <item>38400</item>
+    <item>57600</item>
+    <item>115200</item>
+    <item>230400</item>
+    <item>250000</item>
+    <item>500000</item>
+    <item>921600</item>
+    <item>1000000</item>
+    <item>2000000</item>
+  </string-array>
+  <string name="pref_title_wled_color_order">WLED 颜色顺序</string>
+  <string-array name="pref_list_wled_color_order">
+    <item>RGB</item>
+    <item>GRB</item>
+    <item>BRG</item>
+    <item>RBG</item>
+    <item>GBR</item>
+    <item>BGR</item>
+  </string-array>
+  <string-array name="pref_list_wled_color_order_values">
+    <item>rgb</item>
+    <item>grb</item>
+    <item>brg</item>
+    <item>rbg</item>
+    <item>gbr</item>
+    <item>bgr</item>
+    </string-array>
+  
+  <!-- Smoothing settings -->
+  <string name="pref_group_smoothing">平滑</string>
+  <string name="pref_title_smoothing_enabled">启用平滑</string>
+  <string name="pref_title_smoothing_preset">平滑预设</string>
+  <string-array name="pref_list_smoothing_preset">
+    <item>关闭</item>
+    <item>响应</item>
+    <item>平衡</item>
+    <item>平滑</item>
+  </string-array>
+  <string-array name="pref_list_smoothing_preset_values">
+    <item>off</item>
+    <item>responsive</item>
+    <item>balanced</item>
+    <item>smooth</item>
+  </string-array>
+  <string name="pref_title_settling_time">稳定时间（毫秒）</string>
+  <string name="pref_title_output_delay">输出延迟（毫秒）</string>
+  <string name="pref_title_update_frequency">更新频率</string>
+  <string-array name="pref_list_update_frequency">
+    <item>20 Hz</item>
+    <item>25 Hz</item>
+    <item>30 Hz</item>
+    <item>40 Hz</item>
+    <item>50 Hz</item>
+    <item>60 Hz</item>
+  </string-array>
+  <string-array name="pref_list_update_frequency_values">
+    <item>20</item>
+    <item>25</item>
+    <item>30</item>
+    <item>40</item>
+    <item>50</item>
+    <item>60</item>
+  </string-array>
+  
+  <!-- WLED advanced settings -->
+  <string name="pref_title_wled_protocol">WLED 协议</string>
+  <string-array name="pref_list_wled_protocol">
+    <item>UDP Raw（端口 19446）</item>
+    <item>DDP（端口 4048）</item>
+  </string-array>
+  <string-array name="pref_list_wled_protocol_values">
+    <item>udp_raw</item>
+    <item>ddp</item>
+  </string-array>
+  <string name="pref_title_wled_rgbw">WLED RGBW</string>
+  <string name="pref_summary_wled_rgbw_raw">在端口 19446 上会被忽略：该端口没有白光通道。RGBW 灯带请使用 DDP</string>
+  <string name="pref_summary_wled_rgbw_white_mode">需要在 WLED 中配置 RGBW 灯带，并将白色计算设为仅手动或双模式 — 自动模式会重新计算白色并导致偏暗</string>
+  <string name="pref_title_wled_brightness">WLED 亮度</string>
+  <string name="pref_summary_wled_brightness_max">255 — 颜色按原样发送</string>
+  <!-- Home Assistant -->
+  <string name="pref_title_ha_token">访问令牌</string>
+  <string name="pref_summary_ha_token_empty">来自 Home Assistant 个人资料 → 安全 的长期令牌</string>
+  <string name="pref_summary_ha_token_set">令牌已保存</string>
+  <string name="pref_title_ha_lamps">灯具与区域</string>
+  <string name="pref_summary_ha_lamps_empty">未配置灯具</string>
+  <string name="pref_summary_ha_lamps_count">已配置灯具：%1$d</string>
+  <string name="pref_title_ha_update_interval">更新速率</string>
+  <string-array name="pref_list_ha_update_interval">
+    <item>每秒 10 次（100 毫秒）</item>
+    <item>150 毫秒</item>
+    <item>每秒 4 次（250 毫秒）</item>
+    <item>每秒 2 次（500 毫秒）</item>
+    <item>每秒 1 次</item>
+    <item>每 2 秒</item>
+    <item>每 5 秒</item>
+  </string-array>
+  <string-array name="pref_list_ha_update_interval_values" translatable="false">
+    <item>100</item>
+    <item>150</item>
+    <item>250</item>
+    <item>500</item>
+    <item>1000</item>
+    <item>2000</item>
+    <item>5000</item>
+  </string-array>
+  <string name="pref_title_ha_change_threshold">颜色变化阈值</string>
+  <string name="pref_summary_ha_change_threshold">0–255。仅当区域颜色变化至少达到此值时才发送更新</string>
+  <string name="pref_title_ha_transition">过渡</string>
+  <string-array name="pref_list_ha_transition">
+    <item>关闭</item>
+    <item>150 毫秒</item>
+    <item>300 毫秒</item>
+    <item>500 毫秒</item>
+    <item>1 秒</item>
+    <item>2 秒</item>
+  </string-array>
+  <string-array name="pref_list_ha_transition_values" translatable="false">
+    <item>0</item>
+    <item>150</item>
+    <item>300</item>
+    <item>500</item>
+    <item>1000</item>
+    <item>2000</item>
+  </string-array>
+  <string name="pref_title_ha_brightness_mode">亮度</string>
+  <string-array name="pref_list_ha_brightness_mode">
+    <item>跟随画面</item>
+    <item>不更改</item>
+  </string-array>
+  <string-array name="pref_list_ha_brightness_mode_values" translatable="false">
+    <item>screen</item>
+    <item>keep</item>
+  </string-array>
+  <string name="pref_title_ha_brightness">亮度上限</string>
+  <string name="pref_summary_ha_brightness_max">255 — 灯具全亮度</string>
+  <string name="pref_title_ha_dark_off">暗场景时关闭</string>
+  <string name="pref_summary_ha_dark_off">当区域比阈值更暗时灯具关闭，并随画面恢复而重新点亮</string>
+  <string name="pref_title_ha_dark_threshold">暗阈值</string>
+  <string name="pref_title_ha_turn_off_lights">停止时关闭灯具</string>
+  <string name="pref_summary_ha_turn_off_lights">捕获停止或电视屏幕关闭时关闭灯具</string>
+  <string name="ha_lamps_dialog_title">Home Assistant 灯具</string>
+  <string name="ha_lamps_loading">正在加载灯具…</string>
+  <string name="ha_lamps_error">无法连接 Home Assistant：%1$s</string>
+  <string name="ha_lamps_empty">未找到灯具</string>
+  <string name="ha_lamps_hint">请先设置主机和访问令牌，然后为每盏灯选择区域</string>
+  <string name="ha_zone_none">不使用</string>
+  <string name="ha_zone_average">屏幕平均颜色</string>
+  <string name="ha_zone_left">左边缘</string>
+  <string name="ha_zone_right">右边缘</string>
+  <string name="ha_zone_top">上边缘</string>
+  <string name="ha_zone_bottom">下边缘</string>
+  <string name="ha_zone_top_left">左上角</string>
+  <string name="ha_zone_top_right">右上角</string>
+  <string name="ha_zone_bottom_left">左下角</string>
+  <string name="ha_zone_bottom_right">右下角</string>
+  <string name="ha_lamps_lamp_missing">当前在此 Home Assistant 上未看到</string>
+  <string name="action_save">保存</string>
+  <string name="error_ha_token_missing">未设置 Home Assistant 访问令牌。打开设置 → 连接 → 访问令牌</string>
+  <string name="error_ha_no_lamps">没有 Home Assistant 灯具分配到区域。打开设置 → 连接 → 灯具与区域</string>
+
+  <!-- Second, additional Home Assistant output -->
+
+  <!-- Adalight advanced settings -->
+  <string name="pref_title_adalight_protocol">Adalight 协议</string>
+  <string-array name="pref_list_adalight_protocol">
+    <item>ADA（标准）</item>
+    <item>LBAPA（LightBerry APA102）</item>
+    <item>AWA（Hyperserial）</item>
+    <item>tpm2</item>
+    <item>Skydimo</item>
+    <item>SEDU</item>
+    <item>KarateLight</item>
+    <item>AtmoLight</item>
+    <item>SP616E</item>
+  </string-array>
+  <string-array name="pref_list_adalight_protocol_values">
+    <item>ada</item>
+    <item>lbapa</item>
+    <item>awa</item>
+    <item>tpm2</item>
+    <item>skydimo</item>
+    <item>sedu</item>
+    <item>karate</item>
+    <item>atmo</item>
+    <item>sp616e</item>
+  </string-array>
+
+  <!-- App Specific Strings -->
+  <string name="toggle_activity_label">万能氛围灯（切换）</string>
+  <string name="quick_tile_label">万能氛围灯</string>
+  <string name="status_grabber_running">氛围灯服务正在运行</string>
+  <string name="help">帮助</string>
+  <string name="support_project">支持项目</string>
+  <string name="help_title">使用方法</string>
+  <string name="help_message">使用本应用前，需要设置 LED 控制器：\n\n• WLED：在 ESP8266/ESP32 设备上配置 WLED 固件\n• Adalight：通过 USB 连接刷有 Adalight 固件的 Arduino\n• Hyperion：安装并配置 Hyperion 服务器\n\n详细设置说明请访问 GitHub 仓库。</string>
+  <string name="help_open_github">打开 GitHub</string>
+  <string name="help_open_chat">Telegram 聊天</string>
+  <string name="help_close">关闭</string>
+  <string name="support_project_title">支持项目</string>
+  <string name="support_project_message">感谢您有意支持本项目！\n\n您可以通过以下方式支持开发：\n• Boosty\n• 加密货币（TON）\n• 在 Google Play 留下评价\n\n点击下方查看所有可用选项。</string>
+  <string name="support_open_details">查看详情</string>
+  <string name="report_issue">报告问题</string>
+  <string name="leave_review">留下评价</string>
+  <string name="rating_dialog_title">为万能氛围灯评分</string>
+  <string name="rating_dialog_message">您如何评价使用体验？</string>
+  <string name="rating_dialog_low_rating_title">很遗憾听到这些</string>
+  <string name="rating_dialog_low_rating_message">如果您遇到任何问题，请在 GitHub 上报告。您的反馈有助于我们改进应用。</string>
+  <string name="rating_dialog_report_issue">报告问题</string>
+  <string name="rating_dialog_cancel">取消</string>
+  <string name="github_issues_url">https://github.com/vasmarfas/universal-ambient-light/issues</string>
+  <string name="accessibility_service_description">允许万能氛围灯捕获屏幕以提供氛围照明，并根据配对手机的指令按下电视按键。</string>
+  <string name="accessibility_enable_prompt">请为万能氛围灯启用无障碍服务</string>
+  <string name="accessibility_disclosure_title">需要无障碍权限</string>
+  <string name="accessibility_disclosure_message">本应用使用 AccessibilityService API 捕获屏幕内容。这是分析屏幕颜色并实时与背景灯（Ambilight）同步所必需的。\n\n屏幕数据仅在您的设备本地处理，不会保存，也不会传输到任何第三方服务器。\n\n如果您不同意，则无法使用此捕获模式。</string>
+  <string name="accessibility_disclosure_button_deny">拒绝</string>
+  <string name="accessibility_disclosure_button_accept">同意并继续</string>
+
+  <!-- Remote control, autostart, TV controls -->
+  <string name="number_input_range">从 %1$d 到 %2$d</string>
+  <string name="action_decrease">减少</string>
+  <string name="action_increase">增加</string>
+  <string name="home_status_error">由于错误，灯光已关闭</string>
+  <string name="home_status_starting">正在启动…</string>
+  <string name="home_status_stopped">灯光已关闭</string>
+  <string name="home_target_no_host">未设置地址</string>
+  <string name="pref_summary_boot">如果之前已开启，则在电视开机、唤醒或应用更新后重新打开灯光</string>
+  <string name="autostart_permissions_ok">已授予：灯光会自行恢复，无需对话框</string>
+  <string name="autostart_permissions_missing">未授予：睡眠后电视可能要求确认屏幕捕获。打开以通过 ADB 授予</string>
+  <string name="adb_grant_title">自动启动权限</string>
+  <string name="adb_grant_description">使用一次 ADB，以允许屏幕捕获无需确认对话框、在其他应用之上显示窗口以及不受限制的后台运行。没有它们，Android 10+ 无法在电视唤醒或重启后自行恢复灯光。使用情况访问权限一并授予：有了它，灯光就知道屏幕上是哪个应用，并使用按应用延迟。</string>
+  <string name="adb_grant_btn">通过 ADB 授予</string>
+  <string name="adb_grant_success">完成：已允许无需确认的屏幕捕获、在其他应用之上显示窗口以及后台运行。</string>
+  <string name="adb_grant_partial">未应用：%1$s。此固件可能不支持。</string>
+  <string name="adb_grant_failed">无法授予权限：%1$s</string>
+  <string name="adb_pair_port_not_found">未找到配对端口。请打开“使用配对码配对设备”并保持该屏幕打开。</string>
+  <string name="pref_group_remote">远程控制</string>
+  <string name="remote_host_title">用手机控制</string>
+  <string name="remote_host_summary">显示二维码，以便用手机控制此电视</string>
+  <string name="remote_host_instructions">在手机上打开万能氛围灯 → 电视遥控 → 扫描二维码。手机和电视必须在同一网络上。</string>
+  <string name="remote_host_disabled">用手机控制已关闭</string>
+  <string name="remote_host_no_network">电视未连接到网络</string>
+  <string name="remote_host_blocked">电视固件不允许服务在后台运行，因此手机无法连接。请在设置 → 常规中授予自动启动权限</string>
+  <string name="remote_host_no_clients">没有已连接的手机</string>
+  <string name="remote_host_clients">已连接：%1$s</string>
+  <string name="remote_host_enable">允许用手机控制</string>
+  <string name="remote_host_enable_summary">后台服务保持运行，以便手机随时打开灯光</string>
+  <string name="remote_host_reset_code">更改配对码</string>
+  <string name="remote_host_reset_code_summary">已配对的手机将失去访问权限，直到扫描新的二维码</string>
+  <string name="remote_host_reset_confirm">所有已配对的手机都将断开连接，并需要扫描新的二维码。是否继续？</string>
+  <string name="remote_host_qr_description">配对二维码</string>
+  <string name="remote_host_name">电视</string>
+  <string name="remote_host_address">地址</string>
+  <string name="remote_host_code">代码</string>
+  <string name="remote_tvs_title">电视遥控</string>
+  <string name="remote_tvs_summary">从这台手机控制电视的灯光</string>
+  <string name="remote_tvs_intro">在电视上打开应用并进入“用手机控制”：它会显示二维码和用于手动输入的代码。</string>
+  <string name="remote_tvs_scan">扫描二维码</string>
+  <string name="remote_tvs_manual">手动输入代码</string>
+  <string name="remote_tvs_connecting">正在连接到电视…</string>
+  <string name="remote_tvs_paired">已配对的电视</string>
+  <string name="remote_tvs_active">控制中</string>
+  <string name="remote_tvs_online">在网络上</string>
+  <string name="remote_tvs_found">在网络上找到</string>
+  <string name="remote_tvs_refresh">再次搜索</string>
+  <string name="remote_tvs_none_found">未找到电视。请在电视上打开“用手机控制”。</string>
+  <string name="remote_tvs_forget">忘记</string>
+  <string name="remote_tvs_forget_confirm">手机将忘记此电视。要再次控制它，请扫描其二维码。</string>
+  <string name="remote_tvs_connect">连接</string>
+  <string name="remote_scan_hint">将摄像头对准电视屏幕上的二维码</string>
+  <string name="remote_manual_hint">地址和代码显示在电视二维码下方。</string>
+  <string name="remote_banner_title">电视：%1$s</string>
+  <string name="remote_banner_connected">已连接，更改会应用到电视</string>
+  <string name="remote_banner_connecting">正在连接…</string>
+  <string name="remote_banner_retry">重试</string>
+  <string name="remote_banner_disconnect">断开连接</string>
+  <string name="remote_settings_offline">未连接到电视：恢复后将发送更改</string>
+  <string name="remote_accessibility_on_tv">请先在电视上开启此应用的无障碍服务</string>
+  <string name="remote_detect_frame_summary">角点在电视本身上拖动。从这里可以在摄像头画面中运行屏幕搜索。</string>
+  <string name="remote_detect_frame_started">电视正在摄像头画面中查找屏幕</string>
+  <string name="remote_adb_runs_on_tv">这些操作在电视上运行</string>
+  <string name="remote_adb_pair_instruction">在电视上打开无线调试 → “使用配对码配对设备”，并在此输入 6 位配对码。端口可留空：电视会自行查找。</string>
+  <string name="remote_adb_pair_port_optional">配对端口（可选）</string>
+  <string name="remote_adb_need_accessibility">请在电视上开启此应用的无障碍服务，然后重试。</string>
+  <string name="remote_opened_on_tv">已在电视上打开</string>
+  <string name="remote_confirm_on_tv">请用遥控器在电视上确认屏幕捕获</string>
+  <string name="remote_error_activity_blocked">电视上的 Android 未允许应用在当前窗口之上显示其窗口。请在电视上打开应用或通过 ADB 授予自动启动权限。</string>
+  <string name="remote_error_background_start">电视上的 Android 不允许在后台启动服务。请通过 ADB 授予自动启动权限，或在电视上打开应用。</string>
+  <string name="remote_error_camera_not_running">电视上摄像头捕获未运行</string>
+  <string name="remote_error_offline">未连接到电视</string>
+  <string name="remote_error_not_found">未找到电视。手机和电视必须在同一网络上，并在电视上的应用中开启用手机控制。</string>
+  <string name="remote_error_code_rejected">电视未接受配对码。请再次扫描电视上的二维码。</string>
+  <string name="remote_error_wrong_tv">此地址上回应的是另一台电视。请再次扫描二维码。</string>
+  <string name="remote_error_version">手机和电视上的应用版本不兼容。请在两端更新应用。</string>
+  <string name="remote_notification_channel">用手机控制</string>
+  <string name="remote_notification_title">用手机控制已开启</string>
+  <string name="remote_notification_waiting">正在等待手机</string>
+  <string name="remote_notification_connected">已连接：%1$s</string>
+
+  <!-- Effects without screen capture -->
+  <string name="effects_title">效果</string>
+  <string name="effects_intro">效果自行点亮灯带，无需屏幕捕获。不需要屏幕录制权限，也与电视上显示的内容无关。</string>
+  <string name="effects_group_static">静态</string>
+  <string name="effects_group_dynamic">动画</string>
+  <string name="effects_group_setup">用于设置</string>
+  <string name="effects_group_sound">声音</string>
+  <string name="effects_parameters">设置：%1$s</string>
+  <string name="effects_now_off">灯光已关闭。选择一个效果即可开启。</string>
+  <string name="effects_now_effect">当前：%1$s</string>
+  <string name="effects_now_screen">灯光当前跟随屏幕。选择效果会切换过去。</string>
+  <string name="effects_turn_off">关闭</string>
+  <string name="effects_back_to_screen">返回屏幕</string>
+  <string name="effects_color">颜色</string>
+  <string name="effects_color2">第二种颜色</string>
+  <string name="effects_hue">色相</string>
+  <string name="effects_saturation">饱和度</string>
+  <string name="effects_speed">速度</string>
+  <string name="effects_brightness">亮度</string>
+  <string name="effects_temperature">色温</string>
+  <string name="effects_sensitivity">灵敏度</string>
+  <string name="effects_standby">电视屏幕关闭时保持开启</string>
+  <string name="effects_standby_summary">只要电视盒子保持唤醒，灯带就会像夜灯一样继续发光。有些电视在待机时会切断网络，那时它仍会熄灭。</string>
+  <string name="unit_kelvin">%1$d K</string>
+  <string name="effect_solid">纯色</string>
+  <string name="effect_gradient">渐变</string>
+  <string name="effect_white">观影白光</string>
+  <string name="effect_white_hint">观影参考白光为 6500 K，更低的值更暖。</string>
+  <string name="effect_rainbow">彩虹</string>
+  <string name="effect_color_cycle">颜色循环</string>
+  <string name="effect_breathing">呼吸</string>
+  <string name="effect_candle">烛光</string>
+  <string name="effect_fire">火焰</string>
+  <string name="effect_aurora">极光</string>
+  <string name="effect_ocean">海洋</string>
+  <string name="effect_plasma">等离子体</string>
+  <string name="effect_comet">彗星</string>
+  <string name="effect_layout_test">布局测试</string>
+  <string name="effect_music">彩灯音乐</string>
+  <string name="effect_music_hint">按频率拆分声音：低音用红色点亮屏幕底部，高音用蓝色点亮顶部。声音升高时灯带会反应：节拍和变化会闪烁，像房间噪音一样的稳定声音会在几秒内减弱。声音在设备上分析，不会录制或发送到任何地方。如果灯带几乎不随音乐反应，请提高灵敏度；如果因房间噪音闪烁，请降低。在手机上，打开“电视屏幕关闭时保持开启”，以便手机屏幕关闭时灯光继续。</string>
+  <string name="effect_music_source">声音来源</string>
+  <string-array name="pref_list_music_source">
+    <item>麦克风</item>
+    <item>本机声音</item>
+  </string-array>
+  <string name="effect_music_source_hint">麦克风可听到房间里的声音：电视、音箱或手机的音乐。本机声音是此电视盒子或手机自己播放的内容，无需麦克风。以 Dolby 或 DTS 比特流（直通）发送到功放的声音会绕过 Android，无法以此方式捕获。</string>
+  <string name="music_permission_required">彩灯音乐需要麦克风访问权限</string>
+  <string name="error_microphone_unavailable">麦克风不可用：设备没有麦克风，或其他应用正在使用</string>
+  <string name="error_output_audio_unavailable">本机声音不可用：固件未将其提供给应用。请选择麦克风作为声音来源</string>
+  <string name="effect_layout_test_hint">顶部为红，右侧为绿，底部为蓝，左侧为黄。白点从第一个 LED 沿编号方向运行。如果颜色或白点路径与灯带不符，请修正 LED 布局。</string>
+  <string name="effect_layout_test_strip_hint">在 LED 灯带上，此图案的边界会随扫描深度和捕获边距移动。要精确检查每个 LED，请打开 LED 布局并启用“显示 LED 布局测试”。</string>
+  <string name="home_source_effect">效果：%1$s</string>
+  <string name="remote_error_update_tv">电视上的应用版本过旧，不支持此功能。请在电视上更新。</string>
+
+  <!-- Remote: buttons, mouse, text and apps of the TV -->
+  <string name="tv_remote_title">遥控</string>
+  <string name="tv_remote_tab_keys">按键</string>
+  <string name="tv_remote_tab_mouse">鼠标</string>
+  <string name="tv_remote_tab_text">文本</string>
+  <string name="tv_remote_tab_apps">应用</string>
+  <string name="tv_remote_adb_missing">按键、鼠标和文本通过电视上的 ADB 工作，但当前不可用：%1$s</string>
+  <string name="tv_remote_adb_missing_accessibility">没有 ADB 时，仅系统按键、点按以及通过无障碍服务输入文本可用。</string>
+  <string name="tv_remote_adb_setup">设置 ADB</string>
+  <string name="tv_remote_no_cursor">电视不允许在其他应用之上显示窗口，因此看不到光标。请通过 ADB 授予自动启动权限。</string>
+  <string name="tv_remote_power">电源</string>
+  <string name="tv_remote_input">输入源</string>
+  <string name="tv_remote_settings">电视设置</string>
+  <string name="tv_remote_back">返回</string>
+  <string name="tv_remote_home">主页</string>
+  <string name="tv_remote_menu">菜单</string>
+  <string name="tv_remote_ok">确定</string>
+  <string name="tv_remote_up">上</string>
+  <string name="tv_remote_down">下</string>
+  <string name="tv_remote_left">左</string>
+  <string name="tv_remote_right">右</string>
+  <string name="tv_remote_volume_up">音量加</string>
+  <string name="tv_remote_volume_down">音量减</string>
+  <string name="tv_remote_mute">静音</string>
+  <string name="tv_remote_play_pause">播放或暂停</string>
+  <string name="tv_remote_rewind">快退</string>
+  <string name="tv_remote_forward">快进</string>
+  <string name="tv_remote_previous">上一个</string>
+  <string name="tv_remote_next">下一个</string>
+  <string name="tv_remote_touchpad_hint">滑动手指移动光标。点按为单击，按住为长按。双指滚动，双指点按相当于返回。</string>
+  <string name="tv_remote_click">单击</string>
+  <string name="tv_remote_text_label">发送到电视的文本</string>
+  <string name="tv_remote_text_hint">在电视上选择文本框（例如搜索框），然后在此输入。文本会立即出现在电视上。</string>
+  <string name="tv_remote_enter">回车</string>
+  <string name="tv_remote_backspace">删除</string>
+  <string name="tv_remote_clear">清除</string>
+  <string name="tv_remote_apps_loading">正在加载电视应用…</string>
+  <string name="tv_remote_apps_empty">电视上未找到应用</string>
+  <string name="remote_tvs_switch">其他电视</string>
+  <string name="remote_input_needs_adb">这需要电视上的 ADB（%1$s）。可在遥控屏幕上设置。</string>
+  <string name="remote_app_not_found">该应用未安装在电视上</string>
+
+  <!-- Lighting delay and auto-tuning with the phone camera -->
+  <string name="calibration_title">延迟自动调校</string>
+  <string name="calibration_needs_remote">自动调校用手机摄像头拍摄电视，因此需从已与电视配对的手机运行。</string>
+  <string name="calibration_needs_screen">请在电视上以屏幕捕获模式打开灯光并播放电影：延迟会据此测量。</string>
+  <string name="calibration_turn_on">打开灯光</string>
+  <string name="calibration_intro">手机拍摄电视和墙上的光晕，并比较画面与灯带变化的时机。延迟会根据当前播放内容测量，因此每个应用和片源都有各自的值。</string>
+  <string name="calibration_steps">1. 播放一部镜头切换频繁的电影或视频。\n2. 关闭房间灯光。\n3. 站到整个电视屏幕及其周围墙面都在画面中，并保持手机静止约一分钟。</string>
+  <string name="calibration_start">开始</string>
+  <string name="calibration_searching">灯带会熄灭几秒，同时手机查找电视屏幕。请保持手机静止。</string>
+  <string name="calibration_measuring">正在测量。场景切换：%1$d，秒数：%2$d。请保持手机静止。</string>
+  <string name="calibration_glow_invisible">摄像头几乎看不到灯带光晕。请关灯，并确保电视周围的墙面在画面中。</string>
+  <string name="calibration_result_ahead">灯带比画面超前 %1$d 毫秒</string>
+  <string name="calibration_result_behind">灯带比画面滞后 %1$d 毫秒</string>
+  <string name="calibration_result_in_sync">灯带与画面同步</string>
+  <string name="calibration_result_details">场景切换：%1$d。精度约 ±%2$d 毫秒，匹配度 %3$d%%。</string>
+  <string name="calibration_unreliable">结果不可靠：场景切换太少或手机移动了。最好在更动态的场景上重测。</string>
+  <string name="calibration_behind_hint">延迟无法修正滞后的灯带。请降低平滑或选择更快的捕获方法。</string>
+  <string name="calibration_current">当前设置：%1$d 毫秒。建议：%2$d 毫秒。</string>
+  <string name="calibration_save_app">为 %1$s 保存</string>
+  <string name="calibration_save_all">为所有应用保存</string>
+  <string name="calibration_no_usage_access">电视未报告屏幕上是哪个应用，因此延迟会为所有应用保存。按应用延迟需要使用情况访问权限，它会与自动启动权限一并通过 ADB 授予。</string>
+  <string name="calibration_saved">已保存：%1$d 毫秒。电视会立即应用。</string>
+  <string name="calibration_repeat">重新测量</string>
+  <string name="calibration_error_no_screen">画面中未找到电视屏幕。请将摄像头对准整个屏幕可见的位置，然后重试。</string>
+  <string name="calibration_error_too_dark">画面太暗。电视应打开并播放足够明亮的内容。</string>
+  <string name="calibration_error_too_close">电视几乎占满画面，没有留给墙面的空间。请稍后退一点。</string>
+  <string name="calibration_error_static">场景切换太少，无法测量。请播放更动态的内容后重试。</string>
+  <string name="calibration_error_not_running">请先在电视上打开灯光。</string>
+  <string name="calibration_error_not_screen">自动调校适用于屏幕捕获，而电视当前正在显示效果或使用摄像头。</string>
+  <string name="delay_title">灯光延迟</string>
+  <string name="delay_summary">按应用延迟以及用手机摄像头自动调校</string>
+  <string name="delay_intro">如果灯带超前于画面，延迟可将其拉回。播放器和片源处理视频的方式不同，因此应用可以有各自的延迟：当该应用在屏幕上时，电视会切换到它。</string>
+  <string name="delay_global">所有应用的延迟</string>
+  <string name="delay_calibration_title">自动调校</string>
+  <string name="delay_calibration_summary">手机摄像头拍摄电视和光晕，并在当前播放的电影上找到延迟。</string>
+  <string name="delay_calibration_open">用摄像头调校</string>
+  <string name="delay_calibration_on_phone">自动调校从手机运行：在手机上打开电视遥控，连接到此电视，然后进入设置 → 灯光延迟。</string>
+  <string name="delay_apps_title">按应用延迟</string>
+  <string name="delay_no_usage_access">电视未报告屏幕上是哪个应用。请通过 ADB 授予使用情况访问权限，否则到处都会使用所有应用的延迟。</string>
+  <string name="delay_apps_empty">尚无具有各自延迟的应用。</string>
+  <string name="delay_apps_remove">移除</string>
+  <string name="delay_apps_add">添加应用</string>
+
+  <!-- Sleep timer -->
+  <string name="sleep_timer">睡眠定时器</string>
+  <string name="sleep_timer_minutes">%1$d 分钟后</string>
+  <string name="sleep_timer_cancel">关闭定时器</string>
+  <string name="sleep_timer_until">将在 %1$s 关闭</string>
+
+  <!-- More controllers and smart lights -->
+  <string name="error_hue_not_paired">Hue 网桥未配对。打开设置 → 连接，并用其按钮配对网桥。</string>
+  <string name="error_nanoleaf_not_paired">Nanoleaf 未配对。打开设置 → 连接并配对面板。</string>
+  <string name="error_no_lamps">没有灯具分配到屏幕区域。打开设置 → 连接 → 灯具与区域。</string>
+
+  <!-- Controller picker -->
+  <string name="devices_title">控制器</string>
+  <string name="devices_found">在网络上找到</string>
+  <string name="devices_searching">正在网络上查找设备…</string>
+  <string name="devices_nothing_found">没有响应。请检查控制器是否在同一网络，或在下方选择其类型并手动输入地址。</string>
+  <string name="devices_search_again">再次搜索</string>
+  <string name="devices_sweep">检查每个地址</string>
+  <string name="devices_sweep_summary">适用于没有 mDNS 的 WLED 和 Hyperion。需要一两分钟。</string>
+  <string name="devices_sweep_progress">正在检查地址：%1$d%%</string>
+  <string name="devices_manual">按类型选择</string>
+  <string name="devices_current">当前</string>
+  <string name="devices_lamps_count">灯具：%1$d</string>
+  <string name="devices_remote_note">搜索从此手机运行，因此电视必须在同一网络上。</string>
+  <string name="devices_group_strip">网络可寻址灯带</string>
+  <string name="devices_group_usb">USB 灯带</string>
+  <string name="devices_group_lamps">智能灯具与面板</string>
+  <string name="devices_group_server">Ambilight 服务器</string>
+
+  <!-- Output types -->
+  <string name="output_wled">WLED</string>
+  <string name="output_wled_summary">带 WLED 固件的 ESP8266 或 ESP32</string>
+  <string name="output_ddp">DDP</string>
+  <string name="output_ddp_summary">WLED、ESPixelStick、FPP 及其他 DDP 接收器</string>
+  <string name="output_e131">E1.31（sACN）</string>
+  <string name="output_e131_summary">ESPixelStick、Falcon、FPP、DMX 节点</string>
+  <string name="output_artnet">Art-Net</string>
+  <string name="output_artnet_summary">DMX 节点和像素控制器</string>
+  <string name="output_tpm2net">tpm2.net</string>
+  <string name="output_tpm2net_summary">与 Jinx! 兼容的接收器</string>
+  <string name="output_udpraw">UDP raw</string>
+  <string name="output_udpraw_summary">单包裸 RGB，最多 490 个 LED</string>
+  <string name="output_opc">Open Pixel Control</string>
+  <string name="output_opc_summary">FadeCandy 和 fcserver</string>
+  <string name="output_adalight">Adalight 与 USB 套件</string>
+  <string name="output_adalight_summary">Arduino、ESP、Skydimo 及其他 USB 线连接的板卡</string>
+  <string name="output_hue">Philips Hue</string>
+  <string name="output_hue_summary">通过 Hue 网桥控制的灯具</string>
+  <string name="output_nanoleaf">Nanoleaf</string>
+  <string name="output_nanoleaf_summary">Shapes、Canvas、Elements、Lines、Light Panels</string>
+  <string name="output_wiz">WiZ</string>
+  <string name="output_wiz_summary">WiZ Connected 灯具，包括 Philips WiZ</string>
+  <string name="output_yeelight">Yeelight</string>
+  <string name="output_yeelight_summary">需要在 Yeelight 应用中启用局域网控制</string>
+  <string name="output_lifx">LIFX</string>
+  <string name="output_lifx_summary">本地网络上的 LIFX 灯具</string>
+  <string name="output_govee">Govee</string>
+  <string name="output_govee_summary">需要在 Govee Home 应用中启用局域网控制</string>
+  <string name="output_homeassistant">Home Assistant</string>
+  <string name="output_homeassistant_summary">连接到 Home Assistant 的任何灯具</string>
+  <string name="output_hyperion">Hyperion / HyperHDR</string>
+  <string name="output_hyperion_summary">画面发送到驱动 LED 的 Hyperion 或 HyperHDR 服务器</string>
+
+  <!-- Controller settings -->
+  <string name="extra_outputs_title">附加控制器</string>
+  <string name="extra_outputs_summary_empty">主控制器旁的第二条灯带、侧条或灯具</string>
+  <string name="extra_outputs_summary_count">已添加：%1$d</string>
+  <string name="extra_outputs_hint">它们与主控制器一起运行并显示相同画面。每个都有自己的地址和 LED 布局：布局决定覆盖哪些边，捕获边距则将其缩小到屏幕的一部分。</string>
+  <string name="extra_outputs_add">添加控制器</string>
+  <string name="extra_output_title">附加控制器</string>
+  <string name="extra_output_off">关闭</string>
+  <string name="extra_output_delete">删除控制器</string>
+  <string name="extra_output_delete_confirm">其地址和 LED 布局将丢失。</string>
+  <string name="pref_title_output_enabled">已启用</string>
+  <string name="pref_title_output_name">名称</string>
+  <string name="pref_summary_output_name_empty">未设置</string>
+  <string name="home_target_with_extra" translatable="false">%1$s + %2$d</string>
+  <string name="controller_change">更改</string>
+  <string name="controller_no_address">未设置地址</string>
+  <string name="pref_title_color_order">颜色顺序</string>
+  <string name="pref_title_dmx_universe">起始 universe</string>
+  <string name="pref_summary_dmx_universe">%1$d，更长的灯带会延续到后续 universe</string>
+  <string name="pref_title_dmx_leds_per_universe">每个 universe 的 LED 数</string>
+  <string name="pref_summary_dmx_leds_per_universe">%1$d（170 填满一个 universe 的全部 510 通道）</string>
+  <string name="pref_title_tpm2_leds_per_packet">每个数据包的 LED 数</string>
+  <string name="pref_title_opc_channel">OPC 通道</string>
+  <string name="pref_summary_opc_channel">%1$d（0 表示服务器的每个通道）</string>
+  <string name="pref_summary_e131_multicast">留空：组播到 239.255.x.y</string>
+  <string name="home_target_multicast">组播</string>
+  <string name="pref_title_hue_pairing">网桥配对</string>
+  <string name="pref_title_nanoleaf_pairing">面板配对</string>
+  <string name="pref_summary_paired">已配对</string>
+  <string name="pref_summary_not_paired">未配对，点按以配对</string>
+
+  <!-- Pairing -->
+  <string name="action_pair">配对</string>
+  <string name="pair_in_progress">正在配对…</string>
+  <string name="pair_failed">无法配对：%1$s</string>
+  <string name="hue_pair_title">配对 Hue 网桥</string>
+  <string name="hue_pair_text">按下网桥顶部的圆形按钮，然后在 30 秒内点按配对。</string>
+  <string name="hue_pair_button_not_pressed">网桥表示其按钮未被按下。请按下后重试。</string>
+  <string name="nanoleaf_pair_title">配对 Nanoleaf</string>
+  <string name="nanoleaf_pair_text">按住控制器上的电源按钮 5 到 7 秒，直到指示灯开始闪烁，然后在 30 秒内点按配对。</string>
+  <string name="nanoleaf_pair_rejected">Nanoleaf 拒绝：按钮未按住，或已超过 30 秒。</string>
+  <string name="pair_need_host">请先输入地址</string>
+
+  <!-- Lights of other systems -->
+  <string name="lamps_dialog_title">%1$s 灯具</string>
+  <string name="lamps_hint_network">在本地网络上搜索灯具。请打开它们并确认在同一 Wi-Fi 上。</string>
+  <string name="lamps_hint_hue">请先配对网桥，然后为每盏灯选择区域。</string>
+  <string name="lamps_error">无法获取灯具列表：%1$s</string>
+  <string name="lamps_lamp_missing">当前在网络上未找到</string>
+  <string name="lamps_identify">闪烁</string>
+
+  <!-- Home: controller setup hint -->
+  <string name="home_setup_button">设置控制器</string>
+  <string name="home_setup_no_host">未设置控制器地址</string>
+  <string name="home_setup_no_lamps">没有灯具分配到屏幕区域</string>
+  <string name="home_setup_not_paired">%1$s 尚未配对</string>
+  <string name="home_setup_no_token">未设置 Home Assistant 令牌</string>
+
+  <!-- Connection errors of LED controllers and lights -->
+  <string name="error_device_unreachable">无法连接控制器。请检查其地址和电源，以及是否在同一网络上。</string>
+  <string name="error_device_connection_lost">与控制器的连接已断开，捕获已停止。</string>
+  <string name="error_lamps_unreachable">无法连接灯具。请检查它们是否通电并在同一网络上。</string>
+  <string name="error_lamps_connection_lost">与灯具的连接已断开，捕获已停止。</string>
+
+  <!-- WLED LED count check -->
+  <string name="devices_led_mismatch_title">LED 数量不一致</string>
+  <string name="devices_led_mismatch_text">WLED 中的 LED：%1$d，应用布局中：%2$d。数量不同时，灯带一部分会保持黑暗，或颜色落在错误位置。</string>
+  <string name="devices_led_mismatch_layout">设置布局</string>
+  <string name="devices_led_mismatch_later">暂不</string>
+
+  <!-- Local network access (Android 17) -->
+  <string name="error_local_network">无法访问本地网络。请在系统设置中允许应用的附近设备权限。</string>
+
+  <!-- Hue entertainment area -->
+  <string name="pref_title_hue_area">娱乐区域</string>
+  <string name="pref_summary_hue_area_none">不使用，灯具逐个获取颜色</string>
+  <string name="hue_area_none">灯具逐个</string>
+  <string name="hue_area_none_summary">每秒几次更新，区域在此选择</string>
+  <string name="hue_area_summary">每秒最多流式传输 25 次，位置来自 Hue 应用</string>
+  <string name="hue_area_hint">区域在 Hue 应用的娱乐区域中创建。网桥向其灯具流式传输颜色，每盏灯取屏幕周围其位置的颜色。</string>
+  <string name="hue_area_empty">网桥尚无娱乐区域。</string>
+  <string name="hue_area_no_key">网桥由旧版应用配对，没有流式传输密钥。请重新配对以使用区域。</string>
+  <string name="hue_area_repair">重新配对</string>
+  <string name="hue_area_error">无法获取区域：%1$s</string>
+  <string name="pref_summary_hue_area_lamps">灯具及其位置由 Hue 应用中的区域设定</string>
+  <string name="error_hue_no_clientkey">需要重新配对 Hue 网桥：娱乐区域需要流式传输密钥。打开设置 → 连接。</string>
+  <string name="home_setup_hue_repair">需要重新配对 Hue 网桥</string>
+  <string name="hue_area_loading">正在询问网桥…</string>
+
+  <!-- Zigbee2MQTT -->
+  <string name="output_z2m">Zigbee2MQTT</string>
+  <string name="output_z2m_summary">通过 MQTT 代理的 Zigbee 灯具</string>
+  <string name="pref_title_mqtt_username">MQTT 用户</string>
+  <string name="pref_summary_mqtt_no_login">无登录</string>
+  <string name="pref_title_mqtt_password">MQTT 密码</string>
+  <string name="pref_summary_mqtt_password_empty">未设置</string>
+  <string name="pref_summary_mqtt_password_set">已保存</string>
+  <string name="pref_title_z2m_base_topic">Zigbee2MQTT 基础主题</string>
+  <string name="lamps_hint_z2m">列表来自代理，Zigbee2MQTT 将其保存在那里。请检查代理地址、登录名和基础主题。</string>
+    <string name="remote_layout_test_unsupported_output">请在电视上选择可寻址 LED 输出</string>
+    <string name="remote_layout_test_no_device">电视未连接 USB 串口设备</string>
+    <string name="remote_layout_test_start_failed">无法在电视上启动 LED 布局测试</string>
+    <string name="remote_layout_test_timeout">等待电视上的 USB 权限超时</string>
+    <string name="remote_layout_test_denied">电视上的 USB 权限或 LED 测试启动被拒绝</string>
+    <string name="led_layout_direct_test">显示 LED 布局测试</string>
+    <string name="error_mstar_capture_stopped">MStar 硬件捕获已停止：%1$s</string>
+</resources>

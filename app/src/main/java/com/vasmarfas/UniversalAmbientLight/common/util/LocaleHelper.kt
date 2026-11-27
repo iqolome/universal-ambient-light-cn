@@ -37,8 +37,16 @@ object LocaleHelper {
         preferences.edit().putString("language", language).apply()
     }
 
+    private fun toLocale(language: String): Locale {
+        // Simplified Chinese needs a regional tag so values-zh-rCN is selected.
+        return when (language) {
+            "zh" -> Locale.forLanguageTag("zh-CN")
+            else -> Locale.forLanguageTag(language)
+        }
+    }
+
     private fun updateResources(context: Context, language: String): Context {
-        val locale = Locale(language)
+        val locale = toLocale(language)
         Locale.setDefault(locale)
 
         val configuration = Configuration(context.resources.configuration)

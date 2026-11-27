@@ -1,3 +1,920 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
+  <string-array name="pref_list_framerate">
+    <item>10 fps</item>
+    <item>15 fps</item>
+    <item>24 fps</item>
+    <item>30 fps</item>
+    <item>60 fps</item>
+  </string-array>
+  <string name="app_name">Universal Ambient Light</string>
+  <string name="pref_title">Paramètres</string>
+  <!-- notification button -->
+  <string name="notification_exit_button">Quitter</string>
+  <!-- Network scanner -->
+  <string name="scanner_retry_button">réessayer</string>
+  <string name="scanner_cancel">Annuler</string>
+  <!-- Network Scanner result -->
+  <!-- Connection settings -->
+  <string name="pref_group_connection">Connexion</string>
+  <string name="pref_title_host">Hôte</string>
+  <string name="pref_title_port">Port</string>
+  <string name="pref_title_led_start_corner">Coin de départ des LED</string>
+  <string name="pref_title_led_direction">Direction des LED</string>
+  <string name="pref_title_led_layout">Disposition des LED</string>
+  <string name="pref_summary_led_layout">Voir et modifier la disposition des LED à l\'écran</string>
+  <string name="led_layout_top_count_label">Nombre de LED en haut</string>
+  <string name="led_layout_right_count_label">Nombre de LED à droite</string>
+  <string name="led_layout_bottom_count_label">Nombre de LED en bas</string>
+  <string name="led_layout_left_count_label">Nombre de LED à gauche</string>
+  <string name="led_layout_total_leds">Total des LED : %1$d</string>
+  <string name="led_layout_active_sides">Côtés actifs</string>
+  <string name="led_layout_side_top">Haut</string>
+  <string name="led_layout_side_right">Droite</string>
+  <string name="led_layout_side_bottom">Bas</string>
+  <string name="led_layout_side_left">Gauche</string>
+  <string name="led_layout_bottom_gap_label">Écart bas (pour barre de son)</string>
+  <string name="led_layout_capture_margin_label">Marge de capture (%)</string>
+  <string name="led_layout_capture_margin_top_label">Marge de capture haut (%)</string>
+  <string name="led_layout_capture_margin_top_help">0–90 %. Décalage du bord supérieur par rapport à l\'écran.</string>
+  <string name="led_layout_capture_margin_right_label">Marge de capture droite (%)</string>
+  <string name="led_layout_capture_margin_right_help">0–90 %. Décalage du bord droit par rapport à l\'écran.</string>
+  <string name="led_layout_capture_margin_bottom_label">Marge de capture bas (%)</string>
+  <string name="led_layout_capture_margin_bottom_help">0–90 %. Décalage du bord inférieur par rapport à l\'écran.</string>
+  <string name="led_layout_capture_margin_left_label">Marge de capture gauche (%)</string>
+  <string name="led_layout_capture_margin_left_help">0–90 %. Décalage du bord gauche par rapport à l\'écran.</string>
+    <string name="led_layout_offset_label">Décalage LED (pas le long du périmètre)</string>
+    <string name="led_layout_offset_help">Positif – dans le sens de la disposition, négatif – dans le sens opposé.</string>
+    <string name="led_layout_scan_depth_label">Profondeur de scan (%)</string>
+    <string name="led_layout_scan_depth_help">Profondeur de la zone pour la moyenne des couleurs (1-50 %).</string>
+  <string name="led_layout_legend_title">Légende :</string>
+  <string name="led_layout_legend_first_led">LED n°1 (première)</string>
+  <string name="led_layout_legend_active_leds">LED actives</string>
+  <string name="led_layout_legend_disabled_leds">LED désactivées</string>
+  <string name="led_layout_legend_screen">Écran</string>
+  <string name="led_side_mode_on">Activé</string>
+  <string name="led_side_mode_off">Désactivé</string>
+  <string name="led_side_mode_none">Aucun</string>
+  <string name="led_direction_clockwise">Sens horaire</string>
+  <string name="led_direction_counterclockwise">Sens antihoraire</string>
+  <string name="led_corner_top_left">Haut gauche</string>
+  <string name="led_corner_top_right">Haut droite</string>
+  <string name="led_corner_bottom_right">Bas droite</string>
+  <string name="led_corner_bottom_left">Bas gauche</string>
+  <string name="action_back">Retour</string>
+  <string name="action_ok">OK</string>
+  <string name="action_cancel">Annuler</string>
+  <string name="action_close">Fermer</string>
+  <string name="action_copy">Copier</string>
+  <string name="action_reset">Réinitialiser</string>
+  <string name="home_effects">Effets</string>
+  <string name="home_toggle_power">Allumer / éteindre</string>
+  <string name="home_settings">Paramètres</string>
+  <string name="unit_ms">%1$d ms</string>
+  <string name="debug_info_title">Infos de débogage</string>
+  <string name="debug_info_copied">Copié dans le presse-papiers</string>
+  <string name="pref_category_debug">Débogage</string>
+  <string name="pref_title_device_info">Infos appareil</string>
+  <string name="pref_summary_device_info">Afficher les informations de l\'appareil pour le débogage</string>
+  <string name="rating_stars_desc">%1$d étoiles</string>
+  <string name="usb_service_unavailable">Le service USB n\'est pas disponible sur cet appareil</string>
+  <string name="usb_no_serial_devices">Aucun périphérique série USB trouvé. Connectez votre appareil via USB OTG</string>
+  <string name="usb_permission_denied_toast">Autorisation USB refusée. Veuillez autoriser l\'accès USB.</string>
+  <string name="usb_permission_prompt">Confirmer l\'accès au périphérique USB</string>
+  <string name="usb_permission_no_dialog">Le système n\'a pas affiché la demande d\'accès USB, et sans elle l\'application ne peut pas ouvrir le contrôleur. C\'est une limitation du micrologiciel : utilisez plutôt un contrôleur réseau comme WLED</string>
+  <string name="pref_title_priority">Priorité des messages</string>
+  <string name="pref_title_reconnect">Reconnexion</string>
+  <string name="pref_title_reconnect_delay">Délai de reconnexion</string>
+  <string name="pref_title_standby_keepalive">Continuer en veille</string>
+  <string name="pref_summary_standby_keepalive">Continuer à envoyer des données aux LED pendant que l\'écran du téléviseur est éteint. Si désactivé, l\'application éteint les LED et reste silencieuse en veille, puis reprend lorsque l\'écran se rallume</string>
+  <!-- Capture source -->
+  <string name="pref_title_capture_source">Source de capture</string>
+  <string-array name="pref_list_capture_source">
+    <item>Écran</item>
+    <item>Caméra</item>
+    <item>Effet (sans capture)</item>
+  </string-array>
+  <string-array name="pref_list_capture_source_values">
+    <item>screen</item>
+    <item>camera</item>
+    <item>effect</item>
+  </string-array>
+  <string name="pref_title_camera_setup">Réglage des coins de la caméra</string>
+  <string name="pref_summary_camera_setup">Ajustez les 4 coins pour correspondre à l\'écran du téléviseur dans la vue caméra</string>
+  <string name="camera_setup_title">Réglage de la caméra</string>
+  <string name="camera_setup_instruction">Faites glisser les 4 coins pour correspondre aux bords de l\'écran du téléviseur</string>
+  <string name="camera_auto_frame_button">Trouver le téléviseur</string>
+  <string name="camera_auto_frame_not_found">Écran du téléviseur introuvable — coins inchangés</string>
+  <string name="camera_auto_frame_too_dark">Trop sombre pour trouver l\'écran — allumez le téléviseur et réessayez</string>
+  <string name="camera_auto_frame_no_screen">Rien en forme d\'écran dans le cadre — pointez la caméra vers le téléviseur</string>
+  <string name="camera_auto_frame_no_frames">La caméra n\'a fourni aucune image</string>
+  <string name="camera_setup_save">Enregistrer</string>
+  <string name="camera_setup_reset">Réinitialiser</string>
+  <string name="camera_permission_required">L\'autorisation caméra est requise pour le mode de capture par caméra</string>
+  <string name="camera_grant_permission">Accorder l\'autorisation</string>
+  <string name="camera_capturing_status">La caméra capture…</string>
+  <!-- Capture Method -->
+  <string name="pref_title_capture_method">Méthode de capture</string>
+  <string-array name="pref_list_capture_method">
+    <item>MediaProjection (Standard)</item>
+    <item>Scrcpy (ADB, ~30ms) ★★★★★</item>
+    <item>ADB Stream (H.264, ~50ms)</item>
+    <item>Screencap (Shell / ADB)</item>
+    <item>Screencap (Root)</item>
+    <item>ADB (Screenshot, ~200ms)</item>
+    <item>Accessibility (Android 11+)</item>
+    <item>MTK Hardware Capture (Root)</item>
+    <item>MStar VSS Hardware Capture (Root)</item>
+  </string-array>
+  <string-array name="pref_list_capture_method_values">
+    <item>media_projection</item>
+    <item>scrcpy</item>
+    <item>adb_stream</item>
+    <item>screencap_shell</item>
+    <item>screencap_root</item>
+    <item>adb_local</item>
+    <item>accessibility</item>
+    <item>mtk_thal_capture</item>
+    <item>mstar_vss_capture</item>
+  </string-array>
+
+  <string name="pref_title_adb_port">Port ADB</string>
+  <string name="pref_btn_adb_pair">Tester la connexion ADB</string>
+  <string name="pref_summary_adb_pair">Vérifier la connexion et autoriser la clé sur le téléviseur</string>
+  <string name="adb_pair_title">Autorisation ADB</string>
+  <string name="adb_pair_instruction">Lors de la première connexion, le téléviseur affichera une boîte de dialogue « Autoriser le débogage sans fil ? » — appuyez sur Autoriser sur l\'écran du téléviseur. Assurez-vous que le débogage sans fil est activé dans les options pour les développeurs.</string>
+  <string name="error_adb_pairing_required">Appariement ADB requis. Ouvrez Paramètres → Méthode de capture → Tester la connexion ADB → Appairer avec un code.</string>
+  <string name="adb_pair_code_title">Appairer avec un code (Android 11+, une seule fois)</string>
+  <string name="adb_pair_code_hint">Code d\'appariement à 6 chiffres</string>
+  <string name="adb_pair_port_hint">Port d\'appariement (depuis cet écran)</string>
+  <string name="adb_pair_code_instruction">Solution manuelle : ouvrez Débogage sans fil → « Appairer l\'appareil avec un code d\'appariement » et saisissez le PORT et le CODE à 6 chiffres affichés. Le bouton automatique ci-dessus est plus simple — il lit le code lui-même et appairé sans quitter cet écran.</string>
+  <string name="adb_autopair_btn">Appairer automatiquement (Accessibilité)</string>
+  <string name="adb_autopair_waiting">Activez le débogage sans fil si nécessaire — l\'application l\'ouvrira, puis lira le code et appairera toute seule.</string>
+  <string name="adb_autopair_need_accessibility">Activez l\'accessibilité pour cette application sur l\'écran suivant, puis appuyez à nouveau sur « Appairer automatiquement ».</string>
+  <string name="adb_enable_accessibility_toast">Trouvez « %1$s » dans la liste, ouvrez-le et activez-le — puis revenez et appuyez sur « Appairer automatiquement ».</string>
+  <string name="adb_autopair_consent_title">Appariement automatique — veuillez confirmer</string>
+  <string name="adb_autopair_consent_text">Pour capturer l\'écran, l\'application se connecte à l\'ADB de cet appareil via localhost (127.0.0.1). Avec votre permission, elle va : ouvrir le débogage sans fil, lire le code d\'appariement unique à 6 chiffres affiché sur cet écran à l\'aide du service d\'accessibilité, et appuyer pour vous sur l\'option « Appairer l\'appareil avec un code d\'appariement ». Elle se connecte uniquement en local, ne modifie aucun autre paramètre et n\'envoie rien hors de l\'appareil. Continuer ?</string>
+  <string name="adb_autopair_consent_continue">Continuer</string>
+  <string name="adb_autopair_timeout">Délai dépassé. Assurez-vous que le débogage sans fil est ACTIVÉ, puis appuyez à nouveau sur « Appairer automatiquement ».</string>
+  <string name="adb_pair_manual_label">Saisir manuellement</string>
+  <string name="adb_pair_btn">Appairer</string>
+  <string name="adb_pairing">Appariement…</string>
+  <string name="adb_pair_success">Appairé ! Appuyez maintenant sur Tester la connexion ADB.</string>
+  <string name="adb_pair_failed">Échec de l\'appariement : %1$s</string>
+  <string name="adb_test_success">Connecté ! Clé ADB autorisée.</string>
+  <string name="adb_test_failed">Échec de la connexion : %s\n\nAssurez-vous que le débogage sans fil est activé et acceptez la boîte de dialogue sur le téléviseur.</string>
+  <string name="adb_status_label">Options pour les développeurs : %1$s\nADB : %2$s</string>
+  <string name="adb_legacy_title">Android 10 et versions antérieures</string>
+  <string name="adb_legacy_btn">Connecter (ancien, sans appariement)</string>
+  <string name="adb_status_on">ACTIVÉ</string>
+  <string name="adb_status_off">DÉSACTIVÉ</string>
+  <string name="adb_btn_open_dev_options">Ouvrir les options pour les développeurs</string>
+  <string name="adb_btn_how_to_enable_dev_options">Comment activer les options pour les développeurs</string>
+  <string name="adb_btn_open_wireless_debug">Ouvrir le débogage sans fil</string>
+  <string name="adb_toast_dev_options_help">Activez d\'abord les options pour les développeurs : Paramètres → À propos du téléphone → appuyez 7 fois sur Numéro de build</string>
+  <string name="adb_toast_cannot_open_dev">Impossible d\'ouvrir les options pour les développeurs sur cet appareil</string>
+  <string name="adb_toast_cannot_open_wireless">Impossible d\'ouvrir le débogage sans fil sur cet appareil</string>
+
+  <!-- Capturing settings -->
+  <string name="pref_group_capturing">Capture</string>
+  <string name="pref_title_framerate">Fréquence de capture</string>
+  <string name="pref_title_capture_quality">Qualité de capture</string>
+  <string name="pref_title_color_brightness">Luminosité</string>
+  <string name="pref_title_color_contrast">Contraste</string>
+  <string name="pref_title_color_black_level">Niveau de noir</string>
+  <string name="pref_title_color_white_level">Niveau de blanc</string>
+  <string name="pref_title_color_saturation">Saturation</string>
+  <string name="pref_title_color_processing_enabled">Traitement des couleurs</string>
+  <string name="pref_group_color_per_channel">Correction par canal (R/V/B)</string>
+  <string name="pref_title_color_brightness_r">Luminosité rouge</string>
+  <string name="pref_title_color_brightness_g">Luminosité verte</string>
+  <string name="pref_title_color_brightness_b">Luminosité bleue</string>
+  <string name="pref_title_color_gamma_r">Gamma rouge</string>
+  <string name="pref_title_color_gamma_g">Gamma vert</string>
+  <string name="pref_summary_color_gamma">Un gamma inférieur à 100 % assombrit les tons moyens : les couleurs deviennent plus riches, et le gris foncé, y compris les barres noires d\'une vidéo, cesse de briller. 45 % équivaut à un gamma 2.2, un bon départ pour une bande LED aux couleurs délavées. Au-dessus de 100 %, les tons moyens s\'éclaircissent.</string>
+  <string name="pref_title_color_gamma_b">Gamma bleu</string>
+  <string name="pref_color_preview_title">Aperçu (après traitement des couleurs)</string>
+  <string name="pref_color_preview_hint">Reflète ce qui sera envoyé à la bande LED. Les animations de l\'écran d\'accueil n\'utilisent PAS ces réglages.</string>
+  <string name="pref_group_border_detection">Détection des barres noires (letterbox)</string>
+  <string name="pref_title_border_detection_enabled">Détecter automatiquement le letterbox</string>
+  <string name="pref_summary_border_detection_enabled">Ignorer les barres noires autour de l\'image (fonctionne pour le contenu 16:9, 1.85:1, 2.39:1). Désactivé par défaut.</string>
+  <string name="pref_title_border_threshold">Seuil de noir (RVB 0–64)</string>
+  <string name="pref_title_border_check_interval">Intervalle de détection (images)</string>
+  <string name="pref_title_border_ignore_subtitles">Ignorer les sous-titres dans la barre inférieure</string>
+  <string name="pref_summary_border_ignore_subtitles">Prend la hauteur de barre depuis le bord supérieur et ne vérifie que les coins en bas, afin que les sous-titres dans la barre ne réduisent pas le recadrage. Les scènes sombres conservent le recadrage. Les sous-titres sur l\'image atteignent toujours les LED.</string>
+  <string name="pref_group_camera_idle">Mode veille de la caméra</string>
+  <string name="pref_title_camera_idle_enabled">Activer le mode veille</string>
+  <string name="pref_summary_camera_idle_enabled">La capture par caméra ne reçoit aucun signal de veille du téléviseur, donc un écran éteint continue d\'envoyer le bruit du capteur à la bande. Une fois activé, les LED s\'éteignent lorsque l\'image devient noire, et la transmission des images est suspendue jusqu\'au retour de l\'image. Désactivé par défaut.</string>
+  <string name="pref_title_camera_idle_timeout">Délai de veille (secondes)</string>
+  <string name="pref_title_camera_idle_dark_level">Seuil d\'écran noir (0–96)</string>
+  <string name="pref_title_camera_idle_motion_level">Seuil de sensibilité au mouvement (1–64)</string>
+  <string name="pref_title_camera_idle_static">Veille sur une image fixe</string>
+  <string name="pref_summary_camera_idle_static">Une fois activé, la transmission des images est aussi suspendue si l\'image cesse de changer (par ex. une vidéo en pause ou un menu fixe) ; la bande conserve ses dernières couleurs affichées. Désactivé par défaut, car une scène fixe prolongée figera les couleurs de la bande.</string>
+  <string name="unit_rgb">RVB</string>
+  <string name="unit_frames">images</string>
+  <string name="unit_seconds">s</string>
+  <string-array name="pref_list_capture_quality">
+    <item>Faible (64px)</item>
+    <item>Moyenne (128px)</item>
+    <item>Élevée (256px)</item>
+    <item>Ultra (512px)</item>
+    <item>720p (instable)</item>
+    <item>1080p (instable)</item>
+    <item>1440p (instable)</item>
+    <item>2160p (instable)</item>
+  </string-array>
+  <string-array name="pref_list_capture_quality_values">
+    <item>64</item>
+    <item>128</item>
+    <item>256</item>
+    <item>512</item>
+    <item>720</item>
+    <item>1080</item>
+    <item>1440</item>
+    <item>2160</item>
+  </string-array>
+  <!-- General settings -->
+  <string name="pref_group_general">Général</string>
+  <string name="pref_title_boot">Capturer au démarrage</string>
+  <string name="pref_title_language">Langue</string>
+  <string name="pref_title_reset_picture">Réinitialiser les réglages d\'image</string>
+  <string name="pref_summary_reset_picture">La fréquence et la qualité de capture, la correction des couleurs, le lissage et le recadrage des barres noires reviennent à leurs valeurs par défaut. La connexion, la disposition des LED et le calibrage de la caméra restent inchangés</string>
+  <string name="pref_title_backup_save">Enregistrer les paramètres dans un fichier</string>
+  <string name="pref_summary_backup_save">Tous les paramètres sauf l\'appariement avec le téléphone. Les jetons et mots de passe de vos lumières sont stockés dans le fichier en texte clair</string>
+  <string name="pref_title_backup_restore">Restaurer les paramètres depuis un fichier</string>
+  <string name="pref_summary_backup_restore">Remplace tous les paramètres actuels. Sur un téléviseur, cela nécessite un gestionnaire de fichiers, ou faites-le depuis la télécommande du téléphone</string>
+  <string name="backup_saved">Paramètres enregistrés : %1$s</string>
+  <string name="backup_save_failed">Impossible d\'enregistrer le fichier</string>
+  <string name="backup_restored">Paramètres restaurés</string>
+  <string name="backup_restored_without_method">Paramètres restaurés. La méthode de capture du fichier n\'est pas disponible ici, la méthode actuelle est conservée</string>
+  <string name="backup_read_failed">Impossible de lire les paramètres de ce fichier</string>
+  <string name="backup_no_picker">Aucun gestionnaire de fichiers trouvé sur cet appareil</string>
+  <string name="pref_key_language">language</string>
+  <string-array name="pref_list_language">
+    <item>Par défaut</item>
+    <item>简体中文</item>
+    <item>English</item>
+    <item>日本語</item>
+    <item>한국어</item>
+    <item>Русский</item>
+    <item>Español</item>
+    <item>Français</item>
+  </string-array>
+  <string-array name="pref_list_language_values">
+    <item>default</item>
+    <item>zh</item>
+    <item>en</item>
+    <item>ja</item>
+    <item>ko</item>
+    <item>ru</item>
+    <item>es</item>
+    <item>fr</item>
+  </string-array>
+
+  <string name="error_empty_host">L\'adresse du serveur n\'est pas définie. Ouvrez Paramètres → Connexion → Hôte et saisissez l\'IP de votre appareil Hyperion/HyperHDR/WLED, ou utilisez Scanner le réseau</string>
+  <string name="error_empty_port">Le port n\'est pas défini. Ouvrez Paramètres → Connexion → Port (19400 pour Hyperion, 4048 pour WLED/DDP)</string>
+  <string name="error_invalid_port">Port invalide : %1$d. Il doit être entre 1 et 65535</string>
+  <string name="setup_required_title">Configuration requise</string>
+  <string name="setup_required_open_settings">Ouvrir les paramètres</string>
+  <string name="setup_required_cancel">Annuler</string>
+  <string name="error_invalid_led_counts">Le nombre total de LED est 0 — définissez le nombre de LED par côté dans Paramètres → Disposition des LED</string>
+  <string name="error_server_unreachable">Impossible de se connecter au serveur hyperion. Vérifiez vos paramètres et assurez-vous que hyperion est en cours d\'exécution</string>
+  <string name="error_adalight_unreachable">Impossible de se connecter à l\'appareil Adalight. Assurez-vous : 1) L\'appareil est connecté via un câble USB OTG, 2) L\'autorisation USB est accordée lorsque demandée, 3) Le débit en bauds correct est défini dans les paramètres</string>
+  <string name="error_connection_lost">La connexion à votre serveur hyperion a été perdue, arrêt du grabber</string>
+  <string name="error_adalight_connection_lost">La connexion à votre appareil Adalight a été perdue, arrêt du grabber</string>
+  <string name="error_media_projection_denied">L\'autorisation d\'enregistrement d\'écran a été refusée. Veuillez l\'accorder lorsque demandée</string>
+  <string name="error_screen_recording_not_available">L\'enregistrement d\'écran n\'est pas disponible sur cet appareil</string>
+  <string name="url_dialog_title">Ouvrir le lien</string>
+  <string name="url_dialog_message">Scannez le code QR ou copiez le lien ci-dessous pour l\'ouvrir dans un navigateur :</string>
+  <string name="url_dialog_qr_description">Code QR pour le lien</string>
+  <string name="url_dialog_open_link">Ouvrir le lien</string>
+  <string name="help_readme_url">https://github.com/vasmarfas/universal-ambient-light/blob/master/README.md</string>
+  <string name="support_url">https://github.com/vasmarfas/universal-ambient-light/blob/master/SUPPORT.md</string>
+  <string name="chat_url" translatable="false">https://t.me/vasmarfas_chat</string>
+  <string name="notification_channel_label">Notifications Universal Ambient Light</string>
+  <string name="notification_description">Capture du contenu de l\'écran en cours</string>
+  <string name="pref_title_use_avg_color">Envoyer la couleur moyenne de l\'écran</string>
+  <string name="pref_title_adalight_baudrate">Débit en bauds Adalight</string>
+  <string-array name="pref_list_adalight_baudrate">
+    <item>9600</item>
+    <item>19200</item>
+    <item>38400</item>
+    <item>57600</item>
+    <item>115200 (recommandé)</item>
+    <item>230400</item>
+    <item>250000</item>
+    <item>500000</item>
+    <item>921600</item>
+    <item>1000000</item>
+    <item>2000000</item>
+  </string-array>
+  <string-array name="pref_list_adalight_baudrate_values" translatable="false">
+    <item>9600</item>
+    <item>19200</item>
+    <item>38400</item>
+    <item>57600</item>
+    <item>115200</item>
+    <item>230400</item>
+    <item>250000</item>
+    <item>500000</item>
+    <item>921600</item>
+    <item>1000000</item>
+    <item>2000000</item>
+  </string-array>
+  <string name="pref_title_wled_color_order">Ordre des couleurs WLED</string>
+  <string-array name="pref_list_wled_color_order">
+    <item>RGB</item>
+    <item>GRB</item>
+    <item>BRG</item>
+    <item>RBG</item>
+    <item>GBR</item>
+    <item>BGR</item>
+  </string-array>
+  <string-array name="pref_list_wled_color_order_values">
+    <item>rgb</item>
+    <item>grb</item>
+    <item>brg</item>
+    <item>rbg</item>
+    <item>gbr</item>
+    <item>bgr</item>
+    </string-array>
+  
+  <!-- Smoothing settings -->
+  <string name="pref_group_smoothing">Lissage</string>
+  <string name="pref_title_smoothing_enabled">Activer le lissage</string>
+  <string name="pref_title_smoothing_preset">Préréglage de lissage</string>
+  <string-array name="pref_list_smoothing_preset">
+    <item>Désactivé</item>
+    <item>Réactif</item>
+    <item>Équilibré</item>
+    <item>Fluide</item>
+  </string-array>
+  <string-array name="pref_list_smoothing_preset_values">
+    <item>off</item>
+    <item>responsive</item>
+    <item>balanced</item>
+    <item>smooth</item>
+  </string-array>
+  <string name="pref_title_settling_time">Temps de stabilisation (ms)</string>
+  <string name="pref_title_output_delay">Délai de sortie (ms)</string>
+  <string name="pref_title_update_frequency">Fréquence de mise à jour</string>
+  <string-array name="pref_list_update_frequency">
+    <item>20 Hz</item>
+    <item>25 Hz</item>
+    <item>30 Hz</item>
+    <item>40 Hz</item>
+    <item>50 Hz</item>
+    <item>60 Hz</item>
+  </string-array>
+  <string-array name="pref_list_update_frequency_values">
+    <item>20</item>
+    <item>25</item>
+    <item>30</item>
+    <item>40</item>
+    <item>50</item>
+    <item>60</item>
+  </string-array>
+  
+  <!-- WLED advanced settings -->
+  <string name="pref_title_wled_protocol">Protocole WLED</string>
+  <string-array name="pref_list_wled_protocol">
+    <item>UDP Raw (port 19446)</item>
+    <item>DDP (port 4048)</item>
+  </string-array>
+  <string-array name="pref_list_wled_protocol_values">
+    <item>udp_raw</item>
+    <item>ddp</item>
+  </string-array>
+  <string name="pref_title_wled_rgbw">WLED RGBW</string>
+  <string name="pref_summary_wled_rgbw_raw">Ignoré sur le port 19446 : il n\'a pas de canal blanc. Utilisez DDP pour les bandes RGBW</string>
+  <string name="pref_summary_wled_rgbw_white_mode">Nécessite une bande RGBW dans WLED avec le calcul du blanc réglé sur Manuel uniquement ou Dual — les modes auto recalculent le blanc et le laissent sombre</string>
+  <string name="pref_title_wled_brightness">Luminosité WLED</string>
+  <string name="pref_summary_wled_brightness_max">255 — les couleurs sont envoyées inchangées</string>
+  <!-- Home Assistant -->
+  <string name="pref_title_ha_token">Jeton d\'accès</string>
+  <string name="pref_summary_ha_token_empty">Jeton longue durée depuis votre profil Home Assistant → Sécurité</string>
+  <string name="pref_summary_ha_token_set">Jeton enregistré</string>
+  <string name="pref_title_ha_lamps">Lumières et zones</string>
+  <string name="pref_summary_ha_lamps_empty">Aucune lumière configurée</string>
+  <string name="pref_summary_ha_lamps_count">Lumières configurées : %1$d</string>
+  <string name="pref_title_ha_update_interval">Fréquence de mise à jour</string>
+  <string-array name="pref_list_ha_update_interval">
+    <item>10 par seconde (100 ms)</item>
+    <item>150 ms</item>
+    <item>4 par seconde (250 ms)</item>
+    <item>2 par seconde (500 ms)</item>
+    <item>1 par seconde</item>
+    <item>Toutes les 2 secondes</item>
+    <item>Toutes les 5 secondes</item>
+  </string-array>
+  <string-array name="pref_list_ha_update_interval_values" translatable="false">
+    <item>100</item>
+    <item>150</item>
+    <item>250</item>
+    <item>500</item>
+    <item>1000</item>
+    <item>2000</item>
+    <item>5000</item>
+  </string-array>
+  <string name="pref_title_ha_change_threshold">Seuil de changement de couleur</string>
+  <string name="pref_summary_ha_change_threshold">0–255. Une mise à jour n\'est envoyée que lorsque la couleur de la zone change au moins autant</string>
+  <string name="pref_title_ha_transition">Transition</string>
+  <string-array name="pref_list_ha_transition">
+    <item>Désactivé</item>
+    <item>150 ms</item>
+    <item>300 ms</item>
+    <item>500 ms</item>
+    <item>1 seconde</item>
+    <item>2 secondes</item>
+  </string-array>
+  <string-array name="pref_list_ha_transition_values" translatable="false">
+    <item>0</item>
+    <item>150</item>
+    <item>300</item>
+    <item>500</item>
+    <item>1000</item>
+    <item>2000</item>
+  </string-array>
+  <string name="pref_title_ha_brightness_mode">Luminosité</string>
+  <string-array name="pref_list_ha_brightness_mode">
+    <item>Suit l\'image</item>
+    <item>Ne pas changer</item>
+  </string-array>
+  <string-array name="pref_list_ha_brightness_mode_values" translatable="false">
+    <item>screen</item>
+    <item>keep</item>
+  </string-array>
+  <string name="pref_title_ha_brightness">Limite de luminosité</string>
+  <string name="pref_summary_ha_brightness_max">255 — luminosité maximale de la lampe</string>
+  <string name="pref_title_ha_dark_off">Éteindre sur les scènes sombres</string>
+  <string name="pref_summary_ha_dark_off">Les lumières s\'éteignent lorsque la zone devient plus sombre que le seuil et se rallument avec l\'image</string>
+  <string name="pref_title_ha_dark_threshold">Seuil de sombre</string>
+  <string name="pref_title_ha_turn_off_lights">Éteindre les lumières à l\'arrêt</string>
+  <string name="pref_summary_ha_turn_off_lights">Éteint les lumières lorsque la capture s\'arrête ou que l\'écran du téléviseur s\'éteint</string>
+  <string name="ha_lamps_dialog_title">Lumières Home Assistant</string>
+  <string name="ha_lamps_loading">Chargement des lumières…</string>
+  <string name="ha_lamps_error">Impossible d\'atteindre Home Assistant : %1$s</string>
+  <string name="ha_lamps_empty">Aucune lumière trouvée</string>
+  <string name="ha_lamps_hint">Définissez d\'abord l\'hôte et le jeton d\'accès, puis choisissez une zone pour chaque lumière</string>
+  <string name="ha_zone_none">Non utilisé</string>
+  <string name="ha_zone_average">Couleur moyenne de l\'écran</string>
+  <string name="ha_zone_left">Bord gauche</string>
+  <string name="ha_zone_right">Bord droit</string>
+  <string name="ha_zone_top">Bord supérieur</string>
+  <string name="ha_zone_bottom">Bord inférieur</string>
+  <string name="ha_zone_top_left">Coin haut gauche</string>
+  <string name="ha_zone_top_right">Coin haut droite</string>
+  <string name="ha_zone_bottom_left">Coin bas gauche</string>
+  <string name="ha_zone_bottom_right">Coin bas droite</string>
+  <string name="ha_lamps_lamp_missing">Non visible sur ce Home Assistant pour le moment</string>
+  <string name="action_save">Enregistrer</string>
+  <string name="error_ha_token_missing">Le jeton d\'accès Home Assistant n\'est pas défini. Ouvrez Paramètres → Connexion → Jeton d\'accès</string>
+  <string name="error_ha_no_lamps">Aucune lumière Home Assistant n\'est assignée à des zones. Ouvrez Paramètres → Connexion → Lumières et zones</string>
+
+  <!-- Second, additional Home Assistant output -->
+
+  <!-- Adalight advanced settings -->
+  <string name="pref_title_adalight_protocol">Protocole Adalight</string>
+  <string-array name="pref_list_adalight_protocol">
+    <item>ADA (Standard)</item>
+    <item>LBAPA (LightBerry APA102)</item>
+    <item>AWA (Hyperserial)</item>
+    <item>tpm2</item>
+    <item>Skydimo</item>
+    <item>SEDU</item>
+    <item>KarateLight</item>
+    <item>AtmoLight</item>
+    <item>SP616E</item>
+  </string-array>
+  <string-array name="pref_list_adalight_protocol_values">
+    <item>ada</item>
+    <item>lbapa</item>
+    <item>awa</item>
+    <item>tpm2</item>
+    <item>skydimo</item>
+    <item>sedu</item>
+    <item>karate</item>
+    <item>atmo</item>
+    <item>sp616e</item>
+  </string-array>
+
+  <!-- App Specific Strings -->
+  <string name="toggle_activity_label">Universal Ambient Light (Basculer)</string>
+  <string name="quick_tile_label">Universal Ambient Light</string>
+  <string name="status_grabber_running">Le service d\'éclairage ambiant est en cours d\'exécution</string>
+  <string name="help">Aide</string>
+  <string name="support_project">Soutenir le projet</string>
+  <string name="help_title">Comment utiliser</string>
+  <string name="help_message">Avant d\'utiliser cette application, vous devez configurer votre contrôleur LED :\n\n• WLED : configurez le micrologiciel WLED sur votre appareil ESP8266/ESP32\n• Adalight : connectez un Arduino avec le micrologiciel Adalight via USB\n• Hyperion : installez et configurez un serveur Hyperion\n\nPour des instructions détaillées, veuillez consulter le dépôt GitHub.</string>
+  <string name="help_open_github">Ouvrir GitHub</string>
+  <string name="help_open_chat">Chat Telegram</string>
+  <string name="help_close">Fermer</string>
+  <string name="support_project_title">Soutenir le projet</string>
+  <string name="support_project_message">Merci de votre intérêt pour soutenir ce projet !\n\nVous pouvez soutenir le développement via :\n• Boosty\n• Cryptomonnaie (TON)\n• Laisser un avis sur Google Play\n\nCliquez ci-dessous pour voir toutes les options disponibles.</string>
+  <string name="support_open_details">Voir les détails</string>
+  <string name="report_issue">Signaler un problème</string>
+  <string name="leave_review">Laisser un avis</string>
+  <string name="rating_dialog_title">Noter Universal Ambient Light</string>
+  <string name="rating_dialog_message">Comment évalueriez-vous votre expérience ?</string>
+  <string name="rating_dialog_low_rating_title">Nous sommes désolés de l\'apprendre</string>
+  <string name="rating_dialog_low_rating_message">Si vous avez rencontré des problèmes, veuillez nous en informer en les signalant sur GitHub. Vos retours nous aident à améliorer l\'application.</string>
+  <string name="rating_dialog_report_issue">Signaler un problème</string>
+  <string name="rating_dialog_cancel">Annuler</string>
+  <string name="github_issues_url">https://github.com/vasmarfas/universal-ambient-light/issues</string>
+  <string name="accessibility_service_description">Permet à Universal Ambient Light de capturer l\'écran pour l\'éclairage ambiant et d\'appuyer sur les boutons du téléviseur sur commande d\'un téléphone appairé.</string>
+  <string name="accessibility_enable_prompt">Veuillez activer le service d\'accessibilité pour Universal Ambient Light</string>
+  <string name="accessibility_disclosure_title">Autorisation d\'accessibilité requise</string>
+  <string name="accessibility_disclosure_message">Cette application utilise l\'API AccessibilityService pour capturer le contenu de l\'écran. Cela est nécessaire pour analyser les couleurs de votre écran et les synchroniser avec vos lumières d\'ambiance (Ambilight) en temps réel.\n\nLes données de l\'écran sont traitées localement sur votre appareil, ne sont jamais enregistrées et ne sont jamais transmises à des serveurs tiers.\n\nSi vous n\'êtes pas d\'accord, vous ne pouvez pas utiliser ce mode de capture.</string>
+  <string name="accessibility_disclosure_button_deny">Refuser</string>
+  <string name="accessibility_disclosure_button_accept">Accepter et continuer</string>
+
+  <!-- Remote control, autostart, TV controls -->
+  <string name="number_input_range">De %1$d à %2$d</string>
+  <string name="action_decrease">Diminuer</string>
+  <string name="action_increase">Augmenter</string>
+  <string name="home_status_error">L\'éclairage est éteint à cause d\'une erreur</string>
+  <string name="home_status_starting">Démarrage…</string>
+  <string name="home_status_stopped">L\'éclairage est éteint</string>
+  <string name="home_target_no_host">adresse non définie</string>
+  <string name="pref_summary_boot">Rallumer l\'éclairage après le démarrage du téléviseur, sa sortie de veille ou la mise à jour de l\'application, s\'il était allumé auparavant</string>
+  <string name="autostart_permissions_ok">Accordées : l\'éclairage revient tout seul, sans boîtes de dialogue</string>
+  <string name="autostart_permissions_missing">Non accordées : après la veille, le téléviseur peut demander de confirmer la capture d\'écran. Ouvrez pour les accorder via ADB</string>
+  <string name="adb_grant_title">Autorisations de démarrage automatique</string>
+  <string name="adb_grant_description">Utilise ADB une fois pour autoriser la capture d\'écran sans boîte de confirmation, les fenêtres au-dessus des autres applications et le travail en arrière-plan sans restriction. Sans elles, Android 10+ ne peut pas ramener l\'éclairage tout seul après la sortie de veille ou le redémarrage du téléviseur. L\'accès à l\'utilisation est inclus : avec lui, l\'éclairage sait quelle application est à l\'écran et utilise le délai par application.</string>
+  <string name="adb_grant_btn">Accorder via ADB</string>
+  <string name="adb_grant_success">Terminé : capture d\'écran sans confirmation, fenêtres au-dessus des autres applications et travail en arrière-plan autorisés.</string>
+  <string name="adb_grant_partial">Non appliqué : %1$s. Ce micrologiciel peut ne pas le prendre en charge.</string>
+  <string name="adb_grant_failed">Impossible d\'accorder les autorisations : %1$s</string>
+  <string name="adb_pair_port_not_found">Port d\'appariement introuvable. Ouvrez « Appairer l\'appareil avec un code d\'appariement » et laissez cet écran ouvert.</string>
+  <string name="pref_group_remote">Télécommande</string>
+  <string name="remote_host_title">Contrôle depuis un téléphone</string>
+  <string name="remote_host_summary">Afficher un code QR pour contrôler ce téléviseur depuis un téléphone</string>
+  <string name="remote_host_instructions">Sur le téléphone, ouvrez Universal Ambient Light → Télécommande TV → Scanner le code QR. Le téléphone et le téléviseur doivent être sur le même réseau.</string>
+  <string name="remote_host_disabled">Le contrôle depuis un téléphone est désactivé</string>
+  <string name="remote_host_no_network">Le téléviseur n\'est pas connecté à un réseau</string>
+  <string name="remote_host_blocked">Le micrologiciel du téléviseur ne permet pas au service de fonctionner en arrière-plan, donc un téléphone ne peut pas se connecter. Accordez les autorisations de démarrage automatique dans Paramètres, Général</string>
+  <string name="remote_host_no_clients">Aucun téléphone connecté</string>
+  <string name="remote_host_clients">Connectés : %1$s</string>
+  <string name="remote_host_enable">Autoriser le contrôle depuis un téléphone</string>
+  <string name="remote_host_enable_summary">Un service en arrière-plan reste actif pour que le téléphone puisse allumer l\'éclairage à tout moment</string>
+  <string name="remote_host_reset_code">Changer le code d\'appariement</string>
+  <string name="remote_host_reset_code_summary">Les téléphones appairés perdent l\'accès jusqu\'à ce qu\'ils scannent le nouveau code QR</string>
+  <string name="remote_host_reset_confirm">Tous les téléphones appairés seront déconnectés et devront scanner le nouveau code QR. Continuer ?</string>
+  <string name="remote_host_qr_description">Code QR d\'appariement</string>
+  <string name="remote_host_name">TV</string>
+  <string name="remote_host_address">Adresse</string>
+  <string name="remote_host_code">Code</string>
+  <string name="remote_tvs_title">Télécommande TV</string>
+  <string name="remote_tvs_summary">Contrôler l\'éclairage d\'un téléviseur depuis ce téléphone</string>
+  <string name="remote_tvs_intro">Sur le téléviseur, ouvrez l\'application et allez dans « Contrôle depuis un téléphone » : un code QR et un code pour la saisie manuelle s\'affichent.</string>
+  <string name="remote_tvs_scan">Scanner le code QR</string>
+  <string name="remote_tvs_manual">Saisir le code manuellement</string>
+  <string name="remote_tvs_connecting">Connexion au téléviseur…</string>
+  <string name="remote_tvs_paired">Téléviseurs appairés</string>
+  <string name="remote_tvs_active">Sous contrôle</string>
+  <string name="remote_tvs_online">Sur le réseau</string>
+  <string name="remote_tvs_found">Trouvés sur le réseau</string>
+  <string name="remote_tvs_refresh">Rechercher à nouveau</string>
+  <string name="remote_tvs_none_found">Aucun téléviseur trouvé. Ouvrez « Contrôle depuis un téléphone » sur le téléviseur.</string>
+  <string name="remote_tvs_forget">Oublier</string>
+  <string name="remote_tvs_forget_confirm">Le téléphone oubliera ce téléviseur. Pour le contrôler à nouveau, scannez son code QR.</string>
+  <string name="remote_tvs_connect">Connecter</string>
+  <string name="remote_scan_hint">Pointez la caméra vers le code QR sur l\'écran du téléviseur</string>
+  <string name="remote_manual_hint">L\'adresse et le code sont affichés sur le téléviseur sous le code QR.</string>
+  <string name="remote_banner_title">TV : %1$s</string>
+  <string name="remote_banner_connected">Connecté, les modifications sont appliquées sur le téléviseur</string>
+  <string name="remote_banner_connecting">Connexion…</string>
+  <string name="remote_banner_retry">Réessayer</string>
+  <string name="remote_banner_disconnect">Déconnecter</string>
+  <string name="remote_settings_offline">Pas de connexion au téléviseur : les modifications seront envoyées dès qu\'il sera de retour</string>
+  <string name="remote_accessibility_on_tv">Activez d\'abord le service d\'accessibilité de l\'application sur le téléviseur</string>
+  <string name="remote_detect_frame_summary">Les coins se déplacent sur le téléviseur lui-même. Depuis ici, vous pouvez lancer la recherche d\'écran dans le cadre de la caméra.</string>
+  <string name="remote_detect_frame_started">Le téléviseur cherche l\'écran dans le cadre de la caméra</string>
+  <string name="remote_adb_runs_on_tv">Ces actions s\'exécutent sur le téléviseur</string>
+  <string name="remote_adb_pair_instruction">Sur le téléviseur, ouvrez Débogage sans fil → « Appairer l\'appareil avec un code d\'appariement » et saisissez ici le code à 6 chiffres. Le port peut rester vide : le téléviseur le trouve lui-même.</string>
+  <string name="remote_adb_pair_port_optional">Port d\'appariement (facultatif)</string>
+  <string name="remote_adb_need_accessibility">Activez le service d\'accessibilité de l\'application sur le téléviseur, puis réessayez.</string>
+  <string name="remote_opened_on_tv">Ouvert sur le téléviseur</string>
+  <string name="remote_confirm_on_tv">Confirmez la capture d\'écran sur le téléviseur avec la télécommande</string>
+  <string name="remote_error_activity_blocked">Android sur le téléviseur n\'a pas permis à l\'application d\'afficher sa fenêtre au-dessus de celle en cours. Ouvrez l\'application sur le téléviseur ou accordez les autorisations de démarrage automatique via ADB.</string>
+  <string name="remote_error_background_start">Android sur le téléviseur n\'a pas autorisé le démarrage du service en arrière-plan. Accordez les autorisations de démarrage automatique via ADB ou ouvrez l\'application sur le téléviseur.</string>
+  <string name="remote_error_camera_not_running">La capture par caméra n\'est pas active sur le téléviseur</string>
+  <string name="remote_error_offline">Pas de connexion au téléviseur</string>
+  <string name="remote_error_not_found">Téléviseur introuvable. Le téléphone et le téléviseur doivent être sur le même réseau, avec le contrôle depuis un téléphone activé dans l\'application sur le téléviseur.</string>
+  <string name="remote_error_code_rejected">Le téléviseur n\'a pas accepté le code d\'appariement. Scannez à nouveau le code QR sur le téléviseur.</string>
+  <string name="remote_error_wrong_tv">Un autre téléviseur a répondu à cette adresse. Scannez à nouveau le code QR.</string>
+  <string name="remote_error_version">Les versions de l\'application sur le téléphone et le téléviseur ne sont pas compatibles. Mettez à jour l\'application sur les deux.</string>
+  <string name="remote_notification_channel">Contrôle depuis un téléphone</string>
+  <string name="remote_notification_title">Le contrôle depuis un téléphone est activé</string>
+  <string name="remote_notification_waiting">En attente d\'un téléphone</string>
+  <string name="remote_notification_connected">Connecté : %1$s</string>
+
+  <!-- Effects without screen capture -->
+  <string name="effects_title">Effets</string>
+  <string name="effects_intro">Les effets allument la bande tout seuls, sans capture d\'écran. Aucune autorisation d\'enregistrement d\'écran n\'est nécessaire, et peu importe ce qui s\'affiche sur le téléviseur.</string>
+  <string name="effects_group_static">Statique</string>
+  <string name="effects_group_dynamic">Animé</string>
+  <string name="effects_group_setup">Pour la configuration</string>
+  <string name="effects_group_sound">Son</string>
+  <string name="effects_parameters">Paramètres : %1$s</string>
+  <string name="effects_now_off">L\'éclairage est éteint. Choisissez un effet et il s\'allume.</string>
+  <string name="effects_now_effect">En cours : %1$s</string>
+  <string name="effects_now_screen">L\'éclairage suit actuellement l\'écran. Choisir un effet bascule dessus.</string>
+  <string name="effects_turn_off">Éteindre</string>
+  <string name="effects_back_to_screen">Retour à l\'écran</string>
+  <string name="effects_color">Couleur</string>
+  <string name="effects_color2">Deuxième couleur</string>
+  <string name="effects_hue">Teinte</string>
+  <string name="effects_saturation">Saturation</string>
+  <string name="effects_speed">Vitesse</string>
+  <string name="effects_brightness">Luminosité</string>
+  <string name="effects_temperature">Température de couleur</string>
+  <string name="effects_sensitivity">Sensibilité</string>
+  <string name="effects_standby">Rester allumé lorsque l\'écran du téléviseur est éteint</string>
+  <string name="effects_standby_summary">La bande continue de briller comme une veilleuse tant que le boîtier TV reste éveillé. Certains téléviseurs coupent le réseau en veille, alors elle s\'éteint quand même.</string>
+  <string name="unit_kelvin">%1$d K</string>
+  <string name="effect_solid">Couleur unie</string>
+  <string name="effect_gradient">Dégradé</string>
+  <string name="effect_white">Blanc cinéma</string>
+  <string name="effect_white_hint">Le blanc de référence pour regarder des films est 6500 K, les valeurs plus basses sont plus chaudes.</string>
+  <string name="effect_rainbow">Arc-en-ciel</string>
+  <string name="effect_color_cycle">Cycle de couleurs</string>
+  <string name="effect_breathing">Respiration</string>
+  <string name="effect_candle">Bougie</string>
+  <string name="effect_fire">Feu</string>
+  <string name="effect_aurora">Aurore</string>
+  <string name="effect_ocean">Océan</string>
+  <string name="effect_plasma">Plasma</string>
+  <string name="effect_comet">Comète</string>
+  <string name="effect_layout_test">Test de disposition</string>
+  <string name="effect_music">Musique colorée</string>
+  <string name="effect_music_hint">Découpe le son par fréquence : les basses éclairent le bas de l\'écran en rouge, les aigus éclairent le haut en bleu. La bande réagit lorsque le son monte : les battements et les changements clignotent, un son stable comme le bruit de la pièce s\'atténue en quelques secondes. Le son est analysé sur l\'appareil, il n\'est ni enregistré ni envoyé ailleurs. Augmentez la sensibilité si la bande réagit à peine à la musique, baissez-la si elle clignote à cause du bruit de la pièce. Sur un téléphone, activez « Rester allumé lorsque l\'écran du téléviseur est éteint » pour que les lumières continuent avec l\'écran du téléphone éteint.</string>
+  <string name="effect_music_source">Source sonore</string>
+  <string-array name="pref_list_music_source">
+    <item>Microphone</item>
+    <item>Son de cet appareil</item>
+  </string-array>
+  <string name="effect_music_source_hint">Le microphone entend la pièce : musique du téléviseur, des enceintes ou d\'un téléphone. Le son de cet appareil est ce que ce boîtier TV ou téléphone lit lui-même, sans microphone. Le son envoyé à un récepteur en flux Dolby ou DTS (passthrough) contourne Android et ne peut pas être capturé de cette façon.</string>
+  <string name="music_permission_required">La musique colorée nécessite l\'accès au microphone</string>
+  <string name="error_microphone_unavailable">Le microphone est indisponible : l\'appareil n\'en a pas, ou une autre application l\'utilise</string>
+  <string name="error_output_audio_unavailable">Le son de cet appareil est indisponible : le micrologiciel ne le fournit pas aux applications. Choisissez le microphone comme source sonore</string>
+  <string name="effect_layout_test_hint">Le haut est rouge, la droite est verte, le bas est bleu, la gauche est jaune. Le point blanc part de la première LED dans le sens de numérotation. Si les couleurs ou le trajet du point ne correspondent pas à la bande, corrigez la disposition des LED.</string>
+  <string name="effect_layout_test_strip_hint">Sur une bande LED, les limites de côtés de ce motif se déplacent avec la profondeur de scan et les marges de capture. Pour une vérification exacte de chaque LED, ouvrez Disposition des LED et activez « Afficher le test de disposition LED ».</string>
+  <string name="home_source_effect">Effet : %1$s</string>
+  <string name="remote_error_update_tv">L\'application sur le téléviseur est plus ancienne que cette fonctionnalité. Mettez-la à jour sur le téléviseur.</string>
+
+  <!-- Remote: buttons, mouse, text and apps of the TV -->
+  <string name="tv_remote_title">Télécommande</string>
+  <string name="tv_remote_tab_keys">Boutons</string>
+  <string name="tv_remote_tab_mouse">Souris</string>
+  <string name="tv_remote_tab_text">Texte</string>
+  <string name="tv_remote_tab_apps">Applications</string>
+  <string name="tv_remote_adb_missing">Les boutons, la souris et le texte fonctionnent via ADB sur le téléviseur, et il n\'est pas disponible maintenant : %1$s</string>
+  <string name="tv_remote_adb_missing_accessibility">Sans ADB, seuls les boutons système, les taps et le texte via le service d\'accessibilité fonctionnent.</string>
+  <string name="tv_remote_adb_setup">Configurer ADB</string>
+  <string name="tv_remote_no_cursor">Le téléviseur n\'autorise pas les fenêtres au-dessus des autres applications, donc le curseur n\'est pas visible. Accordez les autorisations de démarrage automatique via ADB.</string>
+  <string name="tv_remote_power">Marche/arrêt</string>
+  <string name="tv_remote_input">Source d\'entrée</string>
+  <string name="tv_remote_settings">Paramètres du téléviseur</string>
+  <string name="tv_remote_back">Retour</string>
+  <string name="tv_remote_home">Accueil</string>
+  <string name="tv_remote_menu">Menu</string>
+  <string name="tv_remote_ok">OK</string>
+  <string name="tv_remote_up">Haut</string>
+  <string name="tv_remote_down">Bas</string>
+  <string name="tv_remote_left">Gauche</string>
+  <string name="tv_remote_right">Droite</string>
+  <string name="tv_remote_volume_up">Volume +</string>
+  <string name="tv_remote_volume_down">Volume −</string>
+  <string name="tv_remote_mute">Muet</string>
+  <string name="tv_remote_play_pause">Lecture ou pause</string>
+  <string name="tv_remote_rewind">Retour arrière</string>
+  <string name="tv_remote_forward">Avance rapide</string>
+  <string name="tv_remote_previous">Précédent</string>
+  <string name="tv_remote_next">Suivant</string>
+  <string name="tv_remote_touchpad_hint">Glissez un doigt pour déplacer le curseur. Un tap clique, un appui long fait un appui long. Deux doigts font défiler, un tap à deux doigts agit comme Retour.</string>
+  <string name="tv_remote_click">Clic</string>
+  <string name="tv_remote_text_label">Texte pour le téléviseur</string>
+  <string name="tv_remote_text_hint">Sélectionnez un champ de texte sur le téléviseur, une zone de recherche par exemple, et tapez ici. Le texte apparaît immédiatement sur le téléviseur.</string>
+  <string name="tv_remote_enter">Entrée</string>
+  <string name="tv_remote_backspace">Supprimer</string>
+  <string name="tv_remote_clear">Effacer</string>
+  <string name="tv_remote_apps_loading">Chargement des applications du téléviseur…</string>
+  <string name="tv_remote_apps_empty">Aucune application trouvée sur le téléviseur</string>
+  <string name="remote_tvs_switch">Autres téléviseurs</string>
+  <string name="remote_input_needs_adb">Cela nécessite ADB sur le téléviseur (%1$s). Il se configure sur l\'écran Télécommande.</string>
+  <string name="remote_app_not_found">L\'application n\'est pas installée sur le téléviseur</string>
+
+  <!-- Lighting delay and auto-tuning with the phone camera -->
+  <string name="calibration_title">Réglage auto du délai</string>
+  <string name="calibration_needs_remote">Le réglage auto filme le téléviseur avec la caméra du téléphone, il s\'exécute donc depuis un téléphone appairé au téléviseur.</string>
+  <string name="calibration_needs_screen">Allumez l\'éclairage en mode capture d\'écran sur le téléviseur et lancez un film : le délai est mesuré dessus.</string>
+  <string name="calibration_turn_on">Allumer l\'éclairage</string>
+  <string name="calibration_intro">Le téléphone filme le téléviseur et la lueur sur le mur et compare quand l\'image et la bande changent. Le délai est mesuré sur ce qui est en cours de lecture, donc chaque application et source obtient sa propre valeur.</string>
+  <string name="calibration_steps">1. Lancez un film ou une vidéo avec des changements de scène fréquents.\n2. Éteignez les lumières de la pièce.\n3. Placez-vous de façon à ce que tout l\'écran du téléviseur et le mur autour soient dans le cadre, et tenez le téléphone immobile pendant environ une minute.</string>
+  <string name="calibration_start">Démarrer</string>
+  <string name="calibration_searching">La bande s\'éteint quelques secondes pendant que le téléphone cherche l\'écran du téléviseur. Tenez le téléphone immobile.</string>
+  <string name="calibration_measuring">Mesure en cours. Changements de scène : %1$d, secondes : %2$d. Tenez le téléphone immobile.</string>
+  <string name="calibration_glow_invisible">La caméra voit à peine la lueur de la bande. Éteignez les lumières et assurez-vous que le mur autour du téléviseur est dans le cadre.</string>
+  <string name="calibration_result_ahead">La bande est en avance de %1$d ms sur l\'image</string>
+  <string name="calibration_result_behind">La bande est en retard de %1$d ms sur l\'image</string>
+  <string name="calibration_result_in_sync">La bande et l\'image sont synchronisées</string>
+  <string name="calibration_result_details">Changements de scène : %1$d. Précision d\'environ ±%2$d ms, correspondance %3$d %%.</string>
+  <string name="calibration_unreliable">Le résultat n\'est pas fiable : trop peu de changements de scène ou le téléphone a bougé. Mieux vaut répéter sur une scène plus dynamique.</string>
+  <string name="calibration_behind_hint">Un délai ne peut pas corriger une bande en retard. Réduisez le lissage ou choisissez une méthode de capture plus rapide.</string>
+  <string name="calibration_current">Réglé actuellement : %1$d ms. Suggéré : %2$d ms.</string>
+  <string name="calibration_save_app">Enregistrer pour %1$s</string>
+  <string name="calibration_save_all">Enregistrer pour toutes les applications</string>
+  <string name="calibration_no_usage_access">Le téléviseur n\'indique pas quelle application est à l\'écran, donc le délai est enregistré pour toutes les applications. Le délai par application nécessite l\'accès à l\'utilisation, accordé avec les autorisations de démarrage automatique via ADB.</string>
+  <string name="calibration_saved">Enregistré : %1$d ms. Le téléviseur l\'applique immédiatement.</string>
+  <string name="calibration_repeat">Mesurer à nouveau</string>
+  <string name="calibration_error_no_screen">L\'écran du téléviseur n\'a pas été trouvé dans le cadre. Pointez la caméra pour que tout l\'écran soit visible, et réessayez.</string>
+  <string name="calibration_error_too_dark">Le cadre est trop sombre. Le téléviseur doit être allumé et diffuser quelque chose d\'assez lumineux.</string>
+  <string name="calibration_error_too_close">Le téléviseur remplit presque tout le cadre et ne laisse pas de place pour le mur. Reculez un peu.</string>
+  <string name="calibration_error_static">Trop peu de changements de scène pour une mesure. Diffusez quelque chose de plus dynamique et réessayez.</string>
+  <string name="calibration_error_not_running">Allumez d\'abord l\'éclairage sur le téléviseur.</string>
+  <string name="calibration_error_not_screen">Le réglage auto fonctionne avec la capture d\'écran, et le téléviseur affiche actuellement un effet ou utilise la caméra.</string>
+  <string name="delay_title">Délai d\'éclairage</string>
+  <string name="delay_summary">Délai par application et réglage auto avec la caméra du téléphone</string>
+  <string name="delay_intro">Si la bande est en avance sur l\'image, un délai la retient. Les lecteurs et sources traitent la vidéo différemment, donc une application peut avoir son propre délai : le téléviseur bascule dessus tant que cette application est à l\'écran.</string>
+  <string name="delay_global">Délai pour toutes les applications</string>
+  <string name="delay_calibration_title">Réglage auto</string>
+  <string name="delay_calibration_summary">La caméra du téléphone filme le téléviseur et la lueur et trouve le délai sur le film en cours.</string>
+  <string name="delay_calibration_open">Régler avec la caméra</string>
+  <string name="delay_calibration_on_phone">Le réglage auto s\'exécute depuis un téléphone : ouvrez Télécommande TV dessus, connectez-vous à ce téléviseur et allez dans Paramètres, Délai d\'éclairage.</string>
+  <string name="delay_apps_title">Délai par application</string>
+  <string name="delay_no_usage_access">Le téléviseur n\'indique pas quelle application est à l\'écran. Accordez l\'accès à l\'utilisation via ADB, sinon le délai pour toutes les applications est utilisé partout.</string>
+  <string name="delay_apps_empty">Aucune application avec son propre délai pour le moment.</string>
+  <string name="delay_apps_remove">Supprimer</string>
+  <string name="delay_apps_add">Ajouter une application</string>
+
+  <!-- Sleep timer -->
+  <string name="sleep_timer">Minuteur de sommeil</string>
+  <string name="sleep_timer_minutes">Dans %1$d min</string>
+  <string name="sleep_timer_cancel">Désactiver le minuteur</string>
+  <string name="sleep_timer_until">S\'éteint à %1$s</string>
+
+  <!-- More controllers and smart lights -->
+  <string name="error_hue_not_paired">Le pont Hue n\'est pas appairé. Ouvrez Paramètres, Connexion et appairez le pont avec son bouton.</string>
+  <string name="error_nanoleaf_not_paired">Nanoleaf n\'est pas appairé. Ouvrez Paramètres, Connexion et appairez les panneaux.</string>
+  <string name="error_no_lamps">Aucune lumière n\'est assignée aux zones d\'écran. Ouvrez Paramètres, Connexion, Lumières et zones.</string>
+
+  <!-- Controller picker -->
+  <string name="devices_title">Contrôleur</string>
+  <string name="devices_found">Trouvés sur le réseau</string>
+  <string name="devices_searching">Recherche d\'appareils sur le réseau…</string>
+  <string name="devices_nothing_found">Aucune réponse. Vérifiez que le contrôleur est sur le même réseau, ou choisissez son type ci-dessous et saisissez l\'adresse à la main.</string>
+  <string name="devices_search_again">Rechercher à nouveau</string>
+  <string name="devices_sweep">Vérifier chaque adresse</string>
+  <string name="devices_sweep_summary">Pour WLED et Hyperion sans mDNS. Prend une ou deux minutes.</string>
+  <string name="devices_sweep_progress">Vérification des adresses : %1$d%%</string>
+  <string name="devices_manual">Choisir par type</string>
+  <string name="devices_current">Actuel</string>
+  <string name="devices_lamps_count">Lumières : %1$d</string>
+  <string name="devices_remote_note">La recherche s\'exécute depuis ce téléphone, donc le téléviseur doit être sur le même réseau.</string>
+  <string name="devices_group_strip">Bande adressable sur le réseau</string>
+  <string name="devices_group_usb">Bande via USB</string>
+  <string name="devices_group_lamps">Lumières et panneaux intelligents</string>
+  <string name="devices_group_server">Serveur Ambilight</string>
+
+  <!-- Output types -->
+  <string name="output_wled">WLED</string>
+  <string name="output_wled_summary">ESP8266 ou ESP32 avec micrologiciel WLED</string>
+  <string name="output_ddp">DDP</string>
+  <string name="output_ddp_summary">WLED, ESPixelStick, FPP et autres récepteurs DDP</string>
+  <string name="output_e131">E1.31 (sACN)</string>
+  <string name="output_e131_summary">ESPixelStick, Falcon, FPP, nœuds DMX</string>
+  <string name="output_artnet">Art-Net</string>
+  <string name="output_artnet_summary">Nœuds DMX et contrôleurs de pixels</string>
+  <string name="output_tpm2net">tpm2.net</string>
+  <string name="output_tpm2net_summary">Récepteurs compatibles avec Jinx!</string>
+  <string name="output_udpraw">UDP raw</string>
+  <string name="output_udpraw_summary">RVB brut dans un seul paquet, jusqu\'à 490 LED</string>
+  <string name="output_opc">Open Pixel Control</string>
+  <string name="output_opc_summary">FadeCandy et fcserver</string>
+  <string name="output_adalight">Adalight et kits USB</string>
+  <string name="output_adalight_summary">Arduino, ESP, Skydimo et autres cartes sur câble USB</string>
+  <string name="output_hue">Philips Hue</string>
+  <string name="output_hue_summary">Lumières via le pont Hue</string>
+  <string name="output_nanoleaf">Nanoleaf</string>
+  <string name="output_nanoleaf_summary">Shapes, Canvas, Elements, Lines, Light Panels</string>
+  <string name="output_wiz">WiZ</string>
+  <string name="output_wiz_summary">Lumières WiZ Connected, Philips WiZ inclus</string>
+  <string name="output_yeelight">Yeelight</string>
+  <string name="output_yeelight_summary">Nécessite le contrôle LAN activé dans l\'application Yeelight</string>
+  <string name="output_lifx">LIFX</string>
+  <string name="output_lifx_summary">Lumières LIFX sur le réseau local</string>
+  <string name="output_govee">Govee</string>
+  <string name="output_govee_summary">Nécessite le contrôle LAN activé dans l\'application Govee Home</string>
+  <string name="output_homeassistant">Home Assistant</string>
+  <string name="output_homeassistant_summary">Toutes les lumières connectées à Home Assistant</string>
+  <string name="output_hyperion">Hyperion / HyperHDR</string>
+  <string name="output_hyperion_summary">L\'image va vers un serveur Hyperion ou HyperHDR qui pilote les LED</string>
+
+  <!-- Controller settings -->
+  <string name="extra_outputs_title">Contrôleurs supplémentaires</string>
+  <string name="extra_outputs_summary_empty">Une deuxième bande, des barres latérales ou des lampes à côté du contrôleur principal</string>
+  <string name="extra_outputs_summary_count">Ajoutés : %1$d</string>
+  <string name="extra_outputs_hint">Ils fonctionnent avec le contrôleur principal et affichent la même image. Chacun a sa propre adresse et disposition LED : la disposition définit quels côtés il couvre, et les marges de capture la réduisent à une partie de l\'écran.</string>
+  <string name="extra_outputs_add">Ajouter un contrôleur</string>
+  <string name="extra_output_title">Contrôleur supplémentaire</string>
+  <string name="extra_output_off">désactivé</string>
+  <string name="extra_output_delete">Supprimer le contrôleur</string>
+  <string name="extra_output_delete_confirm">Son adresse et sa disposition LED seront perdues.</string>
+  <string name="pref_title_output_enabled">Activé</string>
+  <string name="pref_title_output_name">Nom</string>
+  <string name="pref_summary_output_name_empty">Non défini</string>
+  <string name="home_target_with_extra" translatable="false">%1$s + %2$d</string>
+  <string name="controller_change">Changer</string>
+  <string name="controller_no_address">adresse non définie</string>
+  <string name="pref_title_color_order">Ordre des couleurs</string>
+  <string name="pref_title_dmx_universe">Univers de départ</string>
+  <string name="pref_summary_dmx_universe">%1$d, une bande plus longue continue dans les univers suivants</string>
+  <string name="pref_title_dmx_leds_per_universe">LED par univers</string>
+  <string name="pref_summary_dmx_leds_per_universe">%1$d (170 remplissent les 510 canaux d\'un univers)</string>
+  <string name="pref_title_tpm2_leds_per_packet">LED par paquet</string>
+  <string name="pref_title_opc_channel">Canal OPC</string>
+  <string name="pref_summary_opc_channel">%1$d (0 signifie chaque canal du serveur)</string>
+  <string name="pref_summary_e131_multicast">Vide : multicast vers 239.255.x.y</string>
+  <string name="home_target_multicast">multicast</string>
+  <string name="pref_title_hue_pairing">Appariement du pont</string>
+  <string name="pref_title_nanoleaf_pairing">Appariement des panneaux</string>
+  <string name="pref_summary_paired">Appairé</string>
+  <string name="pref_summary_not_paired">Non appairé, appuyez pour appairer</string>
+
+  <!-- Pairing -->
+  <string name="action_pair">Appairer</string>
+  <string name="pair_in_progress">Appariement…</string>
+  <string name="pair_failed">Impossible d\'appairer : %1$s</string>
+  <string name="hue_pair_title">Appairer le pont Hue</string>
+  <string name="hue_pair_text">Appuyez sur le bouton rond en haut du pont, puis appuyez sur Appairer dans les 30 secondes.</string>
+  <string name="hue_pair_button_not_pressed">Le pont indique que son bouton n\'a pas été pressé. Appuyez dessus et réessayez.</string>
+  <string name="nanoleaf_pair_title">Appairer Nanoleaf</string>
+  <string name="nanoleaf_pair_text">Maintenez le bouton d\'alimentation du contrôleur pendant 5 à 7 secondes jusqu\'à ce que sa lumière clignote, puis appuyez sur Appairer dans les 30 secondes.</string>
+  <string name="nanoleaf_pair_rejected">Nanoleaf a refusé : le bouton n\'a pas été maintenu ou plus de 30 secondes se sont écoulées.</string>
+  <string name="pair_need_host">Saisissez d\'abord l\'adresse</string>
+
+  <!-- Lights of other systems -->
+  <string name="lamps_dialog_title">Lumières %1$s</string>
+  <string name="lamps_hint_network">Les lumières sont recherchées sur le réseau local. Allumez-les et vérifiez qu\'elles sont sur le même Wi-Fi.</string>
+  <string name="lamps_hint_hue">Appairez d\'abord le pont, puis choisissez une zone pour chaque lumière.</string>
+  <string name="lamps_error">Impossible d\'obtenir la liste des lumières : %1$s</string>
+  <string name="lamps_lamp_missing">Introuvable sur le réseau pour le moment</string>
+  <string name="lamps_identify">Clignoter</string>
+
+  <!-- Home: controller setup hint -->
+  <string name="home_setup_button">Configurer le contrôleur</string>
+  <string name="home_setup_no_host">L\'adresse du contrôleur n\'est pas définie</string>
+  <string name="home_setup_no_lamps">Aucune lumière n\'est assignée aux zones d\'écran</string>
+  <string name="home_setup_not_paired">%1$s n\'est pas encore appairé</string>
+  <string name="home_setup_no_token">Le jeton Home Assistant n\'est pas défini</string>
+
+  <!-- Connection errors of LED controllers and lights -->
+  <string name="error_device_unreachable">Impossible d\'atteindre le contrôleur. Vérifiez son adresse et son alimentation, et qu\'il est sur le même réseau.</string>
+  <string name="error_device_connection_lost">La connexion au contrôleur a été perdue, capture arrêtée.</string>
+  <string name="error_lamps_unreachable">Impossible d\'atteindre les lumières. Vérifiez qu\'elles sont alimentées et sur le même réseau.</string>
+  <string name="error_lamps_connection_lost">La connexion aux lumières a été perdue, capture arrêtée.</string>
+
+  <!-- WLED LED count check -->
+  <string name="devices_led_mismatch_title">Le nombre de LED diffère</string>
+  <string name="devices_led_mismatch_text">LED dans WLED : %1$d, dans la disposition de l\'application : %2$d. Avec des nombres différents, une partie de la bande reste sombre ou les couleurs atterrissent au mauvais endroit.</string>
+  <string name="devices_led_mismatch_layout">Configurer la disposition</string>
+  <string name="devices_led_mismatch_later">Pas maintenant</string>
+
+  <!-- Local network access (Android 17) -->
+  <string name="error_local_network">Pas d\'accès au réseau local. Autorisez les appareils à proximité pour l\'application dans les paramètres système.</string>
+
+  <!-- Hue entertainment area -->
+  <string name="pref_title_hue_area">Zone divertissement</string>
+  <string name="pref_summary_hue_area_none">Non utilisée, les lumières reçoivent les couleurs une par une</string>
+  <string name="hue_area_none">Lumières une par une</string>
+  <string name="hue_area_none_summary">Quelques mises à jour par seconde, les zones sont choisies ici</string>
+  <string name="hue_area_summary">Flux jusqu\'à 25 fois par seconde, les emplacements viennent de l\'application Hue</string>
+  <string name="hue_area_hint">Les zones sont créées dans l\'application Hue sous Zones divertissement. Le pont diffuse les couleurs vers leurs lumières, chaque lumière prend la couleur de son emplacement autour de l\'écran.</string>
+  <string name="hue_area_empty">Le pont n\'a pas encore de zones divertissement.</string>
+  <string name="hue_area_no_key">Le pont a été appairé par une ancienne version de l\'application, sans clé de streaming. Appairez-le à nouveau pour utiliser une zone.</string>
+  <string name="hue_area_repair">Appairer à nouveau</string>
+  <string name="hue_area_error">Impossible d\'obtenir les zones : %1$s</string>
+  <string name="pref_summary_hue_area_lamps">Les lumières et leurs emplacements sont définis par la zone dans l\'application Hue</string>
+  <string name="error_hue_no_clientkey">Le pont Hue doit être appairé à nouveau : la zone divertissement nécessite une clé de streaming. Ouvrez Paramètres, Connexion.</string>
+  <string name="home_setup_hue_repair">Le pont Hue doit être appairé à nouveau</string>
+  <string name="hue_area_loading">Interrogation du pont…</string>
+
+  <!-- Zigbee2MQTT -->
+  <string name="output_z2m">Zigbee2MQTT</string>
+  <string name="output_z2m_summary">Lumières Zigbee via un broker MQTT</string>
+  <string name="pref_title_mqtt_username">Utilisateur MQTT</string>
+  <string name="pref_summary_mqtt_no_login">Pas de connexion</string>
+  <string name="pref_title_mqtt_password">Mot de passe MQTT</string>
+  <string name="pref_summary_mqtt_password_empty">Non défini</string>
+  <string name="pref_summary_mqtt_password_set">Enregistré</string>
+  <string name="pref_title_z2m_base_topic">Sujet de base Zigbee2MQTT</string>
+  <string name="lamps_hint_z2m">La liste vient du broker, Zigbee2MQTT l\'y conserve. Vérifiez l\'adresse du broker, l\'identifiant et le sujet de base.</string>
+    <string name="remote_layout_test_unsupported_output">Sélectionnez une sortie LED adressable sur le téléviseur</string>
+    <string name="remote_layout_test_no_device">Aucun périphérique série USB connecté au téléviseur</string>
+    <string name="remote_layout_test_start_failed">Impossible de démarrer le test de disposition LED sur le téléviseur</string>
+    <string name="remote_layout_test_timeout">Délai dépassé en attendant l\'autorisation USB sur le téléviseur</string>
+    <string name="remote_layout_test_denied">Autorisation USB ou démarrage du test LED refusé sur le téléviseur</string>
+    <string name="led_layout_direct_test">Afficher le test de disposition LED</string>
+    <string name="error_mstar_capture_stopped">Capture matérielle MStar arrêtée : %1$s</string>
 </resources>
